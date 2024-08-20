@@ -4,6 +4,7 @@ import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
+import PriceLock from "../../projects/PriceLock/PriceLock";
 
 import dshLogo from "../../assets/ds/dsh.svg";
 
@@ -30,7 +31,9 @@ export default function Dish() {
           service Netflix or the NFL Network Multi-Sport Pack - Red Zone.
         </Copy>
         <br />
-        <Viewport>PRICE LOCK</Viewport>
+        <Viewport>
+          <PriceLock />
+        </Viewport>
       </Article>
     </>
   );
