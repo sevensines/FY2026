@@ -1,0 +1,40 @@
+import React from "react";
+import Banner from "../../components/Banner/LogoBanner";
+import Article from "../../components/Article/Article";
+import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
+import Copy from "../../components/Copy/Copy";
+import Viewport from "../../components/Viewport/Viewport";
+import ChoicePackage from "../../projects/ChoicePackage/ChoicePackage";
+
+import dtvLogo from "../../assets/dt/dtv.svg";
+
+export default function DirectTV() {
+  const crumbs = [
+    {
+      text: "DirectTV",
+      url: "/DirectTV",
+    },
+  ];
+
+  return (
+    <>
+      <Banner logo={dtvLogo} alt='DirectTV' />
+      <Article>
+        <Breadcrumb route={crumbs} />
+        <Copy title='DirecTV NFL & Choice Package'>
+          <b>Front End Developer • Graphic Designer</b>
+          <br />
+          The Directv NFL & Choice Package click to call landing page campaign
+          was part of DIRECTV's Choice Package for new customers which included
+          3 free months of HBO, STARZ, SHOWTIME and Cinemax. The 2016 NFL Sunday
+          Ticket, which inlcuded every Out-of-Market NFL game live every Sunday,
+          was also included at no extra cost.
+        </Copy>
+        <br />
+        <Viewport>
+          <ChoicePackage />
+        </Viewport>
+      </Article>
+    </>
+  );
+}
