@@ -4,7 +4,7 @@ import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
-
+import BusinessADT from "../../projects/ADTSecurity/Business";
 import adtLogo from "../../assets/ad/adt.svg";
 
 export default function Business() {
@@ -35,7 +35,9 @@ export default function Business() {
           by an ADT Representative for pricing options.
         </Copy>
         <br />
-        <Viewport>BUSINESS</Viewport>
+        <Viewport>
+          <BusinessADT />
+        </Viewport>
       </Article>
     </>
   );
