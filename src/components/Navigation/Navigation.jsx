@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Logo from "../Logo/Logo";
+import { Link } from "react-router-dom";
 
 const NavWrapper = styled.div`
   display: flex;
@@ -51,13 +52,14 @@ const NavLinks = styled.div`
   display: flex;
 `;
 
-const NavLink = styled.div`
+const NavLink = styled(Link)`
   position: relative;
   margin: 0px;
   padding: 4px 16px;
   color: #f2bf80;
   font-weight: 900;
   text-transform: uppercase;
+  text-decoration: none;
   cursor: pointer;
 
   &:after {
@@ -95,11 +97,13 @@ export default function Navigation() {
     <NavWrapper>
       <NavContainer>
         <NavLogo aria-label='logo' color='#ef8f30'>
-          <Logo />
+          <Link to='/'>
+            <Logo />
+          </Link>
         </NavLogo>
         <NavLinks aria-label='navigation'>
-          <NavLink>Work</NavLink>
-          <NavLink>Contact</NavLink>
+          <NavLink to='/'>Work</NavLink>
+          <NavLink to='/'>Contact</NavLink>
         </NavLinks>
       </NavContainer>
     </NavWrapper>

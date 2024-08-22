@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { COLORS as c } from "../../Theme";
 import Logo from "../Logo/Logo";
+import { Link } from "react-router-dom";
+
+const FooterPush = styled.div`
+  margin: auto;
+`;
 
 const FooterWrapper = styled.div`
   display: flex;
@@ -85,30 +90,35 @@ const FooterLink = styled.a`
 
 export default function Footer() {
   return (
-    <FooterWrapper>
-      <FooterContainer>
-        <FooterLogo aria-label='logo' color='#ef8f30'>
-          <Logo />
-        </FooterLogo>
-        <FooterLinks aria-label='navigation'>
-          <FooterLink
-            href='mailto:sevensines@gmail.com'
-            aria-label='Footer: Email'
-            title='Email'
-            target='_blank'
-          >
-            Email
-          </FooterLink>
-          <FooterLink
-            href='https://www.linkedin.com/in/sean-swidler-80a5b4b7/'
-            aria-label='Footer: LinkedIn'
-            title='LinkedIn'
-            target='_blank'
-          >
-            LinkedIn
-          </FooterLink>
-        </FooterLinks>
-      </FooterContainer>
-    </FooterWrapper>
+    <>
+      <FooterPush />
+      <FooterWrapper>
+        <FooterContainer>
+          <FooterLogo aria-label='Footer: Logo' color='#ef8f30'>
+            <Link to='/' aria-label='Footer: Home'>
+              <Logo />
+            </Link>
+          </FooterLogo>
+          <FooterLinks aria-label='navigation'>
+            <FooterLink
+              href='mailto:sevensines@gmail.com'
+              aria-label='Footer: Email'
+              title='Email'
+              target='_blank'
+            >
+              Email
+            </FooterLink>
+            <FooterLink
+              href='https://www.linkedin.com/in/sean-swidler-80a5b4b7/'
+              aria-label='Footer: LinkedIn'
+              title='LinkedIn'
+              target='_blank'
+            >
+              LinkedIn
+            </FooterLink>
+          </FooterLinks>
+        </FooterContainer>
+      </FooterWrapper>
+    </>
   );
 }

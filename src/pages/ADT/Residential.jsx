@@ -4,6 +4,7 @@ import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
+import ResidentialADT from "../../projects/ADTSecurity/Residential";
 
 import adtLogo from "../../assets/ad/adt.svg";
 
@@ -36,7 +37,9 @@ export default function Residential() {
           options.
         </Copy>
         <br />
-        <Viewport>RESIDENTIAL</Viewport>
+        <Viewport>
+          <ResidentialADT />
+        </Viewport>
       </Article>
     </>
   );

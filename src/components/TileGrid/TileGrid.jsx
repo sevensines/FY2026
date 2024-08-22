@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { CLIENTS } from "../../data.js";
 import Tile from "./Tile";
-import msLogo from "../../assets/ms/mic.svg";
-import msBG from "../../assets/ms/mic-tile-clr.jpg";
-import gtLogo from "../../assets/gt/gts.svg";
-import gtBG from "../../assets/gt/gts-tile-clr.jpg";
 
 const TileWrapper = styled.div`
   display: flex;
@@ -15,13 +11,6 @@ const TileWrapper = styled.div`
   padding: clamp(30px, 5vw, 80px);
   background: #00161a;
   box-sizing: border-box;
-`;
-
-const TileHeaader = styled.h2`
-  margin: 0;
-  color: #ef8f30;
-  font-weight: 900;
-  text-transform: uppercase;
 `;
 
 export const TileList = styled.div`

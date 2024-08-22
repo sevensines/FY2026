@@ -38,7 +38,7 @@ export default function ADT() {
         <TileList className='_three'>
           <TileText title='Business' link='/ADT/Business' bg={adtBiz} />
           <TileText title='Residential' link='/ADT/Residential' bg={adtBG} />
-          <TileText title='New Customers' link='/ADT/Specials' bg={adtMove} />
+          {/* <TileText title='New Customers' link='/ADT/Specials' bg={adtMove} /> */}
         </TileList>
       </Article>
     </>
