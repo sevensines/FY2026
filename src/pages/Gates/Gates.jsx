@@ -1,12 +1,11 @@
 import React from "react";
-import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import { TileList } from "../../components/TileGrid/TileGrid";
 import TileText from "../../components/TileGrid/TileText";
+import BannerGTS from "./GTSBanner";
 
-import gtsLogo from "../../assets/gt/gts.svg";
 import gtsPledge from "../../assets/gt/gts-gvp.jpg";
 import gtsLetter from "../../assets/gt/gts-ltr.jpg";
 
@@ -20,7 +19,7 @@ export default function Gates() {
 
   return (
     <>
-      <Banner logo={gtsLogo} alt='Gates Foundation' />
+      <BannerGTS />
       <Article>
         <Breadcrumb route={crumbs} />
         <Copy title='The Gates Foundation'>

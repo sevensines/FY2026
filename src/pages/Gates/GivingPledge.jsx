@@ -1,12 +1,11 @@
 import React from "react";
-import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
 import Button from "../../components/AnchorButton/AnchorButton";
+import BannerGTS from "./GTSBanner";
 
-import gtsLogo from "../../assets/gt/gts.svg";
 import gtsLanding from "../../assets/gt/gates_landing.jpg";
 import gtsLearning from "../../assets/gt/gates_learning.jpg";
 import gtsLetter from "../../assets/gt/gates_letter.jpg";
@@ -26,7 +25,7 @@ export default function GivingPledge() {
 
   return (
     <>
-      <Banner logo={gtsLogo} alt='The Gates Foundation' />
+      <BannerGTS />
       <Article>
         <Breadcrumb route={crumbs} />
         <Copy title='The Giving Pledge'>

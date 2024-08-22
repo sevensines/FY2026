@@ -1,12 +1,11 @@
 import React from "react";
-import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import { TileList } from "../../components/TileGrid/TileGrid";
 import TileText from "../../components/TileGrid/TileText";
+import BannerTMO from "./TMbanner";
 
-import tmoLogo from "../../assets/tm/tmo.svg";
 import tmoTuesday from "../../assets/tm/tmo-tue.jpg";
 import tmoThree from "../../assets/tm/tmo-341.jpg";
 import tmoJump from "../../assets/tm/tmo-jmp.jpg";
@@ -24,7 +23,7 @@ export default function TMobile() {
 
   return (
     <>
-      <Banner logo={tmoLogo} alt='T-Mobile' />
+      <BannerTMO />
       <Article>
         <Breadcrumb route={crumbs} />
         <Copy title='T-Mobile'>

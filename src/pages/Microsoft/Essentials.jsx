@@ -1,14 +1,13 @@
 import React from "react";
-import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
+import BannerAZR from "./AzrBanner";
 
 import azrHome from "../../assets/ms/azr-homepage-enus.jpg";
 import azrWebinar from "../../assets/ms/azr-webinar-enus.jpg";
 import azrPivot from "../../assets/ms/azr-pivot-enus.jpg";
-import azrLogo from "../../assets/ms/azr.svg";
 
 export default function Essentials() {
   const crumbs = [
@@ -28,7 +27,7 @@ export default function Essentials() {
 
   return (
     <>
-      <Banner logo={azrLogo} alt='Microsoft' />
+      <BannerAZR />
       <Article>
         <Breadcrumb route={crumbs} />
         <Copy title='Azure Essentials'>

@@ -1,12 +1,11 @@
 import React from "react";
-import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import { TileList } from "../../components/TileGrid/TileGrid";
 import TileText from "../../components/TileGrid/TileText";
+import BannerAZR from "./AzrBanner";
 
-import azrLogo from "../../assets/ms/azr.svg";
 import azureBG from "../../assets/ms/mic-ess.jpg";
 import newsBG from "../../assets/ms/mic-nws.jpg";
 import servBG from "../../assets/ms/mic-srv.jpg";
@@ -25,7 +24,7 @@ export default function Azure() {
 
   return (
     <>
-      <Banner logo={azrLogo} alt='Microsoft Azure' />
+      <BannerAZR />
       <Article>
         <Breadcrumb route={crumbs} />
         <Copy title='Azure'>

@@ -1,11 +1,10 @@
 import React from "react";
-import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
+import BannerGTS from "./GTSBanner";
 
-import gtsLogo from "../../assets/gt/gts.svg";
 import gtsLetter from "../../assets/gt/AL2013_English.pdf";
 
 export default function AnnualLetter() {
@@ -22,7 +21,7 @@ export default function AnnualLetter() {
 
   return (
     <>
-      <Banner logo={gtsLogo} alt='The Gates Foundation' />
+      <BannerGTS />
       <Article>
         <Breadcrumb route={crumbs} />
         <Copy title='Gates Foundation Annual Letter 2013'>

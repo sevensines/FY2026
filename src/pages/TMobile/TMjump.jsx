@@ -1,12 +1,10 @@
 import React from "react";
-import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
 import Jump from "../../projects/Jump/Jump";
-
-import tmoLogo from "../../assets/tm/tmo.svg";
+import BannerTMO from "./TMbanner";
 
 export default function TMjump() {
   const crumbs = [
@@ -22,7 +20,7 @@ export default function TMjump() {
 
   return (
     <>
-      <Banner logo={tmoLogo} alt='T-Mobile' />
+      <BannerTMO />
       <Article>
         <Breadcrumb route={crumbs} />
         <Copy title='JUMP! On Demand'>

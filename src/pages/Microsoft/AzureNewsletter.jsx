@@ -1,13 +1,11 @@
 import React from "react";
-import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
+import BannerAZR from "./AzrBanner";
 import AzureEnNewsletter from "../../projects/News2016/AzureNewsEn";
 import AzureJaNewsletter from "../../projects/News2016/AzureNewsJa";
-
-import azrLogo from "../../assets/ms/azr.svg";
 
 export default function AzureNewsletter() {
   const crumbs = [
@@ -27,7 +25,7 @@ export default function AzureNewsletter() {
 
   return (
     <>
-      <Banner logo={azrLogo} alt='Microsoft' />
+      <BannerAZR />
       <Article>
         <Breadcrumb route={crumbs} />
         <Copy title='Azure Newsletter • United States & Japan'>

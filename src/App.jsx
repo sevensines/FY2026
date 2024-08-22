@@ -31,11 +31,7 @@ import Dish from "./pages/Dish/Dish.jsx";
 import ADT from "./pages/ADT/ADT.jsx";
 import Business from "./pages/ADT/Business.jsx";
 import Residential from "./pages/ADT/Residential.jsx";
-import Specials from "./pages/ADT/Specials.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-//import Header from "./components/Header/Header";
-//import CoreConcepts from "./components/CoreConcepts/CoreConcepts.jsx";
-//import Examples from "./components/Examples/Examples.jsx";
 
 const AppContainer = styled.div`
   display: flex;
@@ -83,7 +79,6 @@ function App() {
         <Route exact path='/ADT' element={<ADT />} />
         <Route path='/ADT/Business' element={<Business />} />
         <Route path='/ADT/Residential' element={<Residential />} />
-        <Route path='/ADT/Specials' element={<Specials />} />
       </Routes>
       <Footer />
     </AppContainer>

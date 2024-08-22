@@ -1,15 +1,13 @@
 import React from "react";
-import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import { TileList } from "../../components/TileGrid/TileGrid";
 import TileText from "../../components/TileGrid/TileText";
+import BannerADT from "./ADTBanner";
 
-import adtLogo from "../../assets/ad/adt.svg";
 import adtBG from "../../assets/ad/adt-tile-clr.jpg";
 import adtBiz from "../../assets/ad/adt-bus.jpg";
-import adtMove from "../../assets/ad/adt-mvr.jpg";
 
 export default function ADT() {
   const crumbs = [
@@ -21,7 +19,7 @@ export default function ADT() {
 
   return (
     <>
-      <Banner logo={adtLogo} alt='ADT' />
+      <BannerADT />
       <Article>
         <Breadcrumb route={crumbs} />
         <Copy title='ADT'>
@@ -38,7 +36,6 @@ export default function ADT() {
         <TileList className='_three'>
           <TileText title='Business' link='/ADT/Business' bg={adtBiz} />
           <TileText title='Residential' link='/ADT/Residential' bg={adtBG} />
-          {/* <TileText title='New Customers' link='/ADT/Specials' bg={adtMove} /> */}
         </TileList>
       </Article>
     </>

@@ -1,11 +1,10 @@
 import React from "react";
-import Banner from "../../components/Banner/LogoBanner";
+import BannerADT from "./ADTBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
 import BusinessADT from "../../projects/ADTSecurity/Business";
-import adtLogo from "../../assets/ad/adt.svg";
 
 export default function Business() {
   const crumbs = [
@@ -21,7 +20,7 @@ export default function Business() {
 
   return (
     <>
-      <Banner logo={adtLogo} alt='ADT' />
+      <BannerADT />
       <Article>
         <Breadcrumb route={crumbs} />
         <Copy title='Business Surveillance'>

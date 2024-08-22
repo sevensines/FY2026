@@ -1,12 +1,10 @@
 import React from "react";
-import Banner from "../../components/Banner/LogoBanner";
+import BannerADT from "./ADTBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
 import ResidentialADT from "../../projects/ADTSecurity/Residential";
-
-import adtLogo from "../../assets/ad/adt.svg";
 
 export default function Residential() {
   const crumbs = [
@@ -22,7 +20,7 @@ export default function Residential() {
 
   return (
     <>
-      <Banner logo={adtLogo} alt='ADT' />
+      <BannerADT />
       <Article>
         <Breadcrumb route={crumbs} />
         <Copy title='Residential Surveillance'>
