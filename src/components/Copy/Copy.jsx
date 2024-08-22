@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { COLORS as c } from "../../Theme";
 
 const CopyBlock = styled.div`
   display: flex;
@@ -12,7 +13,10 @@ const CopyBlock = styled.div`
   }
   p {
     margin: 0;
-    color: #f2bf80;
+    color: ${c.orangelt};
+    b {
+      color: ${c.orangemd};
+    }
   }
 `;
 

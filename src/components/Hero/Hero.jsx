@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { COLORS as c } from "../../Theme";
 import Copy from "../Copy/Copy";
 import Button from "../AnchorButton/AnchorButton";
 
@@ -7,7 +8,7 @@ const HeroWrapper = styled.div`
   flex-direction: column-reverse;
   width: 100%;
   height: calc(42vh);
-  border-bottom: 1px solid #f2bf80;
+  border-bottom: 1px solid ${c.orangelt};
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -26,13 +27,13 @@ const ColumnLeft = styled.div`
   padding: clamp(30px, 5vw, 80px);
   padding-top: clamp(30px, 5vw, 40px);
   padding-bottom: clamp(30px, 5vw, 40px);
-  background: #00161a;
+  background: ${c.gray};
   h2 {
-    color: #ef8f30;
+    color: ${c.orange};
     text-transform: uppercase;
   }
   p {
-    color: #f2bf80;
+    color: ${c.orangelt};
   }
   a {
     margin-top: 12px;
@@ -84,7 +85,7 @@ const ColumnRight = styled.div`
     content: '';
     height: 100%;
     width: 100%;
-    background-color: #07373a;
+    background-color: ${c.olive};
     mix-blend-mode: lighten;
     position: absolute;
     top: 0;

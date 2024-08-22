@@ -5,9 +5,7 @@ import Copy from "../../components/Copy/Copy";
 import { TileList } from "../../components/TileGrid/TileGrid";
 import TileText from "../../components/TileGrid/TileText";
 import BannerADT from "./ADTBanner";
-
-import adtBG from "../../assets/ad/adt-tile-clr.jpg";
-import adtBiz from "../../assets/ad/adt-bus.jpg";
+import { ADTSECURITY } from "../../data";
 
 export default function ADT() {
   const crumbs = [
@@ -34,8 +32,14 @@ export default function ADT() {
         </Copy>
         <br />
         <TileList className='_three'>
-          <TileText title='Business' link='/ADT/Business' bg={adtBiz} />
-          <TileText title='Residential' link='/ADT/Residential' bg={adtBG} />
+          {ADTSECURITY.map((item) => (
+            <TileText
+              key={item.title}
+              link={item.url}
+              title={item.title}
+              bg={item.bg}
+            />
+          ))}
         </TileList>
       </Article>
     </>

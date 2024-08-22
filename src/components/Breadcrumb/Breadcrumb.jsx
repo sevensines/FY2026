@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { COLORS as c } from "../../Theme";
 import styled from "styled-components";
 
 const DefaultList = styled.ul`
@@ -15,7 +16,7 @@ const DefaultList = styled.ul`
       position: relative;
       margin: 0px 4px;
       padding: 4px 0;
-      color: #f2bf80;
+      color: ${c.orangelt};
       font-weight: 900;
       text-transform: uppercase;
       text-decoration: none;
@@ -32,7 +33,7 @@ const DefaultList = styled.ul`
         left: 0;
         width: 100%;
         height: 2px;
-        background: #ef8f30;
+        background: ${c.orange};
         transform-origin: right center;
         transform: scaleX(0);
         transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
@@ -41,7 +42,7 @@ const DefaultList = styled.ul`
       &:hover,
       &:focus,
       &.has-focus {
-        color: #ef8f30;
+        color: ${c.orange};
         text-decoration: none;
         transition: color 500ms;
         &:after {
@@ -54,7 +55,7 @@ const DefaultList = styled.ul`
   li + li {
     &:before {
       padding: 8px;
-      color: #f2bf80;
+      color: ${c.orange};
       content: "⊸";
     }
   }

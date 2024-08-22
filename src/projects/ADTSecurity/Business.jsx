@@ -1,8 +1,5 @@
 import styled from "styled-components";
-import adtZurch from "../../assets/ad/fonts/zurch.ttf";
-import adtZurchI from "../../assets/ad/fonts/zurchitalic.ttf";
-import adtZurchIB from "../../assets/ad/fonts/zurchitalbold.ttf";
-import adtZurchL from "../../assets/ad/fonts/zurchlight.ttf";
+import FrameADT from "../../pages/ADT/ADTframe";
 import adtBizLogo from "./adt-biz.svg";
 import adtBizHero from "./biz-hero.jpg";
 import adtCamOne from "./biz-cam1.png";
@@ -15,36 +12,6 @@ import adtTech from "./adt-gear.svg";
 import adtFood from "./adt-bell.svg";
 import adtOffice from "./adt-monitor.svg";
 import adtService from "./adt-coffee.svg";
-
-const DefaultFrameDTV = styled.div`
-  display: flex;
-  flex-direction: column;
-  background: #ffffff;
-  @font-face {
-    font-family: Zurch;
-    src: url(${adtZurch});
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: Zurch Bold;
-    src: url(${adtZurch});
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: Zurch Ital Bold;
-    src: url(${adtZurchIB});
-    font-style: italic;
-  }
-  @font-face {
-    font-family: Zurch Ital;
-    src: url(${adtZurchI});
-    font-style: italic;
-  }
-  @font-face {
-    font-family: Zurch Light;
-    src: url(${adtZurchL});
-  }
-`;
 
 const AdtHeader = styled.div`
   position: relative;
@@ -327,7 +294,7 @@ const BizFormContainer = styled.div`
 
 export default function BusinessADT() {
   return (
-    <DefaultFrameDTV>
+    <FrameADT>
       <AdtHeader>
         <AdtLogo />
         <AdtNumber>
@@ -451,6 +418,6 @@ export default function BusinessADT() {
           </BizFormContainer>
         </BizForm>
       </BizQuoteForm>
-    </DefaultFrameDTV>
+    </FrameADT>
   );
 }

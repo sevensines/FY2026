@@ -5,10 +5,7 @@ import Copy from "../../components/Copy/Copy";
 import { TileList } from "../../components/TileGrid/TileGrid";
 import TileText from "../../components/TileGrid/TileText";
 import BannerAZR from "./AzrBanner";
-
-import azureBG from "../../assets/ms/mic-ess.jpg";
-import newsBG from "../../assets/ms/mic-nws.jpg";
-import servBG from "../../assets/ms/mic-srv.jpg";
+import { AZURE } from "../../data";
 
 export default function Azure() {
   const crumbs = [
@@ -40,21 +37,14 @@ export default function Azure() {
         </Copy>
         <br />
         <TileList className='_three'>
-          <TileText
-            title='Azure Essentials'
-            link='/Microsoft/Azure/Essentials'
-            bg={azureBG}
-          />
-          <TileText
-            title='Newsletter'
-            link='/Microsoft/Azure/Newsletter'
-            bg={newsBG}
-          />
-          <TileText
-            title='Service Alerts'
-            link='/Microsoft/Azure/Alerts'
-            bg={servBG}
-          />
+          {AZURE.map((item) => (
+            <TileText
+              key={item.title}
+              link={item.url}
+              title={item.title}
+              bg={item.bg}
+            />
+          ))}
         </TileList>
       </Article>
     </>

@@ -35,7 +35,7 @@ const FooterLogo = styled.div`
   justify-content: center;
   width: 102px;
   height: 34px;
-  color: #f2bf80;
+  color: ${c.orangelt};
   font-weight: 900;
 
   svg {

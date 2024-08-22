@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { CLIENTS } from "../../data.js";
 import Tile from "./Tile";
+import { COLORS as c } from "../../Theme";
 
 const TileWrapper = styled.div`
   display: flex;
@@ -9,7 +10,7 @@ const TileWrapper = styled.div`
   height: auto;
   margin: 0;
   padding: clamp(30px, 5vw, 80px);
-  background: #00161a;
+  background: ${c.gray};
   box-sizing: border-box;
 `;
 

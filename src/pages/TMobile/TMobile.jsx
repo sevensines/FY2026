@@ -5,12 +5,8 @@ import Copy from "../../components/Copy/Copy";
 import { TileList } from "../../components/TileGrid/TileGrid";
 import TileText from "../../components/TileGrid/TileText";
 import BannerTMO from "./TMbanner";
+import { TMOBILE } from "../../data";
 
-import tmoTuesday from "../../assets/tm/tmo-tue.jpg";
-import tmoThree from "../../assets/tm/tmo-341.jpg";
-import tmoJump from "../../assets/tm/tmo-jmp.jpg";
-import tmoPay from "../../assets/tm/tmo-pyg.jpg";
-import tmoPrepaid from "../../assets/tm/tmo-pre.jpg";
 import tmoData from "../../assets/tm/tmo-dat.jpg";
 
 export default function TMobile() {
@@ -41,16 +37,14 @@ export default function TMobile() {
         </Copy>
         <br />
         <TileList className='_three'>
-          <TileText
-            title='Free Tuesdays'
-            link='/T-Mobile/Tuesdays'
-            bg={tmoTuesday}
-          />
-          <TileText title='3 for 1' link='/T-Mobile/3for1' bg={tmoThree} />
-          <TileText title='Jump' link='/T-Mobile/Jump' bg={tmoJump} />
-          <TileText title='Pay As You Go' link='/T-Mobile/Pay' bg={tmoPay} />
-          <TileText title='Prepaid' link='/T-Mobile/Prepaid' bg={tmoPrepaid} />
-          <TileText title='Data Stash' link='/T-Mobile/Stash' bg={tmoData} />
+          {TMOBILE.map((item) => (
+            <TileText
+              key={item.title}
+              link={item.url}
+              title={item.title}
+              bg={item.bg}
+            />
+          ))}
         </TileList>
       </Article>
     </>

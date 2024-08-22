@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Logo from "../Logo/Logo";
 import { Link } from "react-router-dom";
+import { COLORS as c } from "../../Theme";
 
 const NavWrapper = styled.div`
   display: flex;
@@ -12,8 +13,8 @@ const NavWrapper = styled.div`
   padding-left: clamp(30px, 5vw, 80px);
   padding-right: clamp(30px, 5vw, 80px);
   box-sizing: border-box;
-  background: #00161a;
-  border-bottom: 1px solid #f2bf80;
+  background: ${c.gray};
+  border-bottom: 1px solid ${c.orangelt};
 
   @media (min-width: 768px) {
     height: 80px;
@@ -35,7 +36,7 @@ const NavLogo = styled.div`
   justify-content: center;
   width: 102px;
   height: 34px;
-  color: #f2bf80;
+  color: ${c.orangelt};
   font-weight: 900;
 
   svg {
@@ -56,7 +57,7 @@ const NavLink = styled(Link)`
   position: relative;
   margin: 0px;
   padding: 4px 16px;
-  color: #f2bf80;
+  color: ${c.orangelt};
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
@@ -69,7 +70,7 @@ const NavLink = styled(Link)`
     left: 0;
     width: 100%;
     height: 2px;
-    background: #ef8f30;
+    background: ${c.orange};
     transform-origin: right center;
     transform: scaleX(0);
     transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
@@ -78,7 +79,7 @@ const NavLink = styled(Link)`
   &:hover,
   &:focus,
   &.has-focus {
-    color: #ef8f30;
+    color: ${c.orange};
     text-decoration: none;
     transition: color 500ms;
     &:after {

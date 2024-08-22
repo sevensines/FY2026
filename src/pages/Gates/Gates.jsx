@@ -5,9 +5,7 @@ import Copy from "../../components/Copy/Copy";
 import { TileList } from "../../components/TileGrid/TileGrid";
 import TileText from "../../components/TileGrid/TileText";
 import BannerGTS from "./GTSBanner";
-
-import gtsPledge from "../../assets/gt/gts-gvp.jpg";
-import gtsLetter from "../../assets/gt/gts-ltr.jpg";
+import { GATES } from "../../data.js";
 
 export default function Gates() {
   const crumbs = [
@@ -36,16 +34,14 @@ export default function Gates() {
         </Copy>
         <br />
         <TileList className='_three'>
-          <TileText
-            title='The Giving Pledge'
-            link='/Gates/GivingPledge'
-            bg={gtsPledge}
-          />
-          <TileText
-            title='Annual Letter'
-            link='/Gates/AnnualLetter'
-            bg={gtsLetter}
-          />
+          {GATES.map((item) => (
+            <TileText
+              key={item.title}
+              link={item.url}
+              title={item.title}
+              bg={item.bg}
+            />
+          ))}
         </TileList>
       </Article>
     </>
