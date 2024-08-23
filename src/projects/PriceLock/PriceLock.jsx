@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import dshAriBlack from "./ariblk.ttf";
-import dshLogo from "./dsh-wht.svg";
-import dshLock from "./lock-white.svg";
-import dshChannel from "./channels.png";
-import dshNetflix from "./netflix.png";
-import dshRedZone from "./redzone.png";
-import dshPrimo from "./premiums.png";
-import dshVan from "./van.png";
+import dshAriBlack from "../../assets/ds/ariblk.ttf";
+import dshLogo from "../../assets/ds/dsh-img/dsh-wht.svg";
+import dshLock from "../../assets/ds/dsh-img/lock-white.svg";
+import dshChannel from "../../assets/ds/dsh-img/channels.png";
+import dshNetflix from "../../assets/ds/dsh-img/netflix.png";
+import dshRedZone from "../../assets/ds/dsh-img/redzone.png";
+import dshPrimo from "../../assets/ds/dsh-img/premiums.png";
+import dshVan from "../../assets/ds/dsh-img/van.png";
 
 const DefaultFrameDSH = styled.div`
   display: flex;

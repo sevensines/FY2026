@@ -11,8 +11,8 @@ import dtvLogo from "../../assets/dt/dtv.svg";
 export default function DirectTV() {
   const crumbs = [
     {
-      text: "DirectTV",
-      url: "/DirectTV",
+      text: "DirecTV",
+      url: "/DirecTV",
     },
   ];
 

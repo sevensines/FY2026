@@ -2,8 +2,8 @@ import styled from "styled-components";
 import FrameTMO from "../../pages/TMobile/TMframe";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 
-import tmoPrepaidHero from "./prehero.png";
-import tmoBYOD from "./byod.png";
+import tmoPrepaidHero from "../../assets/tm/pre-img/prehero.png";
+import tmoBYOD from "../../assets/tm/pre-img/byod.png";
 
 const PrepaidHero = styled.div`
   display: flex;
@@ -182,51 +182,11 @@ const PayBanner = styled.div`
   }
 `;
 
-const PlanGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  column-gap: 40px;
-  padding: 0 4% 2% 4%;
-  background-color: #ffffff;
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-`;
-
-const PlanGridItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2%;
-
-  h5 {
-    margin: 0;
-    font-size: 1.2em;
-    line-height: 1.3em;
-    color: #444444;
-    font-family: "swis721 roman", helvetica, arial, sans-serif;
-    font-weight: 600;
-    text-align: center;
-
-    > strong {
-      font-size: 3.6em;
-      line-height: 1.3em;
-      color: #000000;
-      font-family: "swis721 bold", helvetica, arial, sans-serif;
-      font-weight: initial;
-      text-transform: uppercase;
-      > span {
-        font-size: 1.6rem;
-      }
-    }
-  }
-`;
-
 const DeviceBanner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -235,11 +195,11 @@ const DeviceBanner = styled.div`
 
 const DeviceLeft = styled.div`
   flex: 1;
+  min-height: 200px;
   background: url(${tmoBYOD}) no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   @media (min-width: 768px) {
     flex: 2;
-    background-size: contain;
   }
 `;
 const DeviceRight = styled.div`

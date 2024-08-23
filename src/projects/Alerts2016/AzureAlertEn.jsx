@@ -1,7 +1,7 @@
-import azrAlertLogo from "./ms-logo-azure-top.png";
-import azrLogoWt from "./MS_Logo_white_100.png";
-import azrInfo02 from "./Azure2014-InformativeV2_02.png";
-import azrInfo04 from "./Azure2014-InformativeV2_04.png";
+import azrAlertLogo from "../../assets/ms/azr-img/ms-logo-azure-top.png";
+import azrLogoWt from "../../assets/ms/azr-img/MS_Logo_white_100.png";
+import azrInfo02 from "../../assets/ms/azr-img/Azure2014-InformativeV2_02.png";
+import azrInfo04 from "../../assets/ms/azr-img/Azure2014-InformativeV2_04.png";
 
 export default function AzureAlertEn() {
   return (

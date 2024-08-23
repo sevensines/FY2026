@@ -2,11 +2,11 @@ import styled from "styled-components";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 import FrameTMO from "../../pages/TMobile/TMframe";
 
-import tmoThreeHero from "./hero.jpg";
-import tmoThreeTile from "./tile.png";
-import tmoIconMobile from "./mobile.svg";
-import tmoIconTravel from "./travel.svg";
-import tmoIconDollar from "./nodolla.svg";
+import tmoThreeHero from "../../assets/tm/tfo-img/hero.jpg";
+import tmoThreeTile from "../../assets/tm/tfo-img/tile.png";
+import tmoIconMobile from "../../assets/tm/tfo-img/mobile.svg";
+import tmoIconTravel from "../../assets/tm/tfo-img/travel.svg";
+import tmoIconDollar from "../../assets/tm/tfo-img/nodolla.svg";
 
 const ThreeOneHero = styled.div`
   display: flex;

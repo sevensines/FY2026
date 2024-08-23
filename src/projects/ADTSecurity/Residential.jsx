@@ -3,13 +3,13 @@ import adtZurch from "../../assets/ad/fonts/zurch.ttf";
 import adtZurchI from "../../assets/ad/fonts/zurchitalic.ttf";
 import adtZurchIB from "../../assets/ad/fonts/zurchitalbold.ttf";
 import adtZurchL from "../../assets/ad/fonts/zurchlight.ttf";
-import adtResLogo from "./adt-res.svg";
-import adtResHero from "./res-hero.jpg";
-import adtCamOne from "./biz-cam1.png";
-import adtCamTwo from "./biz-cam6.png";
-import adtCamThree from "./biz-cam5.png";
-import adtCamFour from "./biz-cam7.png";
-import adtPulse from "./pulse-promo.png";
+import adtResLogo from "../../assets/ad/adt-img/adt-res.svg";
+import adtResHero from "../../assets/ad/adt-img/res-hero.jpg";
+import adtCamOne from "../../assets/ad/adt-img/biz-cam1.png";
+import adtCamTwo from "../../assets/ad/adt-img/biz-cam6.png";
+import adtCamThree from "../../assets/ad/adt-img/biz-cam5.png";
+import adtCamFour from "../../assets/ad/adt-img/biz-cam7.png";
+import adtPulse from "../../assets/ad/adt-img/pulse-promo.png";
 
 const DefaultFrameDTV = styled.div`
   display: flex;

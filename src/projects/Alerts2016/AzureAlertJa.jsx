@@ -1,13 +1,13 @@
-import azrLogo from "./ms-logo-azure-top.png";
-import azrLogoWT from "./MS_Logo_white_100.png";
-import azrNurture02 from "./Azure2014-Nurture_02.png";
-import azrNurture04 from "./Azure2014-Nurture_04.png";
-import azrArrow from "./33333_Azure_ArrowCTA.png";
-import azrMonitor from "./azure-nurturelist-monitor-2014.png";
-import azrGlobe from "./azure-nurturelist-globe-2014.png";
-import azrMobile from "./azure-nurturelist-mobile-2014.png";
-import azrCalendar from "./azure-nurturelist-calender-2014.png";
-import azrHex from "./azure-nurturelist-hexplay-2014.png";
+import azrLogo from "../../assets/ms/azr-img/ms-logo-azure-top.png";
+import azrLogoWT from "../../assets/ms/azr-img/MS_Logo_white_100.png";
+import azrNurture02 from "../../assets/ms/azr-img/Azure2014-Nurture_02.png";
+import azrNurture04 from "../../assets/ms/azr-img/Azure2014-Nurture_04.png";
+import azrArrow from "../../assets/ms/azr-img/33333_Azure_ArrowCTA.png";
+import azrMonitor from "../../assets/ms/azr-img/azure-nurturelist-monitor-2014.png";
+import azrGlobe from "../../assets/ms/azr-img/azure-nurturelist-globe-2014.png";
+import azrMobile from "../../assets/ms/azr-img/azure-nurturelist-mobile-2014.png";
+import azrCalendar from "../../assets/ms/azr-img/azure-nurturelist-calender-2014.png";
+import azrHex from "../../assets/ms/azr-img/azure-nurturelist-hexplay-2014.png";
 
 export default function AzureAlertJA() {
   return (

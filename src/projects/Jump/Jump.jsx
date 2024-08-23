@@ -2,12 +2,12 @@ import styled from "styled-components";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 import FrameTMO from "../../pages/TMobile/TMframe";
 
-import tmoJumpHero from "./jodgirl.png";
-import tmoJumpLogo from "./jodlogo.svg";
-import tmoJumpTile from "./jump-tile.png";
-import tmoJumpMobile from "./newphone.svg";
-import tmoJumpDollar from "./nodolla.svg";
-import tmoJumpCal from "./calendar.svg";
+import tmoJumpHero from "../../assets/tm/jmp-img/jodgirl.png";
+import tmoJumpLogo from "../../assets/tm/jmp-img/jodlogo.svg";
+import tmoJumpTile from "../../assets/tm/jmp-img/jump-tile.png";
+import tmoJumpMobile from "../../assets/tm/jmp-img/newphone.svg";
+import tmoJumpDollar from "../../assets/tm/jmp-img/nodolla.svg";
+import tmoJumpCal from "../../assets/tm/jmp-img/calendar.svg";
 
 const JumpHero = styled.div`
   display: flex;

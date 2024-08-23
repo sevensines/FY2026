@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import pbiLogo from "./33531_PBIheaderLogo2.png";
-import pbiHeader from "./33531_NLHeaderA.png";
-import pbiHeroApr from "./33531_HeroMain_01.png";
-import pbiStory01 from "./33531_Story1_01.png";
-import pbiStory02 from "./33531_Story2_01.png";
-import pbiFacebook from "./33531_Youtube_Tile2015.png";
-import pbiTwitter from "./33531_FB_Tile2015.png";
-import pbiYouTube from "./33531_Twitter_Tile2015.png";
-import pbiFooter from "./33417_CloudOS_LogoMicrosoft.png";
+import pbiLogo from "../../assets/ms/pbi-img/33531_PBIheaderLogo2.png";
+import pbiHeader from "../../assets/ms/pbi-img/33531_NLHeaderA.png";
+import pbiHeroApr from "../../assets/ms/pbi-img/33531_HeroMain_01.png";
+import pbiStory01 from "../../assets/ms/pbi-img/33531_Story1_01.png";
+import pbiStory02 from "../../assets/ms/pbi-img/33531_Story2_01.png";
+import pbiFacebook from "../../assets/ms/pbi-img/33531_Youtube_Tile2015.png";
+import pbiTwitter from "../../assets/ms/pbi-img/33531_FB_Tile2015.png";
+import pbiYouTube from "../../assets/ms/pbi-img/33531_Twitter_Tile2015.png";
+import pbiFooter from "../../assets/ms/pbi-img/33417_CloudOS_LogoMicrosoft.png";
 
 const PowerAprTable = styled.table`
   .bodywrap {

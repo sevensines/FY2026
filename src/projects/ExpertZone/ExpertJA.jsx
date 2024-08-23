@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import ezHeader from "./33522_MS_Logo_Header_2014-10.png";
-import ezLogo from "./33522_EZNews_Logo_Header_2014-10.png";
-import ezHeroJ from "./33522_ez_jhero.jpg";
-import ezFooter from "./33417_CloudOS_LogoMicrosoft.png";
-import ezArrowPrp from "./33522_purparrowcta_2014-11.png";
-import ezEntryJ from "./33522_ez_jentry.jpg";
-import ezWinPCJ from "./33522_ez_jwinpc.jpg";
-import ezBannerJ from "./33522_ez_pc_bannerlogo_2014-11.png";
+import ezHeader from "../../assets/ms/xpz-img/33522_MS_Logo_Header_2014-10.png";
+import ezLogo from "../../assets/ms/xpz-img/33522_EZNews_Logo_Header_2014-10.png";
+import ezHeroJ from "../../assets/ms/xpz-img/33522_ez_jhero.jpg";
+import ezFooter from "../../assets/ms/xpz-img/33417_CloudOS_LogoMicrosoft.png";
+import ezArrowPrp from "../../assets/ms/xpz-img/33522_purparrowcta_2014-11.png";
+import ezEntryJ from "../../assets/ms/xpz-img/33522_ez_jentry.jpg";
+import ezWinPCJ from "../../assets/ms/xpz-img/33522_ez_jwinpc.jpg";
+import ezBannerJ from "../../assets/ms/xpz-img/33522_ez_pc_bannerlogo_2014-11.png";
 
 const ExpertJATable = styled.table`
   .bodywrap {

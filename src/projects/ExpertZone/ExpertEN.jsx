@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import ezHeader from "./33522_MS_Logo_Header_2014-10.png";
-import ezLogo from "./33522_EZNews_Logo_Header_2014-10.png";
-import ezHero from "./33522_ez_hero.jpg";
-import ezFooter from "./33417_CloudOS_LogoMicrosoft.png";
-import ezArrowGrn from "./33522_drkgrnArrowCTA_2014-10.png";
-import ezEntry from "./33522_ez_enter.jpg";
-import ezWinPC from "./33522_ez_winpc.jpg";
-import ezBanner from "./33522_IntNL_BannerLogo_2015-02.png";
+import ezHeader from "../../assets/ms/xpz-img/33522_MS_Logo_Header_2014-10.png";
+import ezLogo from "../../assets/ms/xpz-img/33522_EZNews_Logo_Header_2014-10.png";
+import ezHero from "../../assets/ms/xpz-img/33522_ez_hero.jpg";
+import ezFooter from "../../assets/ms/xpz-img/33417_CloudOS_LogoMicrosoft.png";
+import ezArrowGrn from "../../assets/ms/xpz-img/33522_drkgrnArrowCTA_2014-10.png";
+import ezEntry from "../../assets/ms/xpz-img/33522_ez_enter.jpg";
+import ezWinPC from "../../assets/ms/xpz-img/33522_ez_winpc.jpg";
+import ezBanner from "../../assets/ms/xpz-img/33522_IntNL_BannerLogo_2015-02.png";
 
 const ExpertENTable = styled.table`
   .bodywrap {

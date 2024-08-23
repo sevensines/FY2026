@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { COLORS as c } from "../../Theme";
 import Copy from "../Copy/Copy";
 import Button from "../AnchorButton/AnchorButton";
+import svnHero from "../../assets/tower.jpg";
 
 const HeroWrapper = styled.div`
   display: flex;
@@ -116,7 +117,7 @@ export default function Hero() {
         </ColumnButtons>
       </ColumnLeft>
       <ColumnRight>
-        <img src='src\assets\tower.jpg' />
+        <img src={svnHero} />
       </ColumnRight>
     </HeroWrapper>
   );

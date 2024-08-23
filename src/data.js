@@ -71,8 +71,8 @@ export const CLIENTS = [
     bg: attBg,
   },
   {
-    title: "DirectTV",
-    url: "/DirectTV",
+    title: "DirecTV",
+    url: "/DirecTV",
     logo: dtvLogo,
     bg: dtvBg,
   },

@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import dinBlack from "./DINBk.woff";
-import dinBold from "./DINBd.woff";
-import dinReg from "./DINrg.woff";
-import dinMed from "./DINMd.woff";
-import dtvLogo from "./dtv-clr.svg";
-import dtvHero from "./home-hero.jpg";
-import dtvCheck from "./check.svg";
+import dinBlack from "../../assets/dt/DINBk.woff";
+import dinBold from "../../assets/dt/DINBd.woff";
+import dinReg from "../../assets/dt/DINrg.woff";
+import dinMed from "../../assets/dt/DINMd.woff";
+import dtvLogo from "../../assets/dt/dtv-img/dtv-clr.svg";
+import dtvHero from "../../assets/dt/dtv-img/home-hero.jpg";
+import dtvCheck from "../../assets/dt/dtv-img/check.svg";
 
 const DefaultFrameDTV = styled.div`
   display: flex;

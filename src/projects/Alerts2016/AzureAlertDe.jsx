@@ -1,10 +1,10 @@
-import azrLogo from "./ms-logo.png";
-import azrTop from "./top.png";
-import azrMid from "./middle.png";
-import azrBot from "./bottom.png";
-import azrNo1 from "./num1.png";
-import azrNo2 from "./num2.png";
-import azrNo3 from "./num3.png";
+import azrLogo from "../../assets/ms/azr-img/ms-logo.png";
+import azrTop from "../../assets/ms/azr-img/top.png";
+import azrMid from "../../assets/ms/azr-img/middle.png";
+import azrBot from "../../assets/ms/azr-img/bottom.png";
+import azrNo1 from "../../assets/ms/azr-img/num1.png";
+import azrNo2 from "../../assets/ms/azr-img/num2.png";
+import azrNo3 from "../../assets/ms/azr-img/num3.png";
 
 export default function AzureAlertDE() {
   return (

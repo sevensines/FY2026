@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import vstHeader from "./VSO_HeaderLogo2_2015-02.png";
-import vstKanban from "./33542_VSO_Agile_Kanban.gif";
-import vstArrow from "./33333_Azure_ArrowCTA.png";
-import vstFooter from "./ms-logo-metro-generic-bk.gif";
+import vstHeader from "../../assets/ms/vst-img/VSO_HeaderLogo2_2015-02.png";
+import vstKanban from "../../assets/ms/vst-img/33542_VSO_Agile_Kanban.gif";
+import vstArrow from "../../assets/ms/vst-img/33333_Azure_ArrowCTA.png";
+import vstFooter from "../../assets/ms/vst-img/ms-logo-metro-generic-bk.gif";
 
 const VSTable = styled.table`
   .bodywrap {

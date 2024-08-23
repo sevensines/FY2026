@@ -1,15 +1,15 @@
-import azrLogoTop from "./ms-logo-azure-top.png";
-import azrLetter02 from "./Azure2014-NewsLetter-EN_02.png";
-import azrLetter05 from "./Azure2014-NewsLetter-EN_05.jpg";
-import azrLetter07 from "./Azure2014-NewsLetter-EN_07.png";
-import azrArrow from "./33333_Azure_ArrowCTA.png";
-import azrHelium from "./Helium_Thumbnail_2014-06.png";
-import azrHeliumLogo from "./Helium_Tile_2014-06.png";
-import azrMazda from "./Mazda_Thumbnail_2014-06.png";
-import azrMazdaLogo from "./Mazda_Tile_2014-06.png";
-import azrAlert from "./AlertLogic_Thumbnail_2014-06.png";
-import azrAlertLogo from "./AlertLogic_Tile_2014-06.png";
-import azrLogoWt from "./MS_Logo_white_100.png";
+import azrLogoTop from "../../assets/ms/nws-img/ms-logo-azure-top.png";
+import azrLetter02 from "../../assets/ms/nws-img/Azure2014-NewsLetter-EN_02.png";
+import azrLetter05 from "../../assets/ms/nws-img/Azure2014-NewsLetter-EN_05.jpg";
+import azrLetter07 from "../../assets/ms/nws-img/Azure2014-NewsLetter-EN_07.png";
+import azrArrow from "../../assets/ms/nws-img/33333_Azure_ArrowCTA.png";
+import azrHelium from "../../assets/ms/nws-img/Helium_Thumbnail_2014-06.png";
+import azrHeliumLogo from "../../assets/ms/nws-img/Helium_Tile_2014-06.png";
+import azrMazda from "../../assets/ms/nws-img/Mazda_Thumbnail_2014-06.png";
+import azrMazdaLogo from "../../assets/ms/nws-img/Mazda_Tile_2014-06.png";
+import azrAlert from "../../assets/ms/nws-img/AlertLogic_Thumbnail_2014-06.png";
+import azrAlertLogo from "../../assets/ms/nws-img/AlertLogic_Tile_2014-06.png";
+import azrLogoWt from "../../assets/ms/nws-img/MS_Logo_white_100.png";
 
 export default function AzureEnNewsletter() {
   return (

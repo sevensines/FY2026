@@ -2,13 +2,13 @@ import styled from "styled-components";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 import FrameTMO from "../../pages/TMobile/TMframe";
 
-import tmoKhaled from "./hero.png";
-import tmoFree from "./tmo-freetuesdays.svg";
-import tmoDomino from "./tmo-dominos.svg";
-import tmoVudu from "./tmo-vudu.svg";
-import tmoWendys from "./tmo-wendys.svg";
-import tmoGraph from "./tmo-graph.svg";
-import tmoStockup from "./tmo-stockup.svg";
+import tmoKhaled from "../../assets/tm/tue-img/hero.png";
+import tmoFree from "../../assets/tm/tue-img/tmo-freetuesdays.svg";
+import tmoDomino from "../../assets/tm/tue-img/tmo-dominos.svg";
+import tmoVudu from "../../assets/tm/tue-img/tmo-vudu.svg";
+import tmoWendys from "../../assets/tm/tue-img/tmo-wendys.svg";
+import tmoGraph from "../../assets/tm/tue-img/tmo-graph.svg";
+import tmoStockup from "../../assets/tm/tue-img/tmo-stockup.svg";
 
 const KhaledHero = styled.div`
   display: flex;

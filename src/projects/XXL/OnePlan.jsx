@@ -7,11 +7,11 @@ import NeueHaasTextBold from "../../assets/vz/fonts/NeueHaasGroteskTextBold.woff
 import NeueHaasTextMed from "../../assets/vz/fonts/NeueHaasGroteskTextMedium.woff2";
 import HeaderVZN from "../../pages/Verizon/VZheader";
 
-import vznConeS from "./cone_s.png";
-import vznConeM from "./cone_m.png";
-import vznConeL from "./cone_l.png";
-import vznConeXL from "./cone_xl.png";
-import vznConeXXL from "./cone_xxl.png";
+import vznConeS from "../../assets/vz/xxl-img/cone_s.png";
+import vznConeM from "../../assets/vz/xxl-img/cone_m.png";
+import vznConeL from "../../assets/vz/xxl-img/cone_l.png";
+import vznConeXL from "../../assets/vz/xxl-img/cone_xl.png";
+import vznConeXXL from "../../assets/vz/xxl-img/cone_xxl.png";
 
 const DefaultFrameVZN = styled.div`
   display: flex;

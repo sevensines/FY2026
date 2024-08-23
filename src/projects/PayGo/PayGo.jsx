@@ -2,9 +2,9 @@ import styled from "styled-components";
 import FrameTMO from "../../pages/TMobile/TMframe";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 
-import tmoPayGoHero from "./grocerycart.png";
-import tmoPayTile from "./tile.png";
-import tmoIconCheck from "./check.png";
+import tmoPayGoHero from "../../assets/tm/pyg-img/grocerycart.png";
+import tmoPayTile from "../../assets/tm/pyg-img/tile.png";
+import tmoIconCheck from "../../assets/tm/pyg-img/check.png";
 
 const PayGoHero = styled.div`
   display: flex;

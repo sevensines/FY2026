@@ -2,7 +2,7 @@ import styled from "styled-components";
 import FrameTMO from "../../pages/TMobile/TMframe";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 
-import tmoDataStash from "./datahero.jpg";
+import tmoDataStash from "../../assets/tm/pre-img/datahero.jpg";
 
 const StashHero = styled.div`
   display: flex;

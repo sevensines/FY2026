@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import winLogo from "./33547_headerlogo150x35_2014-09.png";
-import winSplit from "./splithero_rtl.jpg";
-import winGet from "./getwin10_rtl.jpg";
-import winArrow from "./33333_azure_arrowcta.png";
-import winFooter from "./33547_FooterLogo125x27_2014-09.png";
+import winLogo from "../../assets/ms/ten-img/33547_headerlogo150x35_2014-09.png";
+import winSplit from "../../assets/ms/ten-img/splithero_rtl.jpg";
+import winGet from "../../assets/ms/ten-img/getwin10_rtl.jpg";
+import winArrow from "../../assets/ms/ten-img/33333_azure_arrowcta.png";
+import winFooter from "../../assets/ms/ten-img/33547_FooterLogo125x27_2014-09.png";
 
 const WinHETable = styled.table`
   .bodywrap {
