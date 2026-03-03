@@ -1,72 +1,60 @@
 import styled from "styled-components";
-import { COLORS as c } from "../../Theme";
-import Copy from "../Copy/Copy";
-import Button from "../AnchorButton/AnchorButton";
+import { FARBEN as f } from "../../Theme";
 import svnHero from "../../assets/tower.jpg";
+import iconBio from "../../assets/braille-bio.svg";
 
-const HeroWrapper = styled.div`
-  display: flex;
-  flex-direction: column-reverse;
-  width: 100%;
-  height: calc(42vh);
-  border-bottom: 1px solid ${c.orangelt};
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-  @media (min-width: 1024px) {
-    height: calc(50vh);
-  }
-`;
-
-const ColumnLeft = styled.div`
+const BioWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
-  padding: clamp(30px, 5vw, 80px);
-  padding-top: clamp(30px, 5vw, 40px);
-  padding-bottom: clamp(30px, 5vw, 40px);
-  background: ${c.gray};
-  h2 {
-    color: ${c.orange};
-    text-transform: uppercase;
-  }
-  p {
-    color: ${c.orangelt};
-  }
-  a {
-    margin-top: 12px;
-  }
+  margin: 16px 0;
+  padding-left: clamp(30px, 5vw, 80px);
+  padding-right: clamp(30px, 5vw, 80px);
+  box-sizing: border-box;
+  background: ${f.papier};
+
   @media (min-width: 768px) {
-    flex-basis: 52%;
-    padding: clamp(30px, 3vw, 80px);
-    padding-top: clamp(30px, 3vw, 40px);
-    padding-bottom: clamp(30px, 3vw, 40px);
-  }
-  @media (min-width: 1024px) {
-    flex-basis: 35%;
-    padding: clamp(30px, 5vw, 80px);
-    padding-top: clamp(30px, 5vw, 40px);
-    padding-bottom: clamp(30px, 5vw, 40px);
+    margin: 0 0 16px 0;
   }
 `;
 
-const ColumnButtons = styled.div`
+const BioContainer = styled.div`
   display: flex;
-  padding-top: 16px;
-  a:first-child {
-    margin-right: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1904px;
+  border: 2px solid ${f.graudk};
+  border-radius: 4px;
+  box-shadow: 2px 3px 0px ${f.grauhl};
+`;
+
+const BioHeader = styled.div`
+  display: flex;
+  background: ${f.orange};
+`;
+
+const BioIcon = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 36px;
+  height: auto;
+  text-align: center;
+  @media (min-width: 768px) {
+    width: 56px;
   }
 `;
 
-const ColumnRight = styled.div`
-  background-color: #f2bf80;
+const BioBanner = styled.div`
   display: flex;
   flex: 1 1 100%;
-  height: 100%;
-  padding: 1%;
+  height: 32px;
+  padding: 0;
   overflow: hidden;
   position: relative;
 
@@ -86,7 +74,7 @@ const ColumnRight = styled.div`
     content: '';
     height: 100%;
     width: 100%;
-    background-color: ${c.olive};
+    background-color: ${f.graudk};
     mix-blend-mode: lighten;
     position: absolute;
     top: 0;
@@ -97,28 +85,125 @@ const ColumnRight = styled.div`
   }
 `;
 
+const BioDetails = styled.div`
+  display: flex;
+`;
+
+const BioBraille = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 36px;
+  height: auto;
+  padding: 14px 8px 0 8px;
+  text-align: center;
+  opacity: 0.4;
+  order: 2;
+
+  @media (min-width: 768px) {
+    width: 56px;
+    padding: 20px 8px 0 8px;
+    order: 1;
+  }
+`;
+
+const BioCopy = styled.div`
+  flex: 1;
+  padding: 8px;
+  order: 3;
+  @media (min-width: 768px) {
+    order: 2;
+    padding: 16px;
+  }
+  @media (min-width: 960px) {
+    padding: 16px 32px;
+  }
+`;
+
+const BioDate = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 0;
+  height: auto;
+  padding: 0;
+  text-align: center;
+  order: 1;
+
+  h4 {
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    padding: 0 0 0 8px;
+    color: ${f.graumt};
+    font-size: clamp(1em, 1.2em, 1.2em);
+    font-weight: 400;
+    &:last-child {
+      bottom: 4px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 108px;
+    padding: 0 16px;
+    order: 3;
+    h4 {
+      bottom: 36px;
+      padding: 0;
+      font-size: clamp(1em, 4em, 4em);
+      &:last-child {
+        bottom: -8px;
+      }
+    }
+  }
+  @media (min-width: 960px) {
+    width: 124px;
+    h4 {
+      bottom: 42px;
+      font-size: clamp(1em, 5em, 5em);
+      &:last-child {
+        bottom: -16px;
+      }
+    }
+  }
+`;
+
 export default function Hero() {
   return (
-    <HeroWrapper>
-      <ColumnLeft>
-        <Copy title='Sean Swidler'>
-          Frontend Developer with a background in graphic design and a focus on
-          user experience and interactivity. Specializing in developing full
-          scale responsive websites, web based applications, as well as logos
-          and branding.
-        </Copy>
-        <ColumnButtons>
-          <Button text='Email' url='mailto:sevensines@gmail.com' />
-          <Button
-            text='LinkedIn'
-            url='https://www.linkedin.com/in/sean-swidler-80a5b4b7/'
-            blank
-          />
-        </ColumnButtons>
-      </ColumnLeft>
-      <ColumnRight>
-        <img src={svnHero} />
-      </ColumnRight>
-    </HeroWrapper>
+    <BioWrapper>
+      <BioContainer>
+        <BioHeader>
+          <BioIcon>i</BioIcon>
+          <BioBanner>
+            <img src={svnHero} />
+          </BioBanner>
+        </BioHeader>
+        <BioDetails>
+          <BioBraille>
+            <img src={iconBio} />
+          </BioBraille>
+          <BioCopy>
+            I'm a Front End Web Developer with over 10 years of experience
+            designing and building responsive user-focused websites and web
+            based applications. With a background in graphic design, I bring a
+            strong visual sensibility alongside solid technical skills, allowing
+            me to translate complex ideas into clean, intuitive user
+            experiences.
+            <br />
+            <br />
+            Throughout my career, I've focused on creating scalable, accessible,
+            and responsive UI solutions that balance performance with thoughtful
+            design. I enjoy collaborating with cross-functional teams to deliver
+            products that are both visually compelling and easy to use. I'd love
+            the opportunity to bring my experience and design-driven approach to
+            your team.
+          </BioCopy>
+          <BioDate>
+            <h4>20</h4>
+            <h4>26</h4>
+          </BioDate>
+        </BioDetails>
+      </BioContainer>
+    </BioWrapper>
   );
 }

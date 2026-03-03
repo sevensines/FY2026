@@ -30,6 +30,7 @@ import Dish from "./pages/Dish/Dish.jsx";
 import ADT from "./pages/ADT/ADT.jsx";
 import Business from "./pages/ADT/Business.jsx";
 import Residential from "./pages/ADT/Residential.jsx";
+import TestLab from "./pages/Sandbox/Sandbox.jsx";
 
 const AppContainer = styled.div`
   display: flex;
@@ -77,6 +78,7 @@ function App() {
           <Route exact path='/ADT' element={<ADT />} />
           <Route path='/ADT/Business' element={<Business />} />
           <Route path='/ADT/Residential' element={<Residential />} />
+          <Route exact path='/Lab907' element={<TestLab />} />
         </Route>
       </Routes>
     </AppContainer>

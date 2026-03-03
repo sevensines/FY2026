@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import { COLORS as c } from "../../Theme";
+import CornerFrame from "../CornerFrame/CornerFrame";
 
 const CopyBlock = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 0 16px;
 
   h2 {
     margin: 0;
@@ -12,7 +14,7 @@ const CopyBlock = styled.div`
     text-transform: uppercase;
   }
   p {
-    margin: 0;
+    margin: 0 0 4px 0;
     color: ${c.orangelt};
     b {
       color: ${c.orangemd};
@@ -22,9 +24,11 @@ const CopyBlock = styled.div`
 
 export default function Copy({ title, children }) {
   return (
-    <CopyBlock>
-      <h2>{title}</h2>
-      <p>{children}</p>
-    </CopyBlock>
+    <CornerFrame>
+      <CopyBlock>
+        <h2>{title}</h2>
+        <p>{children}</p>
+      </CopyBlock>
+    </CornerFrame>
   );
 }

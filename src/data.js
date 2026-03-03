@@ -45,48 +45,56 @@ export const CLIENTS = [
     url: "/Microsoft",
     logo: micLogo,
     bg: micBg,
+    sigil: "⠍⠎⠞",
   },
   {
     title: "The Gates Foundation",
     url: "/Gates",
     logo: gtsLogo,
     bg: gtsBg,
+    sigil: "⠞⠛⠋",
   },
   {
     title: "T-Mobile",
     url: "/T-Mobile",
     logo: tmoLogo,
     bg: tmoBg,
+    sigil: "⠞⠍⠕",
   },
   {
     title: "Verizon",
     url: "/Verizon",
     logo: vznLogo,
     bg: vznBg,
+    sigil: "⠧⠵⠝",
   },
   {
     title: "AT&T",
     url: "/ATT",
     logo: attLogo,
     bg: attBg,
+    sigil: "⠁⠞⠞",
   },
   {
     title: "DirecTV",
     url: "/DirecTV",
     logo: dtvLogo,
     bg: dtvBg,
+    sigil: "⠙⠞⠧",
   },
   {
     title: "Dish",
     url: "/Dish",
     logo: dshLogo,
     bg: dshBg,
+    sigil: "⠙⠎⠓",
   },
   {
     title: "ADT",
     url: "/ADT",
     logo: adtLogo,
     bg: adtBg,
+    sigil: "⠁⠙⠞",
   },
 ];
 
@@ -204,4 +212,10 @@ export const ADTSECURITY = [
     url: "/ADT/Residential",
     bg: adtBg,
   },
+];
+
+export const ROLES = [
+  "Front End Development",
+  "Email Development",
+  "Graphic Design",
 ];

@@ -16,6 +16,7 @@ const ArticleContainer = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 1280px;
+  margin: 0 auto;
   padding: 16px;
 
   @media (min-width: 1280px) {
