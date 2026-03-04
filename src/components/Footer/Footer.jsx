@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS as c } from "../../Theme";
+import { FARBEN as f } from "../../Theme";
 import Logo from "../Logo/Logo";
 import { Link } from "react-router-dom";
 
@@ -17,8 +17,7 @@ const FooterWrapper = styled.div`
   padding-left: clamp(30px, 5vw, 80px);
   padding-right: clamp(30px, 5vw, 80px);
   box-sizing: border-box;
-  background: ${c.gray};
-  border-top: 1px solid #f2bf80;
+  background: ${f.papier};
 `;
 
 const FooterContainer = styled.div`
@@ -35,7 +34,7 @@ const FooterLogo = styled.div`
   justify-content: center;
   width: 102px;
   height: 34px;
-  color: ${c.orangelt};
+  color: ${f.orange};
   font-weight: 900;
 
   svg {
@@ -51,7 +50,7 @@ const FooterLink = styled.a`
   position: relative;
   margin: 0px;
   padding: 4px 16px;
-  color: #f2bf80;
+  color: ${f.graudk};
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
@@ -65,7 +64,7 @@ const FooterLink = styled.a`
     left: 0;
     width: 100%;
     height: 2px;
-    background: #ef8f30;
+    background: ${f.graudk};
     transform-origin: right center;
     transform: scaleX(0);
     transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
@@ -74,7 +73,7 @@ const FooterLink = styled.a`
   &:hover,
   &:focus,
   &.has-focus {
-    color: #ef8f30;
+    color: ${f.graudk};
     text-decoration: none;
     transition: color 500ms;
     &:after {
@@ -94,9 +93,9 @@ export default function Footer() {
       <FooterPush />
       <FooterWrapper>
         <FooterContainer>
-          <FooterLogo aria-label='Footer: Logo' color='#ef8f30'>
+          <FooterLogo aria-label='Footer: Logo'>
             <Link to='/' aria-label='Footer: Home'>
-              <Logo />
+              <Logo solid color='#3a3a3a' />
             </Link>
           </FooterLogo>
           <FooterLinks aria-label='navigation'>

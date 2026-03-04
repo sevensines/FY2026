@@ -46,13 +46,15 @@ export const CLIENTS = [
     logo: micLogo,
     bg: micBg,
     sigil: "⠍⠎⠞",
+    role: "Front End Development,Email Development,Graphic Design",
   },
   {
-    title: "The Gates Foundation",
+    title: "Gates Foundation",
     url: "/Gates",
     logo: gtsLogo,
     bg: gtsBg,
     sigil: "⠞⠛⠋",
+    role: "Front End Development,Email Development,Graphic Design",
   },
   {
     title: "T-Mobile",
@@ -60,6 +62,7 @@ export const CLIENTS = [
     logo: tmoLogo,
     bg: tmoBg,
     sigil: "⠞⠍⠕",
+    role: "Front End Development,Graphic Design",
   },
   {
     title: "Verizon",
@@ -67,6 +70,7 @@ export const CLIENTS = [
     logo: vznLogo,
     bg: vznBg,
     sigil: "⠧⠵⠝",
+    role: "Front End Development,Graphic Design",
   },
   {
     title: "AT&T",
@@ -74,6 +78,7 @@ export const CLIENTS = [
     logo: attLogo,
     bg: attBg,
     sigil: "⠁⠞⠞",
+    role: "Front End Development,Graphic Design",
   },
   {
     title: "DirecTV",
@@ -81,6 +86,7 @@ export const CLIENTS = [
     logo: dtvLogo,
     bg: dtvBg,
     sigil: "⠙⠞⠧",
+    role: "Front End Development,Graphic Design",
   },
   {
     title: "Dish",
@@ -88,6 +94,7 @@ export const CLIENTS = [
     logo: dshLogo,
     bg: dshBg,
     sigil: "⠙⠎⠓",
+    role: "Front End Development,Graphic Design",
   },
   {
     title: "ADT",
@@ -95,6 +102,7 @@ export const CLIENTS = [
     logo: adtLogo,
     bg: adtBg,
     sigil: "⠁⠙⠞",
+    role: "Front End Development,Graphic Design",
   },
 ];
 

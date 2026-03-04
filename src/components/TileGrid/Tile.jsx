@@ -10,19 +10,74 @@ const TileLink = styled(Link)`
 const DefaultTile = styled.div`
   position: relative;
   display: flex;
+  flex-direction: row;
   flex: 1 1 100%;
-  height: 50vw;
-  max-height: 220px;
+  height: 220px;
   border: 2px solid ${f.graudk};
   border-radius: 4px;
   box-shadow: 2px 3px 0px ${f.grauhl};
   overflow: hidden;
-  transition: padding 250ms;
 `;
 
 const ClientBackground = styled.div`
+  position: relative;  
+  display: flex;
   flex: 1;
-  background: ${f.graudk};
+  height: 100%;
+  padding: 0;
+  background: ${f.orange};
+  overflow: hidden;
+  
+  > img {
+    position: relative;
+    flex 1 0 100%;
+    width: 100%;   
+    max-width: 100%;
+    height: 100%;
+    filter: grayscale(100%) contrast(1) blur(0);
+    mix-blend-mode: multiply;
+    object-fit: cover;
+    opacity: 1;
+  }
+
+  &::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: ${f.graudk};
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+`;
+
+const ClientLogo = styled.div`
+  position: absolute;
+  top: 0px;
+  left: -3px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 220px;
+  height: 100%;
+  transform: rotate(90deg);
+
+  span {
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    background-color: ${f.graudk};
+    img {
+      height: 100%;
+      max-width: 60%;
+    }
+  }
 `;
 
 const ClientDetail = styled.div`
@@ -30,15 +85,17 @@ const ClientDetail = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 16px;
+  padding: 0;
 
   h4 {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 0;
+    padding: 0 8px 0 24px;
+    background: ${f.graudk};
+    color: ${f.orange};
     font-size: clamp(1em, 2vw, 1.8em);
-    font-weight: 400;
+    font-weight: 100;
     text-transform: uppercase;
     span {
       color: ${f.graumt};
@@ -46,10 +103,11 @@ const ClientDetail = styled.div`
   }
 
   ul {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 16px;
+    padding: 8px 24px 0 16px;
 
     li {
+      padding: 4px 0 0 8px;
       &::marker {
         content: "◢";
       }
@@ -60,6 +118,8 @@ const ClientDetail = styled.div`
 const TileCTA = styled.div`
   display: flex;
   justify-content: flex-end;
+  padding: 0 24px 16px 0;
+
   button {
     position: relative;
     top: 0;
@@ -103,18 +163,28 @@ const TileCTA = styled.div`
   }
 `;
 
-export default function Tile({ title, sgl, logo, bg, link, children }) {
+export default function Tile({ title, sgl, role, logo, bg, link }) {
+  const roleArray = role.split(",");
+
   return (
     <DefaultTile>
-      <ClientBackground>IMG</ClientBackground>
+      <ClientBackground>
+        <ClientLogo>
+          <span>
+            <img src={logo} alt={title} border='0' />
+          </span>
+        </ClientLogo>
+        <img src={bg} border='0' />
+      </ClientBackground>
       <ClientDetail>
         <div>
           <h4>
-            //{`${title}`}
+            {`${title}`}
             <span>{`${sgl}`}</span>
           </h4>
           <ul>
-            <li>ROLE</li>
+            {roleArray.length > 1 &&
+              roleArray.map((title) => <li key={title}>{title}</li>)}
           </ul>
         </div>
 

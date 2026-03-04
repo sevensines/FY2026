@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CLIENTS, ROLES } from "../../data.js";
+import { CLIENTS } from "../../data.js";
 import Tile from "./Tile";
 
 const TileWrapper = styled.div`
@@ -45,6 +45,7 @@ export default function TileGrid() {
             logo={item.logo}
             bg={item.bg}
             sgl={item.sigil}
+            role={item.role}
           />
         ))}
       </TileList>

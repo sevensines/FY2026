@@ -17,7 +17,7 @@ const BioWrapper = styled.div`
   background: ${f.papier};
 
   @media (min-width: 768px) {
-    margin: 0 0 16px 0;
+    margin: 12px 0 32px 0;
   }
 `;
 
