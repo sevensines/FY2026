@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -25,11 +24,11 @@ export default function GivingPledge() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerGTS />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='The Giving Pledge'>
-          <b>Front End Developer</b>
+          <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />
           The Giving Pledge site wide redesign and rebuild was part of a
           campaign to encourage wealthy people to contribute a majority of their
@@ -47,7 +46,7 @@ export default function GivingPledge() {
           />
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <div>
             <img src={gtsLanding} width='100%' height='auto' />
           </div>

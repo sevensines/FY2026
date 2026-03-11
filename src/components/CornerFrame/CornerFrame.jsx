@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS as c } from "../../Theme";
+import { FARBEN as f } from "../../Theme";
 
 const GlowFrame = styled.div`
   display: flex;
@@ -10,14 +10,14 @@ const GlowFrame = styled.div`
 `;
 
 const GlowBar = styled.div`
-  width: 16px;
-  height: 4px;
-  background: ${c.olive};
+  width: 12px;
+  height: 1px;
+  background: ${f.orange};
 `;
 const GlowLine = styled.div`
-  width: 4px;
+  width: 1px;
   height: 12px;
-  background: ${c.olive};
+  background: ${f.orange};
 `;
 
 const GlowCorner = styled.div`

@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -22,11 +21,11 @@ export default function VisualStudio() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <Banner logo={vstLogo} alt='Visual Studio' />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Visual Studio Promotions'>
-          <b>Front End Developer • Graphic Designer</b>
+          <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />
           Microsoft Visual Studio is an integrated development environment (IDE)
           from Microsoft. It is used to develop computer programs for Microsoft
@@ -36,7 +35,7 @@ export default function VisualStudio() {
           products, features, events, and community activities.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <Kanban />
         </Viewport>
       </Article>

@@ -11,6 +11,7 @@ export const COLORS = {
 export const FARBEN = {
   orange: "#e0a070",
   orangedk: "#d88d59",
+  blau: "#74898B",
   graudk: "#3a3a3a",
   graumt: "#8c8b89",
   grauhl: "#bebcb9",

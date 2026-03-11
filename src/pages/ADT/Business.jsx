@@ -1,4 +1,3 @@
-import React from "react";
 import BannerADT from "./ADTBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -20,9 +19,9 @@ export default function Business() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerADT />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Business Surveillance'>
           <b>Front End Developer</b>
           <br />
@@ -34,7 +33,7 @@ export default function Business() {
           by an ADT Representative for pricing options.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <BusinessADT />
         </Viewport>
       </Article>

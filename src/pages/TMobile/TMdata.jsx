@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -20,9 +19,9 @@ export default function TMdata() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerTMO />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Data Stash'>
           <b>Front End Developer</b>
           <br />
@@ -31,7 +30,7 @@ export default function TMdata() {
           users roll unused data over to the following month.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <DataStash />
         </Viewport>
       </Article>

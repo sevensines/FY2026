@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -20,9 +19,9 @@ export default function TMpay() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerTMO />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Pay As You Go'>
           <b>Front End Developer</b>
           <br />
@@ -34,7 +33,7 @@ export default function TMpay() {
           Smartphone Mobile HotSpot.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <PayGo />
         </Viewport>
       </Article>

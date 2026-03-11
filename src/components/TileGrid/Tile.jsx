@@ -25,7 +25,7 @@ const ClientBackground = styled.div`
   flex: 1;
   height: 100%;
   padding: 0;
-  background: ${f.orange};
+  background: ${f.blau};
   overflow: hidden;
   
   > img {
@@ -34,7 +34,7 @@ const ClientBackground = styled.div`
     width: 100%;   
     max-width: 100%;
     height: 100%;
-    filter: grayscale(100%) contrast(1) blur(0);
+    filter: grayscale(100%) contrast(2) blur(0);
     mix-blend-mode: multiply;
     object-fit: cover;
     opacity: 1;
@@ -91,11 +91,11 @@ const ClientDetail = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 0 8px 0 24px;
+    padding: 0 8px 0 32px;
     background: ${f.graudk};
     color: ${f.orange};
     font-size: clamp(1em, 2vw, 1.8em);
-    font-weight: 100;
+    font-weight: 500;
     text-transform: uppercase;
     span {
       color: ${f.graumt};
@@ -104,10 +104,11 @@ const ClientDetail = styled.div`
 
   ul {
     margin: 0 0 0 16px;
-    padding: 8px 24px 0 16px;
+    padding: 12px 24px 0 24px;
 
     li {
-      padding: 4px 0 0 8px;
+      padding: 8px 0 0 12px;
+      line-height: 1.2;
       &::marker {
         content: "◢";
       }
@@ -163,7 +164,7 @@ const TileCTA = styled.div`
   }
 `;
 
-export default function Tile({ title, sgl, role, logo, bg, link }) {
+export default function Tile({ title, sgl, role = "", logo, bg, link }) {
   const roleArray = role.split(",");
 
   return (

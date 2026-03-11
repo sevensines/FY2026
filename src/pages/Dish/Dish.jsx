@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -18,9 +17,9 @@ export default function Dish() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <Banner logo={dshLogo} alt='Dish' />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='2 Year Price Lock'>
           <b>Front End Developer • Graphic Designer</b>
           <br />
@@ -31,7 +30,7 @@ export default function Dish() {
           service Netflix or the NFL Network Multi-Sport Pack - Red Zone.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <PriceLock />
         </Viewport>
       </Article>

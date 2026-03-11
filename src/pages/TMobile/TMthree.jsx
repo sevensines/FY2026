@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -13,16 +12,16 @@ export default function TMthree() {
       url: "/T-Mobile",
     },
     {
-      text: "Tuesdays",
+      text: "3 for 1",
       url: "/T-Mobile/3for1",
     },
   ];
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerTMO />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='3 Countries for the Price of 1'>
           <b>Front End Developer</b>
           <br />
@@ -34,7 +33,7 @@ export default function TMthree() {
           either country at no extra charge.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <ThreeForOne />
         </Viewport>
       </Article>

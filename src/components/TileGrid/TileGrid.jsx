@@ -14,16 +14,12 @@ const TileWrapper = styled.div`
 
 export const TileList = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   column-gap: 32px;
   row-gap: 32px;
   margin: 0 auto;
   width: 100%;
   max-width: 1904px;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);

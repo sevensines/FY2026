@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -27,9 +26,9 @@ export default function Essentials() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerAZR />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Azure Essentials'>
           <b>Front End Developer • Graphic Designer</b>
           <br />
@@ -43,7 +42,7 @@ export default function Essentials() {
           launch.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <div>
             <img src={azrHome} width='100%' height='auto' />
           </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -21,11 +20,11 @@ export default function Azure() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerAZR />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Azure'>
-          <b>Front End Developer • Graphic Designer</b>
+          <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />
           Microsoft Azure is a cloud computing platform and infrastructure
           created by Microsoft for building, deploying, and managing

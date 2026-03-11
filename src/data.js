@@ -108,40 +108,52 @@ export const CLIENTS = [
 
 export const MICROSOFT = [
   {
-    title: "Microsoft Azure",
+    title: "Azure",
     url: "/Microsoft/Azure",
     logo: azrLogo,
     bg: azrThumb,
+    sgl: "⠁⠵⠗",
+    role: "Front End Development,Email Development,Graphic Design",
   },
   {
-    title: "Microsoft Student",
+    title: "Student",
     url: "/Microsoft/Student",
     logo: stuLogo,
     bg: stuThumb,
+    sgl: "⠎⠞⠥",
+    role: "Front End Development,Email Development,Graphic Design",
   },
   {
     title: "Windows 10",
     url: "/Microsoft/Windows10",
     logo: tenLogo,
     bg: tenThumb,
+    sgl: "⠞⠑⠝",
+    role: "Front End Development,Email Development,Graphic Design",
   },
   {
     title: "Expert Zone",
     url: "/Microsoft/ExpertZone",
     logo: xpzLogo,
     bg: xpzThumb,
+    sgl: "⠑⠭⠏",
+    role: "Front End Development,Email Development,Graphic Design",
   },
   {
     title: "Power BI",
     url: "/Microsoft/PowerBI",
     logo: pbiLogo,
     bg: pbiThumb,
+    sgl: "⠏⠃⠊",
+    role: "Front End Development,Email Development,Graphic Design",
   },
   {
     title: "Visual Studio",
     url: "/Microsoft/VisualStudio",
     logo: vstLogo,
     bg: vstThumb,
+    sgl: "⠧⠎⠞",
+    role: "Front End Development,Email Development,Graphic Design",
   },
 ];
 

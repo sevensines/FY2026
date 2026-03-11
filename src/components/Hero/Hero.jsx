@@ -57,6 +57,7 @@ const BioBanner = styled.div`
   padding: 0;
   overflow: hidden;
   position: relative;
+  background: ${f.blau};
 
   img {
     filter: grayscale(100%) contrast(1) blur(0);
@@ -115,7 +116,7 @@ const BioCopy = styled.div`
     padding: 16px;
   }
   @media (min-width: 960px) {
-    padding: 16px 32px;
+    padding: 16px 32px 24px 32px;
   }
 `;
 
@@ -160,7 +161,7 @@ const BioDate = styled.div`
     width: 124px;
     h4 {
       bottom: 42px;
-      font-size: clamp(1em, 5em, 5em);
+      font-size: clamp(1em, 4.5em, 5em);
       &:last-child {
         bottom: -16px;
       }
@@ -188,15 +189,11 @@ export default function Hero() {
             based applications. With a background in graphic design, I bring a
             strong visual sensibility alongside solid technical skills, allowing
             me to translate complex ideas into clean, intuitive user
-            experiences.
-            <br />
-            <br />
-            Throughout my career, I've focused on creating scalable, accessible,
-            and responsive UI solutions that balance performance with thoughtful
-            design. I enjoy collaborating with cross-functional teams to deliver
-            products that are both visually compelling and easy to use. I'd love
-            the opportunity to bring my experience and design-driven approach to
-            your team.
+            experiences. Throughout my career, I've focused on creating
+            scalable, accessible, and responsive UI solutions that balance
+            performance with thoughtful design. I enjoy collaborating with
+            cross-functional teams to deliver products that are both visually
+            compelling and easy&nbsp;to&nbsp;use.
           </BioCopy>
           <BioDate>
             <h4>20</h4>

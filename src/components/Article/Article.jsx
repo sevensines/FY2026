@@ -1,27 +1,31 @@
 import styled from "styled-components";
-import { COLORS as c } from "../../Theme";
+import { FARBEN as f } from "../../Theme";
 
 const DefaultArticle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: ${c.gray};
-  border-top: 1px solid ${c.orangelt};
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-left: clamp(30px, 5vw, 80px);
+  padding-right: clamp(30px, 5vw, 80px);
+  box-sizing: border-box;
+  background: ${f.papier};
 `;
 
 const ArticleContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: stretch;
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 1904px;
   padding: 16px;
-
-  @media (min-width: 1280px) {
-    padding: 0;
-  }
+  border: 2px solid ${f.graudk};
+  border-radius: 4px;
+  box-shadow: 2px 3px 0px ${f.grauhl};
 `;
 
 export default function Article({ children }) {

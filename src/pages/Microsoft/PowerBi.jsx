@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -22,11 +21,11 @@ export default function PowerBI() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <Banner logo={pbiLogo} alt='Power BI' />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Power BI Newsletter'>
-          <b>Front End Developer • Graphic Designer</b>
+          <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />
           Power BI is a cloud-based business analytics service that enables
           anyone to visualize and analyze data with greater speed, efficiency,
@@ -37,7 +36,7 @@ export default function PowerBI() {
           the latest Power BI features, events, and community activities.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <PowerBIApr />
         </Viewport>
       </Article>

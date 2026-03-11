@@ -34,7 +34,9 @@ const Frame = styled.div`
 export default function Viewport({ viewSelected, children }) {
   return (
     <DefaultFrame>
-      <Frame className={(viewSelected || "").toLowerCase()}>{children}</Frame>
+      <Frame className={(`${viewSelected}` || "").toLowerCase()}>
+        {children}
+      </Frame>
     </DefaultFrame>
   );
 }

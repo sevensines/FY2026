@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -24,11 +23,11 @@ export default function Win10() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <Banner logo={tenLogo} alt='Microsoft Student' />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Windows 10 Preview Registration'>
-          <b>Front End Developer • Graphic Designer</b>
+          <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />
           The Windows 10 Preview Registration campaign was an effort to promote
           the launch of Microsoft's latest edition of its operating system
@@ -38,7 +37,7 @@ export default function Win10() {
           million pre-registrations over the course of the enrollment period.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <>
             <Win10EN />
             <br />

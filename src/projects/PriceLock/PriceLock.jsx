@@ -8,6 +8,8 @@ import dshRedZone from "../../assets/ds/dsh-img/redzone.png";
 import dshPrimo from "../../assets/ds/dsh-img/premiums.png";
 import dshVan from "../../assets/ds/dsh-img/van.png";
 
+const OpenSans = "'Open Sans', Helvetica, Arial, sans-serif";
+
 const DefaultFrameDSH = styled.div`
   display: flex;
   flex-direction: column;
@@ -17,8 +19,12 @@ const DefaultFrameDSH = styled.div`
   h2,
   h3,
   h4,
-  h5 {
-    font-family: "Ari Black", "Open Sans", Helvetica, Arial, sans-serif;
+  h5,
+  h6 {
+    font-family: "Ari Black", ${OpenSans};
+  }
+  p {
+    font-family: ${OpenSans};
   }
   @font-face {
     font-family: Ari Black;
@@ -159,6 +165,7 @@ const OfferLeft = styled.div`
     padding: 0 8px 0 0;
     font-size: 6em;
     line-height: 1em;
+    color: #ffffff;
     sup {
       position: relative;
       top: -16px;
@@ -171,7 +178,7 @@ const OfferLeft = styled.div`
     padding: 16px 0 0 0;
     font-size: 2.6em;
     line-height: 1em;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: ${OpenSans};
     text-align: center;
     color: #ffffff;
     border-bottom: 3px solid #ffffff;
@@ -181,7 +188,7 @@ const OfferLeft = styled.div`
     margin: 0;
     padding: 0;
     color: #ffffff;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: ${OpenSans};
     font-size: 1.8em;
     line-height: 1em;
     text-align: center;
@@ -232,7 +239,7 @@ const OfferRight = styled.div`
     line-height: 1em;
     letter-spacing: 6px;
     text-align: center;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: ${OpenSans};
     font-weight: lighter;
   }
   h4 {
@@ -243,7 +250,7 @@ const OfferRight = styled.div`
     font-size: 1.1em;
     line-height: 1.2em;
     text-align: center;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: ${OpenSans};
     font-weight: lighter;
   }
   @media (min-width: 768px) {
@@ -282,7 +289,7 @@ const OfferCTA = styled.div`
     margin: 0 auto;
     padding: 10px 0;
     color: #992786;
-    font-family: "open sans", helvetica, arial, sans-serif;
+    font-family: ${OpenSans};
     font-size: 1.8em;
     text-align: center;
     background: #ffffff;
@@ -347,9 +354,10 @@ const OfferDetails = styled.div`
     padding: 0;
     list-style: none;
     li {
+      color: #ffffff;
       font-size: 1.2em;
       line-height: 1.4em;
-      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      font-family: ${OpenSans};
       font-weight: lighter;
     }
   }
@@ -358,9 +366,10 @@ const OfferDetails = styled.div`
     padding: 4px 0;
     font-size: 1.2em;
     line-height: 1.4em;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: ${OpenSans};
     font-weight: lighter;
     text-align: center;
+    color: #ffffff;
     strong {
       font-family: "Ari Black", "Open Sans", Helvetica, Arial, sans-serif;
       font-weight: initial;
@@ -410,7 +419,7 @@ const Subsripctions = styled.div`
     padding: 12px 0;
     color: #ffffff;
     font-size: 1.4em;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: ${OpenSans};
     font-weight: normal;
     text-align: center;
   }
@@ -419,7 +428,7 @@ const Subsripctions = styled.div`
     padding: 12px 0;
     color: #ffffff;
     font-size: 0.8em;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: ${OpenSans};
     font-weight: lighter;
     text-align: center;
   }
@@ -441,7 +450,8 @@ const SubOptions = styled.div`
   p {
     margin: 0;
     padding: 0 12px;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: ${OpenSans};
+    color: #ffffff;
   }
 
   img {
@@ -470,6 +480,7 @@ const FreeAddons = styled.div`
     color: #ffffff;
     font-size: 1.2em;
     text-align: center;
+    font-family: ${OpenSans};
   }
   img {
     display: none;
@@ -536,7 +547,10 @@ const PromoFooter = styled.div`
     border-radius: 4px;
   }
   h6 {
+    color: #ffffff;
     text-align: center;
+    font-family: ${OpenSans};
+    font-weight: normal;
   }
   @media (min-width: 768px) {
     width: 700px;

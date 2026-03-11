@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -21,17 +20,17 @@ export default function TMtuesday() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerTMO />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='T-Mobile Tuesdays'>
           <b>Front End Developer</b>
           <br />
           The T-Mobile Tuesdays click to call landing page campaign was part of
           T-Mobile's 11th Un-Carrier initiative <b>#GetThanked</b> in which they
           announced the T-Mobile Tuesdays app. The app "thanked" T-Mobile
-          customers with free stuff and prizes from Gilt, Domino’s, StubHub,
-          Wendy’s, VUDU, Fandango, Legendary Pictures and Universal Pictures,
+          customers with free stuff and prizes from Gilt, Domino's, StubHub,
+          Wendy's, VUDU, Fandango, Legendary Pictures and Universal Pictures,
           Lyft and more. In addition, the campaign introduced Stock Up, a
           program that offered a full share of T-Mobile US (TMUS) common stock
           to existing and new customers. Customers could also grow their
@@ -39,7 +38,7 @@ export default function TMtuesday() {
           T-Mobile.
         </Copy>
         <br />
-        <Viewport viewSelected={"desktop"}>
+        <Viewport viewSelected='desktop'>
           <Tuesday />
         </Viewport>
       </Article>

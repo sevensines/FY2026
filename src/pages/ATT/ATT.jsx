@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -18,9 +17,9 @@ export default function ATT() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <Banner logo={attLogo} alt='AT&T Digital Life' />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='AT&T Smart Security'>
           <b>Front End Developer • Graphic Designer</b>
           <br />
@@ -35,7 +34,7 @@ export default function ATT() {
           devices utilizing smart plugs.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <SmartSecurity />
         </Viewport>
       </Article>
