@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -17,9 +16,9 @@ export default function ADT() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerADT />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='ADT'>
           <b>Front End Developer • Graphic Designer</b>
           <br />

@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -21,18 +20,18 @@ export default function AnnualLetter() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerGTS />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Gates Foundation Annual Letter 2013'>
-          <b>Front End Developer</b>
+          <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />
           The Gates Foundation Annual Letter is a yearly publication to higlight
           the foundations current philanthropic endeavors and discuss the
           specific focus for year ahead.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <>
             <iframe
               width='605'

@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -18,9 +17,9 @@ export default function DirectTV() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <Banner logo={dtvLogo} alt='DirectTV' />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='DirecTV NFL & Choice Package'>
           <b>Front End Developer • Graphic Designer</b>
           <br />
@@ -31,7 +30,7 @@ export default function DirectTV() {
           was also included at no extra cost.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <ChoicePackage />
         </Viewport>
       </Article>

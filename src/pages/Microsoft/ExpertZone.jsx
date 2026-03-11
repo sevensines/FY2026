@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -23,11 +22,11 @@ export default function ExpertZone() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <Banner logo={expLogo} alt='Expert Zone' />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Expert Zone Newsletter • United States & Japan'>
-          <b>Front End Developer • Graphic Designer</b>
+          <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />
           The Expert Zone Newsletter is a promotional publication that helps
           global retail professionals who sell Windows Phone, Windows, Xbox,
@@ -35,7 +34,7 @@ export default function ExpertZone() {
           Microsoft products, features, events, and community activities.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <ExpertEN />
           <br />
           <ExpertJA />

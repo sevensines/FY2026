@@ -1,22 +1,52 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { COLORS as c } from "../../Theme";
+import { COLORS as c, FARBEN as f } from "../../Theme";
 import styled from "styled-components";
+
+const CrumbWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 16px 0 0 0;
+  padding-left: clamp(30px, 5vw, 80px);
+  padding-right: clamp(30px, 5vw, 80px);
+  box-sizing: border-box;
+  background: ${f.papier};
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+`;
+
+const CrumbContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1904px;
+  border: 2px solid ${f.graudk};
+  border-radius: 4px;
+  box-shadow: 2px 3px 0px ${f.grauhl};
+`;
 
 const DefaultList = styled.ul`
   margin: 0;
-  padding: 1vw 0;
+  padding: 4px 16px;
   list-style: none;
 
   li {
     position: relative;
     display: inline;
-    font-size: 18px;
+    font-size: 14px;
     a {
       position: relative;
       margin: 0px 4px;
-      padding: 4px 0;
-      color: ${c.orangelt};
+      padding: 4px 0 0 0;
+      color: ${f.graudk};
       font-weight: 900;
       text-transform: uppercase;
       text-decoration: none;
@@ -33,7 +63,7 @@ const DefaultList = styled.ul`
         left: 0;
         width: 100%;
         height: 2px;
-        background: ${c.orange};
+        background: ${f.orange};
         transform-origin: right center;
         transform: scaleX(0);
         transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
@@ -42,7 +72,6 @@ const DefaultList = styled.ul`
       &:hover,
       &:focus,
       &.has-focus {
-        color: ${c.orange};
         text-decoration: none;
         transition: color 500ms;
         &:after {
@@ -55,28 +84,38 @@ const DefaultList = styled.ul`
   li + li {
     &:before {
       padding: 8px;
-      color: ${c.orange};
+      color: ${f.graudk};
       content: "⊸";
+    }
+  }
+
+  @media (min-width: 768px) {
+    li {
+      font-size: 18px;
     }
   }
 `;
 
 export default function Breadcrumb({ route }) {
   return (
-    <DefaultList>
-      <li>
-        <Link to='/' title='Home' aria-label='Breadcrumb: Home'>
-          Home
-        </Link>
-      </li>
-      {route &&
-        route.map((item) => (
-          <li key={item.text}>
-            <Link to={item.url} title={item.text} aria-label={item.text}>
-              {item.text}
+    <CrumbWrapper>
+      <CrumbContainer>
+        <DefaultList>
+          <li>
+            <Link to='/' title='Home' aria-label='Breadcrumb: Home'>
+              Home
             </Link>
           </li>
-        ))}
-    </DefaultList>
+          {route &&
+            route.map((item) => (
+              <li key={item.text}>
+                <Link to={item.url} title={item.text} aria-label={item.text}>
+                  {item.text}
+                </Link>
+              </li>
+            ))}
+        </DefaultList>
+      </CrumbContainer>
+    </CrumbWrapper>
   );
 }

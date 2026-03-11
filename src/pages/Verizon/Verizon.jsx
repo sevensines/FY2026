@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -18,9 +17,9 @@ export default function Verizon() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <Banner logo={vznLogo} alt='Verizon' />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Introducing XXL'>
           <b>Front End Developer • Graphic Designer</b>
           <br />
@@ -31,7 +30,7 @@ export default function Verizon() {
           ability to switch between plans, and full nationwide coverage.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <OnePlan />
         </Viewport>
       </Article>

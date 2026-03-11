@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -17,12 +16,10 @@ export default function Gates() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerGTS />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='The Gates Foundation'>
-          <b>Front End Developer • Graphic Designer</b>
-          <br />
           The Bill & Melinda Gates Foundation is a private foundation founded by
           Bill and Melinda Gates. It was launched in 2000 and is said to be the
           largest private foundation in the US. The primary aims of the

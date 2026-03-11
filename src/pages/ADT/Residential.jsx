@@ -1,4 +1,3 @@
-import React from "react";
 import BannerADT from "./ADTBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -20,9 +19,9 @@ export default function Residential() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerADT />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Residential Surveillance'>
           <b>Front End Developer</b>
           <br />
@@ -35,7 +34,7 @@ export default function Residential() {
           options.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <ResidentialADT />
         </Viewport>
       </Article>

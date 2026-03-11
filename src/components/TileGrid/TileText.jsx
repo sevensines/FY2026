@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS as c } from "../../Theme";
+import { FARBEN as f } from "../../Theme";
 import { Link } from "react-router-dom";
 
 const TileLink = styled(Link)`
@@ -24,22 +24,21 @@ const TileOverlay = styled.div`
     width: 100%;
     padding: 3% 0;
     font-size: 2rem;
-    font-weight: 900;
-    color: ${c.gray};
+    font-weight: 100;
+    color: ${f.orange};
     text-align: center;
-    background-color: ${c.orangelt};
+    background-color: ${f.graudk};
   }
 `;
 
 const DefaultTile = styled.div`
-  background-color: ${c.orangelt};
+  position: relative;
   display: flex;
   flex: 1 1 100%;
   height: 50vw;
   max-height: 220px;
-  padding: 3%;
+  background-color: ${f.blau};
   overflow: hidden;
-  position: relative;
   transition: padding 500ms;
 
   > img {
@@ -58,7 +57,7 @@ const DefaultTile = styled.div`
     content: '';
     height: 100%;
     width: 100%;
-    background-color: ${c.olive};
+    background-color: ${f.graudk};
     mix-blend-mode: lighten;
     position: absolute;
     top: 0;
@@ -69,8 +68,8 @@ const DefaultTile = styled.div`
   }
 
   &:hover {
-    background: linear-gradient(to bottom, #ef8f30 0%,#f2bf80 25%,#f2bf80 75%,#ef8f30 100%);
-    padding: 2%;
+    background: ${f.orange};
+    padding: 1%;
     transition: padding 500ms;
     img {
       filter: grayscale(0%) contrast(1) blur(0);

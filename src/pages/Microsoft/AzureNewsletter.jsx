@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -25,11 +24,11 @@ export default function AzureNewsletter() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerAZR />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Azure Newsletter • United States & Japan'>
-          <b>Front End Developer • Graphic Designer</b>
+          <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />
           The Azure Newsletter is a monthly digital publication that helps
           subscribers in the United States and Japan stay informed on the latest
@@ -38,7 +37,7 @@ export default function AzureNewsletter() {
           corporations using Azure.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <>
             <AzureEnNewsletter />
             <AzureJaNewsletter />

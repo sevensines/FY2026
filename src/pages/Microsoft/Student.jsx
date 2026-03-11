@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -22,11 +21,12 @@ export default function Student() {
 
   return (
     <>
+      {" "}
+      <Breadcrumb route={crumbs} />
       <Banner logo={stuLogo} alt='Microsoft Student' />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Microsoft Student & Imagine Cup Newsletter'>
-          <b>Front End Developer • Graphic Designer</b>
+          <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />
           Microsoft Student and Imagine Cup are services that offer students and
           educators access to computer programming courses and webinars
@@ -38,7 +38,7 @@ export default function Student() {
           activities.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <>
             <StudentEn />
             <br />

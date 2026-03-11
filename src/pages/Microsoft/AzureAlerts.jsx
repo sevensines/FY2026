@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -27,11 +26,11 @@ export default function AzureAlerts() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerAZR />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Azure Service Alerts • Global'>
-          <b>Front End Developer • Graphic Designer</b>
+          <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />
           Azure Service Alerts are email notifications that keep global Azure
           subscribers informed on the latest Azure features, updates, outages,
@@ -39,7 +38,7 @@ export default function AzureAlerts() {
           and are localized into 44 languages.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <>
             <AzureAlertEn />
             <br />

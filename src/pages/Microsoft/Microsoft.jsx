@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../../components/Banner/LogoBanner";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
@@ -19,12 +18,10 @@ export default function Microsoft() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <Banner logo={msLogo} alt='Microsoft' />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='Microsoft'>
-          <b>Front End Developer • Graphic Designer</b>
-          <br />
           Microsoft is an American multinational technology company that
           develops, manufactures, licenses, supports and sells computer
           software, consumer electronics and personal computers and services.
@@ -40,9 +37,12 @@ export default function Microsoft() {
           {MICROSOFT.map((item) => (
             <Tile
               key={item.title}
+              title={item.title}
               link={item.url}
               logo={item.logo}
               bg={item.bg}
+              sgl={item.sgl}
+              role={item.role}
             />
           ))}
         </TileList>

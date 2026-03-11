@@ -1,4 +1,3 @@
-import React from "react";
 import Article from "../../components/Article/Article";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Copy from "../../components/Copy/Copy";
@@ -20,9 +19,9 @@ export default function TMjump() {
 
   return (
     <>
+      <Breadcrumb route={crumbs} />
       <BannerTMO />
       <Article>
-        <Breadcrumb route={crumbs} />
         <Copy title='JUMP! On Demand'>
           <b>Front End Developer</b>
           <br />
@@ -32,7 +31,7 @@ export default function TMjump() {
           zero upfront costs and zero upgrade charges.
         </Copy>
         <br />
-        <Viewport>
+        <Viewport viewSelected='desktop'>
           <Jump />
         </Viewport>
       </Article>
