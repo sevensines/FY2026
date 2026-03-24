@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FARBEN as f } from "../../Theme";
 import { Link } from "react-router-dom";
 
-const TileLink = styled(Link)`
+export const TileLink = styled(Link)`
   text-decoration: none;
   border: 0;
 `;
@@ -116,7 +116,7 @@ const ClientDetail = styled.div`
   }
 `;
 
-const TileCTA = styled.div`
+export const TileCTA = styled.div`
   display: flex;
   justify-content: flex-end;
   padding: 0 24px 16px 0;

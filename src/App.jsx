@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import Layout from "./pages/Layout.jsx";
@@ -30,6 +30,7 @@ import Dish from "./pages/Dish/Dish.jsx";
 import ADT from "./pages/ADT/ADT.jsx";
 import Business from "./pages/ADT/Business.jsx";
 import Residential from "./pages/ADT/Residential.jsx";
+import NotFound from "./pages/404/404.jsx";
 
 const AppContainer = styled.div`
   display: flex;
@@ -77,6 +78,7 @@ function App() {
           <Route exact path='/ADT' element={<ADT />} />
           <Route path='/ADT/Business' element={<Business />} />
           <Route path='/ADT/Residential' element={<Residential />} />
+          <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
     </AppContainer>
