@@ -15,8 +15,16 @@ const CopyBlock = styled.div`
   }
   p {
     margin: 0 0 4px 0;
+    font-size: 0.8rem;
     b {
       font-size: 125%;
+    }
+  }
+  @media (min-width: 768px) {
+    p {
+      order: 2;
+      padding: 16px;
+      font-size: 1rem;
     }
   }
 `;

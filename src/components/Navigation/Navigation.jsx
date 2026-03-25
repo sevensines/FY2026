@@ -10,8 +10,8 @@ const NavWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 48px;
-  padding-left: clamp(30px, 5vw, 80px);
-  padding-right: clamp(30px, 5vw, 80px);
+  padding-left: clamp(16px, 5vw, 80px);
+  padding-right: clamp(16px, 5vw, 80px);
   box-sizing: border-box;
   background: ${c.gray};
   border-bottom: 1px solid ${c.orangelt};

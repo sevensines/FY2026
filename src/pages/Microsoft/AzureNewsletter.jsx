@@ -25,8 +25,8 @@ export default function AzureNewsletter() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerAZR />
-      <Article>
+      <BannerAZR fixedLogo />
+      <Article fadeOnly>
         <Copy title='Azure Newsletter • United States & Japan'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />

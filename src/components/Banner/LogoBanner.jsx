@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FARBEN as f } from "../../Theme";
 
 const DefaultBanner = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,8 +10,8 @@ const DefaultBanner = styled.div`
   width: 100%;
   height: auto;
   margin: 16px 0 0 0;
-  padding-left: clamp(30px, 5vw, 80px);
-  padding-right: clamp(30px, 5vw, 80px);
+  padding-left: clamp(16px, 5vw, 80px);
+  padding-right: clamp(16px, 5vw, 80px);
   box-sizing: border-box;
 `;
 
@@ -40,15 +41,36 @@ const BannerLogo = styled.div`
     width: 100%;
     max-width: 280px;
     height: auto;
+    animation: 800ms fadeLogo ease;
+
+    @keyframes fadeLogo {
+      0% {
+        transform: translateY(10%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+
+    &._no-anim {
+      animation: none;
+    }
   }
 `;
 
-export default function Banner({ logo, alt }) {
+export default function Banner({ logo, alt, fixedLogo }) {
   return (
     <DefaultBanner>
       <LogoContainer>
         <BannerLogo>
-          <img src={logo} alt={alt} border='0' />
+          <img
+            src={logo}
+            alt={alt}
+            border='0'
+            className={fixedLogo ? "_no-anim" : ""}
+          />
         </BannerLogo>
       </LogoContainer>
     </DefaultBanner>

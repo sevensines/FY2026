@@ -27,8 +27,8 @@ export default function Essentials() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerAZR />
-      <Article>
+      <BannerAZR fixedLogo />
+      <Article fadeOnly>
         <Copy title='Azure Essentials'>
           <b>Front End Developer • Graphic Designer</b>
           <br />

@@ -10,13 +10,28 @@ export const TileLink = styled(Link)`
 const DefaultTile = styled.div`
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex: 1 1 100%;
-  height: 220px;
   border: 2px solid ${f.graudk};
   border-radius: 4px;
   box-shadow: 2px 3px 0px ${f.grauhl};
   overflow: hidden;
+
+  @media (min-width: 560px) {
+    flex-direction: row;
+    height: 220px;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
 `;
 
 const ClientBackground = styled.div`
@@ -33,7 +48,7 @@ const ClientBackground = styled.div`
     flex 1 0 100%;
     width: 100%;   
     max-width: 100%;
-    height: 100%;
+    height: 25vw;
     filter: grayscale(100%) contrast(2) blur(0);
     mix-blend-mode: multiply;
     object-fit: cover;
@@ -53,29 +68,38 @@ const ClientBackground = styled.div`
     right: 0;
     z-index: 1;
   }
+
+  @media (min-width: 560px) {
+    > img {
+      height: 100%;
+    }
+  }
 `;
 
 const ClientLogo = styled.div`
-  position: absolute;
-  top: 0px;
-  left: -3px;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  width: 220px;
-  height: 100%;
-  transform: rotate(90deg);
+  display: none;
+  @media (min-width: 560px) {
+    position: absolute;
+    top: 0px;
+    left: -3px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 220px;
+    height: 100%;
+    transform: rotate(90deg);
 
-  span {
-    width: 100%;
-    padding: 3%;
-    text-align: center;
-    background-color: ${f.graudk};
-    img {
-      height: 100%;
-      max-width: 60%;
+    span {
+      width: 100%;
+      padding: 3%;
+      text-align: center;
+      background-color: ${f.graudk};
+      img {
+        height: 100%;
+        max-width: 60%;
+      }
     }
   }
 `;
@@ -91,10 +115,10 @@ const ClientDetail = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 0 8px 0 32px;
+    padding: 0 8px;
     background: ${f.graudk};
     color: ${f.orange};
-    font-size: clamp(1em, 2vw, 1.8em);
+    font-size: clamp(1.2em, 2vw, 1.8em);
     font-weight: 500;
     text-transform: uppercase;
     span {
@@ -103,14 +127,30 @@ const ClientDetail = styled.div`
   }
 
   ul {
-    margin: 0 0 0 16px;
-    padding: 12px 24px 0 24px;
+    margin: 0 0 0 12px;
+    padding: 12px 12px 16px 12px;
 
     li {
       padding: 8px 0 0 12px;
+      font-size: 0.8rem;
       line-height: 1.2;
       &::marker {
         content: "◢";
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    h4 {
+      padding: 0 8px 0 32px;
+    }
+    ul {
+      margin: 0 0 0 16px;
+      padding: 12px 24px 0 24px;
+
+      li {
+        font-size: 1rem;
+        padding: 8px 0 0 12px;
       }
     }
   }
@@ -164,25 +204,34 @@ export const TileCTA = styled.div`
   }
 `;
 
-export default function Tile({ title, sgl, role = "", logo, bg, link }) {
+export default function Tile({ count, title, sgl, role = "", logo, bg, link }) {
   const roleArray = role.split(",");
+  const fadeDelay = (count + 1) * 100 + 500;
+
+  const fade = {
+    animation: `${fadeDelay}ms fadeInUp ease-out`,
+  };
 
   return (
-    <DefaultTile>
-      <ClientBackground>
-        <ClientLogo>
-          <span>
-            <img src={logo} alt={title} border='0' />
-          </span>
-        </ClientLogo>
-        <img src={bg} border='0' />
-      </ClientBackground>
+    <DefaultTile style={fade}>
+      <TileLink to={link} title={title} aria-label={title}>
+        <ClientBackground>
+          <ClientLogo>
+            <span>
+              <img src={logo} alt={title} border='0' />
+            </span>
+          </ClientLogo>
+          <img src={bg} border='0' />
+        </ClientBackground>
+      </TileLink>
       <ClientDetail>
         <div>
-          <h4>
-            {`${title}`}
-            <span>{`${sgl}`}</span>
-          </h4>
+          <TileLink to={link} title={title} aria-label={title}>
+            <h4>
+              {`${title}`}
+              <span>{`${sgl}`}</span>
+            </h4>
+          </TileLink>
           <ul>
             {roleArray.length > 1 &&
               roleArray.map((title) => <li key={title}>{title}</li>)}

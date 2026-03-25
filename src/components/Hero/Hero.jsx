@@ -11,8 +11,8 @@ const BioWrapper = styled.div`
   width: 100%;
   height: auto;
   margin: 16px 0;
-  padding-left: clamp(30px, 5vw, 80px);
-  padding-right: clamp(30px, 5vw, 80px);
+  padding-left: clamp(16px, 5vw, 80px);
+  padding-right: clamp(16px, 5vw, 80px);
   box-sizing: border-box;
   background: ${f.papier};
 
@@ -31,6 +31,18 @@ const BioContainer = styled.div`
   border: 2px solid ${f.graudk};
   border-radius: 4px;
   box-shadow: 2px 3px 0px ${f.grauhl};
+  animation: 400ms fadeIn ease-out;
+
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
 `;
 
 const BioHeader = styled.div`
@@ -109,11 +121,13 @@ const BioBraille = styled.div`
 
 const BioCopy = styled.div`
   flex: 1;
-  padding: 8px;
+  padding: 8px 16px 8px 8px;
   order: 3;
+  font-size: 0.8rem;
   @media (min-width: 768px) {
     order: 2;
     padding: 16px;
+    font-size: 1rem;
   }
   @media (min-width: 960px) {
     padding: 16px 32px 24px 32px;

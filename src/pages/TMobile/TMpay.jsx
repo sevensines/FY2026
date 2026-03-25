@@ -20,10 +20,10 @@ export default function TMpay() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerTMO />
-      <Article>
+      <BannerTMO fixedLogo />
+      <Article fadeOnly>
         <Copy title='Pay As You Go'>
-          <b>Front End Developer</b>
+          <b>Front End Developer • Graphic Designer</b>
           <br />
           The Pay As You Go click to call landing page campaign was part of
           T-Mobile's prepaid pay as you go plans which offered no annual

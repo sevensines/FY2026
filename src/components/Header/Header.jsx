@@ -14,8 +14,8 @@ const HeaderWrapper = styled.div`
   width: 100%;
   height: auto;
   margin: 16px 0 0 0;
-  padding-left: clamp(30px, 5vw, 80px);
-  padding-right: clamp(30px, 5vw, 80px);
+  padding-left: clamp(16px, 5vw, 80px);
+  padding-right: clamp(16px, 5vw, 80px);
   box-sizing: border-box;
   background: ${f.papier};
 
@@ -123,7 +123,7 @@ const HeaderContacts = styled.div`
   }
 `;
 
-const ContactsButton = styled.button`
+const ContactsButton = styled.a`
   flex: 1;
   position: relative;
   z-index: 1;

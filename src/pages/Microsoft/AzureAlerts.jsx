@@ -27,8 +27,8 @@ export default function AzureAlerts() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerAZR />
-      <Article>
+      <BannerAZR fixedLogo />
+      <Article fadeOnly>
         <Copy title='Azure Service Alerts • Global'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />

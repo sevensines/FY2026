@@ -24,7 +24,7 @@ export default function Student() {
       {" "}
       <Breadcrumb route={crumbs} />
       <Banner logo={stuLogo} alt='Microsoft Student' />
-      <Article>
+      <Article fadeOnly>
         <Copy title='Microsoft Student & Imagine Cup Newsletter'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />

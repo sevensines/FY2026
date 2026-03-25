@@ -10,8 +10,8 @@ const LostWrapper = styled.div`
   width: 100%;
   height: auto;
   margin: 16px 0;
-  padding-left: clamp(30px, 5vw, 80px);
-  padding-right: clamp(30px, 5vw, 80px);
+  padding-left: clamp(16px, 5vw, 80px);
+  padding-right: clamp(16px, 5vw, 80px);
   box-sizing: border-box;
   background: ${f.papier};
 

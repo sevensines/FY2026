@@ -24,7 +24,7 @@ export default function ExpertZone() {
     <>
       <Breadcrumb route={crumbs} />
       <Banner logo={expLogo} alt='Expert Zone' />
-      <Article>
+      <Article fadeOnly>
         <Copy title='Expert Zone Newsletter • United States & Japan'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />

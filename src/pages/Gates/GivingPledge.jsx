@@ -25,7 +25,7 @@ export default function GivingPledge() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerGTS />
+      <BannerGTS fixedLogo />
       <Article>
         <Copy title='The Giving Pledge'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>

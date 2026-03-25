@@ -21,8 +21,8 @@ export default function TMtuesday() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerTMO />
-      <Article>
+      <BannerTMO fixedLogo />
+      <Article fadeOnly>
         <Copy title='T-Mobile Tuesdays'>
           <b>Front End Developer</b>
           <br />

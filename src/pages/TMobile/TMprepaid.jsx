@@ -20,10 +20,10 @@ export default function TMprepaid() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerTMO />
-      <Article>
+      <BannerTMO fixedLogo />
+      <Article fadeOnly>
         <Copy title='Simply Prepaid'>
-          <b>Front End Developer</b>
+          <b>Front End Developer • Graphic Designer</b>
           <br />
           The Simply Prepaid click to call landing page campaign was part of
           T-Mobile's Simply Prepaid announcement offering 3 monthly prepaid

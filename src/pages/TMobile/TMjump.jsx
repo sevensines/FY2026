@@ -20,10 +20,10 @@ export default function TMjump() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerTMO />
-      <Article>
+      <BannerTMO fixedLogo />
+      <Article fadeOnly>
         <Copy title='JUMP! On Demand'>
-          <b>Front End Developer</b>
+          <b>Front End Developer • Graphic Designer</b>
           <br />
           The JUMP! On Demand click to call landing page campaign was part of
           T-Mobile's introduction of JUMP!, an on-demand service for customers

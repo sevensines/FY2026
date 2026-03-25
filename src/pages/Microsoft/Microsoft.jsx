@@ -33,7 +33,7 @@ export default function Microsoft() {
           of the world's most valuable companies.
         </Copy>
         <br />
-        <TileList className='_three'>
+        <TileList>
           {MICROSOFT.map((item) => (
             <Tile
               key={item.title}

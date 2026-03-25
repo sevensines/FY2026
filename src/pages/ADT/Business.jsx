@@ -20,8 +20,8 @@ export default function Business() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerADT />
-      <Article>
+      <BannerADT fixedLogo />
+      <Article fadeOnly>
         <Copy title='Business Surveillance'>
           <b>Front End Developer</b>
           <br />

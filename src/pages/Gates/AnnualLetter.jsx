@@ -21,7 +21,7 @@ export default function AnnualLetter() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerGTS />
+      <BannerGTS fixedLogo />
       <Article>
         <Copy title='Gates Foundation Annual Letter 2013'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>

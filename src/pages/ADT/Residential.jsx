@@ -20,8 +20,8 @@ export default function Residential() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerADT />
-      <Article>
+      <BannerADT fixedLogo />
+      <Article fadeOnly>
         <Copy title='Residential Surveillance'>
           <b>Front End Developer</b>
           <br />

@@ -20,8 +20,8 @@ export default function TMthree() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerTMO />
-      <Article>
+      <BannerTMO fixedLogo />
+      <Article fadeOnly>
         <Copy title='3 Countries for the Price of 1'>
           <b>Front End Developer</b>
           <br />

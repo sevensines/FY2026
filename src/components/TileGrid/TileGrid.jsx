@@ -8,7 +8,7 @@ const TileWrapper = styled.div`
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 0 clamp(30px, 5vw, 80px);
+  padding: 0 clamp(16px, 5vw, 80px);
   box-sizing: border-box;
 `;
 
@@ -16,13 +16,14 @@ export const TileList = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   column-gap: 32px;
-  row-gap: 32px;
+  row-gap: 16px;
   margin: 0 auto;
   width: 100%;
   max-width: 1904px;
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
     &._three {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -33,7 +34,7 @@ export default function TileGrid() {
   return (
     <TileWrapper>
       <TileList>
-        {CLIENTS.map((item) => (
+        {CLIENTS.map((item, count) => (
           <Tile
             key={item.title}
             title={item.title}
@@ -42,6 +43,7 @@ export default function TileGrid() {
             bg={item.bg}
             sgl={item.sigil}
             role={item.role}
+            count={count}
           />
         ))}
       </TileList>

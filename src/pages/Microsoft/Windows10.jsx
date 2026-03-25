@@ -25,7 +25,7 @@ export default function Win10() {
     <>
       <Breadcrumb route={crumbs} />
       <Banner logo={tenLogo} alt='Microsoft Student' />
-      <Article>
+      <Article fadeOnly>
         <Copy title='Windows 10 Preview Registration'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />

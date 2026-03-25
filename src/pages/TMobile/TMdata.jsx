@@ -20,8 +20,8 @@ export default function TMdata() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <BannerTMO />
-      <Article>
+      <BannerTMO fixedLogo />
+      <Article fadeOnly>
         <Copy title='Data Stash'>
           <b>Front End Developer</b>
           <br />

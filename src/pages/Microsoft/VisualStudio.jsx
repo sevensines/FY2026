@@ -23,7 +23,7 @@ export default function VisualStudio() {
     <>
       <Breadcrumb route={crumbs} />
       <Banner logo={vstLogo} alt='Visual Studio' />
-      <Article>
+      <Article fadeOnly>
         <Copy title='Visual Studio Promotions'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />

@@ -4,6 +4,7 @@ import { COLORS as c, FARBEN as f } from "../../Theme";
 import styled from "styled-components";
 
 const CrumbWrapper = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,8 +12,8 @@ const CrumbWrapper = styled.div`
   width: 100%;
   height: auto;
   margin: 16px 0 0 0;
-  padding-left: clamp(30px, 5vw, 80px);
-  padding-right: clamp(30px, 5vw, 80px);
+  padding-left: clamp(16px, 5vw, 80px);
+  padding-right: clamp(16px, 5vw, 80px);
   box-sizing: border-box;
   background: ${f.papier};
 

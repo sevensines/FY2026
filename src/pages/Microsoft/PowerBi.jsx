@@ -23,7 +23,7 @@ export default function PowerBI() {
     <>
       <Breadcrumb route={crumbs} />
       <Banner logo={pbiLogo} alt='Power BI' />
-      <Article>
+      <Article fadeOnly>
         <Copy title='Power BI Newsletter'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>
           <br />

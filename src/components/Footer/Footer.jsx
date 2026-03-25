@@ -14,8 +14,8 @@ const FooterWrapper = styled.div`
   width: 100%;
   height: 56px;
   margin-top: 32px;
-  padding-left: clamp(30px, 5vw, 80px);
-  padding-right: clamp(30px, 5vw, 80px);
+  padding-left: clamp(16px, 5vw, 80px);
+  padding-right: clamp(16px, 5vw, 80px);
   box-sizing: border-box;
   background: ${f.papier};
 `;
