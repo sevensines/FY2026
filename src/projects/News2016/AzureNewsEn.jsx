@@ -35,35 +35,6 @@ export default function AzureEnNewsletter() {
               <tbody>
                 <tr>
                   <td
-                    width='600'
-                    align='right'
-                    style={{
-                      backgroundColor: "none",
-                      color: "#ffffff",
-                      fontFamily: "Segoe UI,Arial,sans-serif",
-                      fontSize: "10px",
-                      fontWeight: "bold",
-                      padding: "24px 0 3px",
-                    }}
-                  >
-                    Having trouble viewing this email?&nbsp;
-                    <a
-                      href='#'
-                      title='View as a webpage'
-                      alias='Preheader: View as a webpage'
-                      style={{ color: "#3da5dd", textDecoration: "none" }}
-                    >
-                      View as a webpage
-                    </a>
-                    .
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table width='600' cellPadding='0' cellSpacing='0' border='0'>
-              <tbody>
-                <tr>
-                  <td
                     width='1'
                     style={{ background: "#000000", lineHeight: "1px" }}
                   ></td>
