@@ -5,8 +5,6 @@ import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
 import Kanban from "../../projects/VisualStudio/Kanban";
 
-import vstLogo from "../../assets/ms/vst.svg";
-
 export default function VisualStudio() {
   const crumbs = [
     {
@@ -22,7 +20,7 @@ export default function VisualStudio() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <Banner logo={vstLogo} alt='Visual Studio' />
+      <Banner logo='/public/images/ms/vst.svg' alt='Visual Studio' />
       <Article fadeOnly>
         <Copy title='Visual Studio Promotions'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>

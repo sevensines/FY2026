@@ -5,8 +5,6 @@ import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
 import ChoicePackage from "../../projects/ChoicePackage/ChoicePackage";
 
-import dtvLogo from "../../assets/dt/dtv.svg";
-
 export default function DirectTV() {
   const crumbs = [
     {
@@ -18,7 +16,7 @@ export default function DirectTV() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <Banner logo={dtvLogo} alt='DirectTV' />
+      <Banner logo='/public/images/dt/dtv.svg' alt='DirectTV' />
       <Article>
         <Copy title='DirecTV NFL & Choice Package'>
           <b>Front End Developer • Graphic Designer</b>

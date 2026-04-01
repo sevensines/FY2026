@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import adtZurch from "../../assets/ad/fonts/zurch.ttf";
-import adtZurchI from "../../assets/ad/fonts/zurchitalic.ttf";
-import adtZurchIB from "../../assets/ad/fonts/zurchitalbold.ttf";
-import adtZurchL from "../../assets/ad/fonts/zurchlight.ttf";
-import adtResLogo from "../../assets/ad/adt-img/adt-res.svg";
-import adtResHero from "../../assets/ad/adt-img/res-hero.jpg";
-import adtCamOne from "../../assets/ad/adt-img/biz-cam1.png";
-import adtCamTwo from "../../assets/ad/adt-img/biz-cam6.png";
-import adtCamThree from "../../assets/ad/adt-img/biz-cam5.png";
-import adtCamFour from "../../assets/ad/adt-img/biz-cam7.png";
-import adtPulse from "../../assets/ad/adt-img/pulse-promo.png";
+/* import adtZurch from "../../../public/fonts/ad/zurch.ttf";
+import adtZurchI from "../../../public/fonts/ad/zurchitalic.ttf";
+import adtZurchIB from "../../../public/fonts/ad/zurchitalbold.ttf";
+import adtZurchL from "../../../public/fonts/ad/zurchlight.ttf";
+import adtResLogo from "../../../public/images/ad/adt-img/adt-res.svg";
+import adtResHero from "../../../public/images/ad/adt-img/res-hero.jpg";
+import adtCamOne from "../../../public/images/ad/adt-img/biz-cam1.png";
+import adtCamTwo from "../../../public/images/ad/adt-img/biz-cam6.png";
+import adtCamThree from "../../../public/images/ad/adt-img/biz-cam5.png";
+import adtCamFour from "../../../public/images/ad/adt-img/biz-cam7.png";
+import adtPulse from "../../../public/images/ad/adt-img/pulse-promo.png"; */
 
 const DefaultFrameDTV = styled.div`
   display: flex;
@@ -17,27 +17,27 @@ const DefaultFrameDTV = styled.div`
   background: #ffffff;
   @font-face {
     font-family: Zurch;
-    src: url(${adtZurch});
+    src: url("/public/fonts/ad/zurch.ttf");
     font-weight: normal;
   }
   @font-face {
     font-family: Zurch Bold;
-    src: url(${adtZurch});
+    src: url("/public/fonts/ad/zurch.ttf");
     font-weight: bold;
   }
   @font-face {
     font-family: Zurch Ital Bold;
-    src: url(${adtZurchIB});
+    src: url("/public/fonts/ad/zurchitalbold.ttf");
     font-style: italic;
   }
   @font-face {
     font-family: Zurch Ital;
-    src: url(${adtZurchI});
+    src: url("/public/fonts/ad/zurchitalic.ttf");
     font-style: italic;
   }
   @font-face {
     font-family: Zurch Light;
-    src: url(${adtZurchL});
+    src: url("/public/fonts/ad/zurchlight.ttf");
   }
 `;
 
@@ -61,7 +61,7 @@ const AdtLogo = styled.div`
   width: 136px;
   height: 48px;
   padding: 20px 20px 0 20px;
-  background: url(${adtResLogo}) no-repeat center;
+  background: url("/public/images/ad/adt-img/adt-res.svg") no-repeat center;
   background-size: cover;
 `;
 const AdtNumber = styled.div`
@@ -88,7 +88,8 @@ const ResHero = styled.div`
   justify-content: flex-end;
   align-items: center;
   padding: 4%;
-  background: url(${adtResHero}) no-repeat center center;
+  background: url("/public/images/ad/adt-img/res-hero.jpg") no-repeat center
+    center;
   background-size: cover;
 `;
 const ResHeroCopy = styled.div`
@@ -105,7 +106,12 @@ const ResHeroCopy = styled.div`
     color: #0f9aff;
     text-transform: uppercase;
     text-align: center;
-    font-family: Zurch Bold, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Bold,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
   }
   h2 {
     margin: 0;
@@ -115,7 +121,12 @@ const ResHeroCopy = styled.div`
     color: #0061a8;
     text-transform: uppercase;
     text-align: center;
-    font-family: Zurch Bold, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Bold,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
   }
   h3 {
     margin: 0;
@@ -125,7 +136,12 @@ const ResHeroCopy = styled.div`
     line-height: 1em;
     text-transform: uppercase;
     text-align: center;
-    font-family: Zurch Light, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Light,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
     span {
       color: #0f9aff;
     }
@@ -139,7 +155,12 @@ const ResHeroCopy = styled.div`
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
-    font-family: Zurch Ital Bold, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Ital Bold,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
     background: #0061a8;
   }
   h6 {
@@ -170,7 +191,12 @@ const ResBanner = styled.div`
     padding: 0;
     font-size: 1.4em;
     color: #ffffff;
-    font-family: Zurch Light, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Light,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
     text-align: center;
     border-radius: 0;
     background: transparent;
@@ -220,7 +246,12 @@ const ResGridItem = styled.div`
     margin: 0;
     padding: 0;
     color: #000000;
-    font-family: Zurch Light, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Light,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
   }
 
   img {
@@ -334,7 +365,7 @@ export default function ResidentialADT() {
         <h4>Home Surveillance Products</h4>
         <ResProductGrid>
           <ResGridItem>
-            <img src={adtCamThree} border='0' />
+            <img src='/public/images/ad/adt-img/biz-cam3.png' border='0' />
             <h5>Wireless Security Camera</h5>
             <p>
               Remotely check in on your home and make sure all is safe while
@@ -342,7 +373,7 @@ export default function ResidentialADT() {
             </p>
           </ResGridItem>
           <ResGridItem>
-            <img src={adtCamOne} border='0' />
+            <img src='/public/images/ad/adt-img/biz-cam1.png' border='0' />
             <h5>Dome Security Camera</h5>
             <p>
               These can be mounted almost anywhere, provides 360° viewing with
@@ -350,7 +381,7 @@ export default function ResidentialADT() {
             </p>
           </ResGridItem>
           <ResGridItem>
-            <img src={adtCamTwo} border='0' />
+            <img src='/public/images/ad/adt-img/biz-cam6.png' border='0' />
             <h5>Indoor Color Security Camera</h5>
             <p>
               High-resolution color cameras allow you to see around your home in
@@ -358,7 +389,7 @@ export default function ResidentialADT() {
             </p>
           </ResGridItem>
           <ResGridItem>
-            <img src={adtCamFour} border='0' />
+            <img src='/public/images/ad/adt-img/biz-cam7.png' border='0' />
             <h5>DVR</h5>
             <p>
               Clear audio and video and remote viewing, record from all cameras
@@ -373,7 +404,7 @@ export default function ResidentialADT() {
       <ResQuoteForm>
         <ResQuoteTypes>
           <h4>Control your home from anywhere with your mobile device. Free</h4>
-          <img src={adtPulse} border='0' />
+          <img src='/public/images/ad/adt-img/pulse-promo.png' border='0' />
         </ResQuoteTypes>
         <RezForm>
           <h5>Free Security Quote</h5>

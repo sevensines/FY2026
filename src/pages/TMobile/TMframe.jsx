@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import swisHeavy from "../../assets/tm/fonts/Swiss721BT-Heavy-webfont.ttf";
-import swisBold from "../../assets/tm/fonts/Swiss721BT-Bold-webfont.ttf";
-import swisRoman from "../../assets/tm/fonts/Swiss721BT-Roman-webfont.ttf";
+import swisHeavy from "../../../public/fonts/tm/Swiss721BT-Heavy-webfont.ttf";
+import swisBold from "../../../public/fonts/tm/Swiss721BT-Bold-webfont.ttf";
+import swisRoman from "../../../public/fonts/tm/Swiss721BT-Roman-webfont.ttf";
 
 const DefaultFrameTMO = styled.div`
   display: flex;

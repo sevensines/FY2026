@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import dshAriBlack from "../../assets/ds/ariblk.ttf";
-import dshLogo from "../../assets/ds/dsh-img/dsh-wht.svg";
-import dshLock from "../../assets/ds/dsh-img/lock-white.svg";
-import dshChannel from "../../assets/ds/dsh-img/channels.png";
-import dshNetflix from "../../assets/ds/dsh-img/netflix.png";
-import dshRedZone from "../../assets/ds/dsh-img/redzone.png";
-import dshPrimo from "../../assets/ds/dsh-img/premiums.png";
-import dshVan from "../../assets/ds/dsh-img/van.png";
+/* import dshAriBlack from "../../../public/ds/ariblk.ttf";
+import dshLogo from "../../../public/images/ds/dsh-img/dsh-wht.svg";
+import dshLock from "../../../public/images/ds/dsh-img/lock-white.svg";
+import dshChannel from "../../../public/images/ds/dsh-img/channels.png";
+import dshNetflix from "../../../public/images/ds/dsh-img/netflix.png";
+import dshRedZone from "../../../public/images/ds/dsh-img/redzone.png";
+import dshPrimo from "../../../public/images/ds/dsh-img/premiums.png";
+import dshVan from "../../../public/images/ds/dsh-img/van.png"; */
 
 const OpenSans = "'Open Sans', Helvetica, Arial, sans-serif";
 
@@ -28,7 +28,7 @@ const DefaultFrameDSH = styled.div`
   }
   @font-face {
     font-family: Ari Black;
-    src: url(${dshAriBlack});
+    src: url("/public/fonts/ds/ariblk.ttf");
     font-weight: bold;
   }
 `;
@@ -53,7 +53,7 @@ const DtvLogo = styled.div`
   width: 126px;
   height: 35px;
   padding: 20px 20px 0 20px;
-  background: url(${dshLogo}) no-repeat center;
+  background: url("/public/images/ds/dsh-img/dsh-wht.svg") no-repeat center;
   background-size: cover;
 `;
 
@@ -583,7 +583,7 @@ export default function PriceLock() {
       <PriceHero>
         <h1>2-YEAR</h1>
         <h1>TV PRICE LOCK</h1>
-        <img src={dshLock} border='0' />
+        <img src='/public/images/ds/dsh-img/lock-white.svg' border='0' />
       </PriceHero>
       <PriceOffer>
         <OfferLeft>
@@ -608,7 +608,7 @@ export default function PriceLock() {
         </h4>
       </OfferCTA>
       <LockChannels>
-        <img src={dshChannel} border='0' />
+        <img src='/public/images/ds/dsh-img/channels.png' border='0' />
       </LockChannels>
       <OfferDetails>
         <OfferDetailLeft>
@@ -645,9 +645,17 @@ export default function PriceLock() {
           <strong>PLUS YOU CHOOSE</strong>
         </h5>
         <SubOptions>
-          <img src={dshNetflix} border='0' alt='Netflix' />
+          <img
+            src='/public/images/ds/dsh-img/netflix.png'
+            border='0'
+            alt='Netflix'
+          />
           <p>- or -</p>
-          <img src={dshRedZone} border='0' alt='RedZone' />
+          <img
+            src='/public/images/ds/dsh-img/redzone.png'
+            border='0'
+            alt='RedZone'
+          />
         </SubOptions>
         <div>
           <h5>Included for 1 year with no hassle</h5>
@@ -657,11 +665,11 @@ export default function PriceLock() {
       <FreeAddons>
         <AddonsLeft>
           <p>Free&nbsp;Premiums&nbsp;for&nbsp;3&nbsp;months&nbsp;</p>
-          <img src={dshPrimo} border='0' />
+          <img src='/public/images/ds/dsh-img/premiums.png' border='0' />
         </AddonsLeft>
         <AddonsRight>
           <p>Free&nbsp;Professional&nbsp;Installation</p>
-          <img src={dshVan} border='0' />
+          <img src='/public/images/ds/dsh-img/van.png' border='0' />
         </AddonsRight>
       </FreeAddons>
       <PromoFooter>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FARBEN as f } from "../../Theme";
-import svnHero from "../../assets/tower.jpg";
-import iconBio from "../../assets/braille-bio.svg";
+//import svnHero from "../../../public/images/tower.jpg";
+//import iconBio from "../../../public/braille-bio.svg";
 
 const BioWrapper = styled.div`
   display: flex;
@@ -190,12 +190,12 @@ export default function Hero() {
         <BioHeader>
           <BioIcon>i</BioIcon>
           <BioBanner>
-            <img src={svnHero} />
+            <img src='/public/images/tower.jpg' />
           </BioBanner>
         </BioHeader>
         <BioDetails>
           <BioBraille>
-            <img src={iconBio} />
+            <img src='/public/images/braille-bio.svg' />
           </BioBraille>
           <BioCopy>
             I'm a Front End Web Developer with over 10 years of experience

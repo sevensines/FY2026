@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import ezHeader from "../../assets/ms/xpz-img/33522_MS_Logo_Header_2014-10.png";
-import ezLogo from "../../assets/ms/xpz-img/33522_EZNews_Logo_Header_2014-10.png";
-import ezHero from "../../assets/ms/xpz-img/33522_ez_hero.jpg";
-import ezFooter from "../../assets/ms/xpz-img/33417_CloudOS_LogoMicrosoft.png";
-import ezArrowGrn from "../../assets/ms/xpz-img/33522_drkgrnArrowCTA_2014-10.png";
-import ezEntry from "../../assets/ms/xpz-img/33522_ez_enter.jpg";
-import ezWinPC from "../../assets/ms/xpz-img/33522_ez_winpc.jpg";
-import ezBanner from "../../assets/ms/xpz-img/33522_IntNL_BannerLogo_2015-02.png";
+/* import ezHeader from "../../../public/images/ms/xpz-img/33522_MS_Logo_Header_2014-10.png";
+import ezLogo from "../../../public/images/ms/xpz-img/33522_EZNews_Logo_Header_2014-10.png";
+import ezHero from "../../../public/images/ms/xpz-img/33522_ez_hero.jpg";
+import ezFooter from "../../../public/images/ms/xpz-img/33417_CloudOS_LogoMicrosoft.png";
+import ezArrowGrn from "../../../public/images/ms/xpz-img/33522_drkgrnArrowCTA_2014-10.png";
+import ezEntry from "../../../public/images/ms/xpz-img/33522_ez_enter.jpg";
+import ezWinPC from "../../../public/images/ms/xpz-img/33522_ez_winpc.jpg";
+import ezBanner from "../../../public/images/ms/xpz-img/33522_IntNL_BannerLogo_2015-02.png"; */
 
 const ExpertENTable = styled.table`
   .bodywrap {
@@ -70,81 +70,6 @@ export default function ExpertEN() {
               color: "#292929",
             }}
           >
-            <table width='100%' cellPadding='0' cellSpacing='0' border='0'>
-              <tbody>
-                <tr>
-                  <td
-                    width='5'
-                    align='left'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Seoge UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      padding: "24px 0 8px",
-                    }}
-                  >
-                    &nbsp;
-                  </td>
-                  <td
-                    width='540'
-                    align='left'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Seoge UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      lineHeight: "13px",
-                      padding: "24px 0 8px",
-                    }}
-                  >
-                    Xbox and Windows bring entertainment to a new&nbsp;level.
-                  </td>
-                  <td
-                    width='10'
-                    align='left'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Seoge UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      padding: "24px 0 8px",
-                    }}
-                  >
-                    &nbsp;
-                  </td>
-                  <td
-                    width='140'
-                    align='right'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Seoge UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      lineHeight: "13px",
-                      padding: "24px 0 8px",
-                    }}
-                  >
-                    <a
-                      href=''
-                      title='Read online.'
-                      alias='Preheader: Read online'
-                      style={{ color: "#fffffe" }}
-                    >
-                      Read online.
-                    </a>
-                  </td>
-                  <td
-                    width='5'
-                    align='left'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Seoge UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      padding: "24px 0 8px",
-                    }}
-                  >
-                    &nbsp;
-                  </td>
-                </tr>
-              </tbody>
-            </table>
             <table
               width='100%'
               cellPadding='0'
@@ -194,7 +119,7 @@ export default function ExpertEN() {
                               style={{ textDecoration: "none" }}
                             >
                               <img
-                                src={ezHeader}
+                                src='/public/images/ms/xpz-img/33522_MS_Logo_Header_2014-10.png'
                                 width='94'
                                 height='19'
                                 border='0'
@@ -261,7 +186,7 @@ export default function ExpertEN() {
                               }}
                             >
                               <img
-                                src={ezLogo}
+                                src='/public/images/ms/xpz-img/33522_EZNews_Logo_Header_2014-10.png'
                                 class='bannerScale'
                                 width='372'
                                 height='56'
@@ -304,7 +229,7 @@ export default function ExpertEN() {
                       style={{ textDecoration: "none", color: "#fffffe" }}
                     >
                       <img
-                        src={ezHero}
+                        src='/public/images/ms/xpz-img/33522_ez_hero.jpg'
                         class='hero'
                         width='700'
                         height='390'
@@ -463,7 +388,7 @@ export default function ExpertEN() {
                               }}
                             >
                               <img
-                                src={ezArrowGrn}
+                                src='/public/images/ms/xpz-img/33522_drkgrnArrowCTA_2014-10.png'
                                 width='6'
                                 height='12'
                                 alt='▶'
@@ -532,7 +457,7 @@ export default function ExpertEN() {
                       style={{ color: "#107c10", textDecoration: "none" }}
                     >
                       <img
-                        src={ezEntry}
+                        src='/public/images/ms/xpz-img/33522_ez_enter.jpg'
                         class='sectionImg'
                         border='0'
                         alt='Keep everybody entertained with Windows.'
@@ -620,7 +545,7 @@ export default function ExpertEN() {
                               }}
                             >
                               <img
-                                src={ezArrowGrn}
+                                src='/public/images/ms/xpz-img/33522_drkgrnArrowCTA_2014-10.png'
                                 width='6'
                                 height='12'
                                 alt='▶'
@@ -738,7 +663,7 @@ export default function ExpertEN() {
                               }}
                             >
                               <img
-                                src={ezArrowGrn}
+                                src='/public/images/ms/xpz-img/33522_drkgrnArrowCTA_2014-10.png'
                                 width='6'
                                 height='12'
                                 alt='▶'
@@ -780,7 +705,7 @@ export default function ExpertEN() {
                       style={{ textDecoration: "none", color: "#107c10" }}
                     >
                       <img
-                        src={ezWinPC}
+                        src='/public/images/ms/xpz-img/33522_ez_winpc.jpg'
                         class='sectionImg'
                         border='0'
                         alt='The fun is just getting started with Windows 10.'
@@ -833,7 +758,7 @@ export default function ExpertEN() {
                       style={{ textDecoration: "none", color: "#5dc21e" }}
                     >
                       <img
-                        src={ezBanner}
+                        src='/public/images/ms/xpz-img/33522_IntNL_BannerLogo_2015-02.png'
                         width='110'
                         height='110'
                         border='0'
@@ -968,7 +893,11 @@ export default function ExpertEN() {
                       alias='Footer  Image: Microsoft'
                       style={{ textDecoration: "none" }}
                     >
-                      <img src={ezFooter} alt='Microsoft' border='0' />
+                      <img
+                        src='/public/images/ms/xpz-img/33417_CloudOS_LogoMicrosoft.png'
+                        alt='Microsoft'
+                        border='0'
+                      />
                     </a>
                   </td>
                   <td

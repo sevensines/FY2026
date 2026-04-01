@@ -2,7 +2,7 @@ import styled from "styled-components";
 import FrameTMO from "../../pages/TMobile/TMframe";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 
-import tmoDataStash from "../../assets/tm/pre-img/datahero.jpg";
+//import tmoDataStash from "../../../public/images/tm/pre-img/datahero.jpg";
 
 const StashHero = styled.div`
   display: flex;
@@ -23,7 +23,8 @@ const StashColLeft = styled.div`
   flex: 2;
   width: 100%;
   min-height: 240px;
-  background: url(${tmoDataStash}) no-repeat bottom center;
+  background: url("/public/images/tm/pre-img/datahero.jpg") no-repeat bottom
+    center;
   background-size: contain;
 
   @media (min-width: 768px) {
@@ -45,7 +46,12 @@ const StashColRight = styled.div`
     font-size: 2em;
     line-height: 1em;
     color: #e20074;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -54,7 +60,12 @@ const StashColRight = styled.div`
     margin: 0 auto;
     padding: 0 12px;
     color: #000000;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.6em;
     line-height: 1em;
@@ -68,7 +79,12 @@ const StashColRight = styled.div`
     margin: 0 auto;
     padding: 10px 0;
     color: #ffffff;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.4em;
     text-align: center;
@@ -83,7 +99,12 @@ const StashColRight = styled.div`
     margin: 0 auto;
     padding: 12px;
     color: #444444;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
@@ -94,7 +115,12 @@ const StashColRight = styled.div`
     font-size: 0.6rem;
     font-weight: normal;
     text-align: center;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
   }
 
@@ -135,7 +161,12 @@ const StashBanner = styled.div`
     font-size: 1.8em;
     line-height: 1em;
     color: #000000;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     text-align: center;
   }
@@ -143,7 +174,12 @@ const StashBanner = styled.div`
     margin: 0 auto;
     padding: 12px 0 0 0;
     color: #444444;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1em;
     line-height: 1.1em;

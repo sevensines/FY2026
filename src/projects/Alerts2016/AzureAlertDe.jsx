@@ -1,10 +1,10 @@
-import azrLogo from "../../assets/ms/azr-img/ms-logo.png";
-import azrTop from "../../assets/ms/azr-img/top.png";
-import azrMid from "../../assets/ms/azr-img/middle.png";
-import azrBot from "../../assets/ms/azr-img/bottom.png";
-import azrNo1 from "../../assets/ms/azr-img/num1.png";
-import azrNo2 from "../../assets/ms/azr-img/num2.png";
-import azrNo3 from "../../assets/ms/azr-img/num3.png";
+//import azrLogo from "../../../public/images/ms/azr-img/ms-logo.png";
+//import azrTop from "../../../public/images/ms/azr-img/top.png";
+//import azrMid from "../../../public/images/ms/azr-img/middle.png";
+//import azrBot from "../../../public/images/ms/azr-img/bottom.png";
+//import azrNo1 from "../../../public/images/ms/azr-img/num1.png";
+//import azrNo2 from "../../../public/images/ms/azr-img/num2.png";
+//import azrNo3 from "../../../public/images/ms/azr-img/num3.png";
 
 export default function AzureAlertDE() {
   return (
@@ -26,32 +26,6 @@ export default function AzureAlertDE() {
             &nbsp;
           </td>
           <td style={{ backgroundColor: "none" }} valign='top'>
-            <table border='0' cellPadding='0' cellSpacing='0' width='600'>
-              <tbody>
-                <tr>
-                  <td
-                    style={{
-                      backgroundColor: "none",
-                      color: "#3f4042",
-                      fontFamily: "Segoe UI,Arial,sans-serif",
-                      fontSize: "10px",
-                      fontWeight: "bold",
-                      padding: "24px 0 3px",
-                    }}
-                    align='right'
-                    width='600'
-                  >
-                    <a
-                      href=''
-                      title=''
-                      style={{ color: "#3da5dd", textDecoration: "none" }}
-                    >
-                      Lesen browser
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
             <table border='0' cellPadding='0' cellSpacing='0' width='600'>
               <tbody>
                 <tr>
@@ -81,7 +55,7 @@ export default function AzureAlertDE() {
                           </td>
                           <td style={{ background: "#f1f1f1" }} width='74'>
                             <img
-                              src={azrLogo}
+                              src='/public/images/ms/azr-img/ms-logo.png'
                               height='30'
                               align='left'
                               border='0'
@@ -114,7 +88,12 @@ export default function AzureAlertDE() {
                     align=''
                     width='598'
                   >
-                    <img src={azrTop} height='70' border='0' width='598' />
+                    <img
+                      src='/public/images/ms/azr-img/top.png'
+                      height='70'
+                      border='0'
+                      width='598'
+                    />
                   </td>
                   <td
                     style={{ background: "#000000", lineHeight: "1px" }}
@@ -189,7 +168,7 @@ export default function AzureAlertDE() {
                     width='198'
                   >
                     <img
-                      src={azrMid}
+                      src='/public/images/ms/azr-img/middle.png'
                       alt='Azure'
                       height='216'
                       border='0'
@@ -263,7 +242,7 @@ export default function AzureAlertDE() {
                             valign='top'
                           >
                             <img
-                              src={azrNo1}
+                              src='/public/images/ms/azr-img/num1.png'
                               alt='1'
                               height='25'
                               border='0'
@@ -310,7 +289,7 @@ export default function AzureAlertDE() {
                             valign='top'
                           >
                             <img
-                              src={azrNo2}
+                              src='/public/images/ms/azr-img/num2.png'
                               alt='2'
                               height='25'
                               border='0'
@@ -347,7 +326,7 @@ export default function AzureAlertDE() {
                             valign='top'
                           >
                             <img
-                              src={azrNo3}
+                              src='/public/images/ms/azr-img/num3.png'
                               alt='3'
                               height='25'
                               border='0'
@@ -780,7 +759,7 @@ export default function AzureAlertDE() {
                     width='100'
                   >
                     <img
-                      src={azrBot}
+                      src='/public/images/ms/azr-img/bottom.png'
                       height='21'
                       align='left'
                       border='0'

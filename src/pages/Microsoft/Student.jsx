@@ -6,7 +6,6 @@ import Viewport from "../../components/Viewport/Viewport";
 import StudentEn from "../../projects/Student2016/StudentEn";
 import ImagineEn from "../../projects/Student2016/ImagineEn";
 
-import stuLogo from "../../assets/ms/stu.svg";
 export default function Student() {
   const crumbs = [
     {
@@ -23,7 +22,7 @@ export default function Student() {
     <>
       {" "}
       <Breadcrumb route={crumbs} />
-      <Banner logo={stuLogo} alt='Microsoft Student' />
+      <Banner logo='/public/images/ms/stu.svg' alt='Microsoft Student' />
       <Article fadeOnly>
         <Copy title='Microsoft Student & Imagine Cup Newsletter'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>

@@ -2,11 +2,11 @@ import styled from "styled-components";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 import FrameTMO from "../../pages/TMobile/TMframe";
 
-import tmoThreeHero from "../../assets/tm/tfo-img/hero.jpg";
-import tmoThreeTile from "../../assets/tm/tfo-img/tile.png";
-import tmoIconMobile from "../../assets/tm/tfo-img/mobile.svg";
-import tmoIconTravel from "../../assets/tm/tfo-img/travel.svg";
-import tmoIconDollar from "../../assets/tm/tfo-img/nodolla.svg";
+/* import tmoThreeHero from "../../../public/images/tm/tfo-img/hero.jpg";
+import tmoThreeTile from "../../../public/images/tm/tfo-img/tile.png";
+import tmoIconMobile from "../../../public/images/tm/tfo-img/mobile.svg";
+import tmoIconTravel from "../../../public/images/tm/tfo-img/travel.svg";
+import tmoIconDollar from "../../../public/images/tm/tfo-img/nodolla.svg"; */
 
 const ThreeOneHero = styled.div`
   display: flex;
@@ -42,7 +42,12 @@ const ThreeOneColLeft = styled.div`
     font-size: 1.6em;
     line-height: 1em;
     color: #e20074;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     text-align: center;
     &:nth-child(2) {
@@ -57,7 +62,12 @@ const ThreeOneColLeft = styled.div`
     margin: 0 auto;
     padding: 12px;
     color: #ffffff;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
@@ -68,7 +78,12 @@ const ThreeOneColLeft = styled.div`
     margin: 0 auto;
     padding: 10px 0;
     color: #ffffff;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.8em;
     text-align: center;
@@ -84,7 +99,12 @@ const ThreeOneColLeft = styled.div`
     font-size: 0.8rem;
     font-weight: normal;
     text-align: center;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
   }
 
@@ -118,7 +138,7 @@ const ThreeOneColRight = styled.div`
   flex: 2;
   width: 100%;
   min-height: 240px;
-  background: url(${tmoThreeHero}) no-repeat center center;
+  background: url("/public/images/tm/tfo-img/hero.jpg") no-repeat center center;
   background-size: cover;
 
   @media (min-width: 768px) {
@@ -138,7 +158,12 @@ const ThreeOneBanner = styled.div`
     font-size: 1.8em;
     line-height: 1em;
     color: #ffffff;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -147,7 +172,12 @@ const ThreeOneBanner = styled.div`
     margin: 0 auto;
     padding: 0 0 12px 0;
     color: #000000;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1em;
     line-height: 1.1em;
@@ -173,7 +203,7 @@ const PlanGrid = styled.div`
   column-gap: 40px;
   padding: 4%;
   background-color: #e20074;
-  background: url(${tmoThreeTile});
+  background: url("/public/images/tm/tfo-img/tile.png");
   border-left: 8px solid #e20074;
   border-right: 8px solid #e20074;
   @media (min-width: 768px) {
@@ -237,21 +267,21 @@ export default function ThreeForOne() {
       </ThreeOneBanner>
       <PlanGrid>
         <PlanGridItem>
-          <img src={tmoIconMobile} border='0' />
+          <img src='/public/images/tm/tfo-img/mobile.svg' border='0' />
           <h5>
             Unlimited calling to and from the U.S. to any number, including
             mobile phones, in Mexico and Canada.
           </h5>
         </PlanGridItem>
         <PlanGridItem>
-          <img src={tmoIconTravel} border='0' />
+          <img src='/public/images/tm/tfo-img/travel.svg' border='0' />
           <h5>
             Now when you travel throughout the U.S., Mexico, & Canada your phone
             works the same with 4G LTE data and unlimited calling and texting.
           </h5>
         </PlanGridItem>
         <PlanGridItem>
-          <img src={tmoIconDollar} border='0' />
+          <img src='/public/images/tm/tfo-img/nodolla.svg' border='0' />
           <h5>
             No other plan includes this much freedom and flexibility at no extra
             charge.

@@ -1,13 +1,13 @@
-import azrLogo from "../../assets/ms/azr-img/ms-logo-azure-top.png";
-import azrLogoWT from "../../assets/ms/azr-img/MS_Logo_white_100.png";
-import azrNurture02 from "../../assets/ms/azr-img/Azure2014-Nurture_02.png";
-import azrNurture04 from "../../assets/ms/azr-img/Azure2014-Nurture_04.png";
-import azrArrow from "../../assets/ms/azr-img/33333_Azure_ArrowCTA.png";
-import azrMonitor from "../../assets/ms/azr-img/azure-nurturelist-monitor-2014.png";
-import azrGlobe from "../../assets/ms/azr-img/azure-nurturelist-globe-2014.png";
-import azrMobile from "../../assets/ms/azr-img/azure-nurturelist-mobile-2014.png";
-import azrCalendar from "../../assets/ms/azr-img/azure-nurturelist-calender-2014.png";
-import azrHex from "../../assets/ms/azr-img/azure-nurturelist-hexplay-2014.png";
+//import azrLogo from "../../../public/images/ms/azr-img/ms-logo-azure-top.png";
+//import azrLogoWT from "../../../public/images/ms/azr-img/MS_Logo_white_100.png";
+//import azrNurture02 from "../../../public/images/ms/azr-img/Azure2014-Nurture_02.png";
+//import azrNurture04 from "../../../public/images/ms/azr-img/Azure2014-Nurture_04.png";
+//import azrArrow from "../../../public/images/ms/azr-img/33333_Azure_ArrowCTA.png";
+//import azrMonitor from "../../../public/images/ms/azr-img/azure-nurturelist-monitor-2014.png";
+//import azrGlobe from "../../../public/images/ms/azr-img/azure-nurturelist-globe-2014.png";
+//import azrMobile from "../../../public/images/ms/azr-img/azure-nurturelist-mobile-2014.png";
+//import azrCalendar from "../../../public/images/ms/azr-img/azure-nurturelist-calender-2014.png";
+//import azrHex from "../../../public/images/ms/azr-img/azure-nurturelist-hexplay-2014.png";
 
 export default function AzureAlertJA() {
   return (
@@ -33,36 +33,6 @@ export default function AzureAlertJA() {
               <tbody>
                 <tr>
                   <td
-                    width='600'
-                    align='right'
-                    style={{
-                      backgroundColor: "none",
-                      color: "#3f4042",
-                      fontFamily: "Segoe UI,Arial,sans-serif",
-                      fontSize: "10px",
-                      fontWeight: "bold",
-                      padding: "24px 0 3px",
-                      borderBottom: "1px solid #000000",
-                    }}
-                  >
-                    この電子メールが正しく表示されない場合は、{" "}
-                    <a
-                      href=''
-                      title='Web ページとして表示してください'
-                      alias='Preheader: View as a webpage'
-                      style={{ color: "#3da5dd" }}
-                    >
-                      Web ページとして表示してください
-                    </a>
-                    。
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table width='600' cellPadding='0' cellSpacing='0' border='0'>
-              <tbody>
-                <tr>
-                  <td
                     width='1'
                     style={{ background: "#000000", lineHeight: "1px" }}
                   ></td>
@@ -72,6 +42,7 @@ export default function AzureAlertJA() {
                       background: "#ffffff",
                       lineHeight: "1px",
                       display: "block",
+                      borderTop: "1px solid #000000",
                     }}
                   >
                     <table
@@ -87,7 +58,7 @@ export default function AzureAlertJA() {
                           </td>
                           <td width='74' style={{ background: "#f1f1f1" }}>
                             <img
-                              src={azrLogo}
+                              src='/public/images/ms/azr-img/ms-logo-azure-top.png'
                               width='74'
                               height='30'
                               border='0'
@@ -121,7 +92,7 @@ export default function AzureAlertJA() {
                     }}
                   >
                     <img
-                      src={azrNurture02}
+                      src='/public/images/ms/azr-img/Azure2014-Nurture_02.png'
                       width='598'
                       height='70'
                       border='0'
@@ -255,7 +226,7 @@ export default function AzureAlertJA() {
                                       }}
                                     >
                                       <img
-                                        src={azrArrow}
+                                        src='/public/images/ms/azr-img/33333_Azure_ArrowCTA.png'
                                         width='28'
                                         height='28'
                                         border='0'
@@ -286,7 +257,7 @@ export default function AzureAlertJA() {
                     style={{ background: "#ffffff", display: "block" }}
                   >
                     <img
-                      src={azrNurture04}
+                      src='/public/images/ms/azr-img/Azure2014-Nurture_04.png'
                       width='171'
                       height='260'
                       border='0'
@@ -360,7 +331,7 @@ export default function AzureAlertJA() {
                               }}
                             >
                               <img
-                                src={azrMonitor}
+                                src='/public/images/ms/azr-img/azure-nurturelist-monitor-2014.png'
                                 width='40'
                                 height='40'
                                 border='0'
@@ -416,7 +387,7 @@ export default function AzureAlertJA() {
                               }}
                             >
                               <img
-                                src={azrGlobe}
+                                src='/public/images/ms/azr-img/azure-nurturelist-globe-2014.png'
                                 width='40'
                                 height='40'
                                 border='0'
@@ -472,7 +443,7 @@ export default function AzureAlertJA() {
                               }}
                             >
                               <img
-                                src={azrMobile}
+                                src='/public/images/ms/azr-img/azure-nurturelist-mobile-2014.png'
                                 width='40'
                                 height='40'
                                 border='0'
@@ -529,7 +500,7 @@ export default function AzureAlertJA() {
                               }}
                             >
                               <img
-                                src={azrCalendar}
+                                src='/public/images/ms/azr-img/azure-nurturelist-calender-2014.png'
                                 width='40'
                                 height='40'
                                 border='0'
@@ -585,7 +556,7 @@ export default function AzureAlertJA() {
                               }}
                             >
                               <img
-                                src={azrHex}
+                                src='/public/images/ms/azr-img/azure-nurturelist-hexplay-2014.png'
                                 width='40'
                                 height='40'
                                 border='0'
@@ -1052,7 +1023,7 @@ export default function AzureAlertJA() {
                     }}
                   >
                     <img
-                      src={azrLogoWT}
+                      src='/public/images/ms/azr-img/MS_Logo_white_100.png'
                       width='75'
                       height='16'
                       border='0'

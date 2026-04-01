@@ -6,8 +6,6 @@ import { TileList } from "../../components/TileGrid/TileGrid";
 import Tile from "../../components/TileGrid/Tile";
 import { MICROSOFT } from "../../data.js";
 
-import msLogo from "../../assets/ms/mic.svg";
-
 export default function Microsoft() {
   const crumbs = [
     {
@@ -19,7 +17,7 @@ export default function Microsoft() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <Banner logo={msLogo} alt='Microsoft' />
+      <Banner logo='/public/images/ms/mic.svg' alt='Microsoft' />
       <Article>
         <Copy title='Microsoft'>
           Microsoft is an American multinational technology company that

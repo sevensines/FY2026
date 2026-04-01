@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import winLogo from "../../assets/ms/ten-img/33547_headerlogo150x35_2014-09.png";
-import winSplit from "../../assets/ms/ten-img/splithero_ltr.jpg";
-import winGet from "../../assets/ms/ten-img/getwin10_ltr.jpg";
-import winArrow from "../../assets/ms/ten-img/33333_azure_arrowcta.png";
-import winFooter from "../../assets/ms/ten-img/33547_FooterLogo125x27_2014-09.png";
+/* import winLogo from "../../../public/images/ms/ten-img/33547_headerlogo150x35_2014-09.png";
+import winSplit from "../../../public/images/ms/ten-img/splithero_ltr.jpg";
+import winGet from "../../../public/images/ms/ten-img/getwin10_ltr.jpg";
+import winArrow from "../../../public/images/ms/ten-img/33333_azure_arrowcta.png";
+import winFooter from "../../../public/images/ms/ten-img/33547_FooterLogo125x27_2014-09.png"; */
 
 const WinTenTable = styled.table`
   .bodywrap {
@@ -100,7 +100,7 @@ export default function Win10EN() {
                 style={{ background: "#ffffff", padding: "15px 0 25px" }}
               >
                 <img
-                  src={winLogo}
+                  src='/public/images/ms/ten-img/33547_headerlogo150x35_2014-09.png'
                   width='150'
                   height='35'
                   border='0'
@@ -243,7 +243,7 @@ export default function Win10EN() {
                 class='block'
               >
                 <img
-                  src={winSplit}
+                  src='/public/images/ms/ten-img/splithero_ltr.jpg'
                   width='300'
                   height='339'
                   border='0'
@@ -298,7 +298,12 @@ export default function Win10EN() {
                 <br />
                 <br />
                 Read the FAQ&nbsp;&nbsp;&nbsp;
-                <img src={winArrow} width='16' height='16' border='0' />
+                <img
+                  src='/public/images/ms/ten-img/33333_azure_arrowcta.png'
+                  width='16'
+                  height='16'
+                  border='0'
+                />
               </td>
               <td width='20'>&nbsp;</td>
             </tr>
@@ -371,7 +376,7 @@ export default function Win10EN() {
                 }}
               >
                 <img
-                  src={winGet}
+                  src='/public/images/ms/ten-img/getwin10_ltr.jpg'
                   width='600'
                   height='383'
                   border='0'
@@ -459,7 +464,12 @@ export default function Win10EN() {
                 <br />
                 <br />
                 Learn more&nbsp;&nbsp;&nbsp;
-                <img src={winArrow} width='16' height='16' border='0' />
+                <img
+                  src='/public/images/ms/ten-img/33333_azure_arrowcta.png'
+                  width='16'
+                  height='16'
+                  border='0'
+                />
               </td>
               <td width='20'>&nbsp;</td>
             </tr>
@@ -603,7 +613,7 @@ export default function Win10EN() {
                 }}
               >
                 <img
-                  src={winFooter}
+                  src='/public/images/ms/ten-img/33547_FooterLogo125x27_2014-09.png'
                   width='125'
                   height='27'
                   border='0'

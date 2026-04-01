@@ -3,8 +3,6 @@ import Logo from "../Logo/Logo";
 import Braille from "../Logo/Braille";
 import { Link } from "react-router-dom";
 import { FARBEN as f } from "../../Theme";
-import iconLinkedIn from "../../assets/icon-linkedin.svg";
-import iconEmail from "../../assets/icon-email.svg";
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -204,7 +202,7 @@ export default function Navigation() {
             title='LinkedIn'
             target='_blank'
           >
-            <img src={iconLinkedIn} alt='LinkedIn' />
+            <img src='/public/images/icon-linkedin.svg' alt='LinkedIn' />
           </ContactsButton>
           <ContactsButton
             href='mailto:sevensines@gmail.com'
@@ -212,7 +210,7 @@ export default function Navigation() {
             title='Email'
             target='_blank'
           >
-            <img src={iconEmail} alt='Email' />
+            <img src='/public/images/icon-email.svg' alt='Email' />
           </ContactsButton>
         </HeaderContacts>
       </HeaderContainer>

@@ -4,10 +4,6 @@ import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
 import BannerAZR from "./AzrBanner";
 
-import azrHome from "../../assets/ms/azr-homepage-enus.jpg";
-import azrWebinar from "../../assets/ms/azr-webinar-enus.jpg";
-import azrPivot from "../../assets/ms/azr-pivot-enus.jpg";
-
 export default function Essentials() {
   const crumbs = [
     {
@@ -44,13 +40,25 @@ export default function Essentials() {
         <br />
         <Viewport viewSelected='desktop'>
           <div>
-            <img src={azrHome} width='100%' height='auto' />
+            <img
+              src='/public/images/ms/azr-homepage-enus.jpg'
+              width='100%'
+              height='auto'
+            />
           </div>
           <div>
-            <img src={azrWebinar} width='100%' height='auto' />
+            <img
+              src='/public/images/ms/azr-webinar-enus.jpg'
+              width='100%'
+              height='auto'
+            />
           </div>
           <div>
-            <img src={azrPivot} width='100%' height='auto' />
+            <img
+              src='/public/images/ms/azr-pivot-enus.jpg'
+              width='100%'
+              height='auto'
+            />
           </div>
         </Viewport>
       </Article>

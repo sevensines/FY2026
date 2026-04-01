@@ -2,12 +2,12 @@ import styled from "styled-components";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 import FrameTMO from "../../pages/TMobile/TMframe";
 
-import tmoJumpHero from "../../assets/tm/jmp-img/jodgirl.png";
-import tmoJumpLogo from "../../assets/tm/jmp-img/jodlogo.svg";
-import tmoJumpTile from "../../assets/tm/jmp-img/jump-tile.png";
-import tmoJumpMobile from "../../assets/tm/jmp-img/newphone.svg";
-import tmoJumpDollar from "../../assets/tm/jmp-img/nodolla.svg";
-import tmoJumpCal from "../../assets/tm/jmp-img/calendar.svg";
+/* import tmoJumpHero from "../../../public/images/tm/jmp-img/jodgirl.png";
+import tmoJumpLogo from "../../../public/images/tm/jmp-img/jodlogo.svg";
+import tmoJumpTile from "../../../public/images/tm/jmp-img/jump-tile.png";
+import tmoJumpMobile from "../../../public/images/tm/jmp-img/newphone.svg";
+import tmoJumpDollar from "../../../public/images/tm/jmp-img/nodolla.svg";
+import tmoJumpCal from "../../../public/images/tm/jmp-img/calendar.svg"; */
 
 const JumpHero = styled.div`
   display: flex;
@@ -15,7 +15,7 @@ const JumpHero = styled.div`
   justify-content: center;
   align-items: center;
   background: #ffffff;
-  background-image: url(${tmoJumpTile});
+  background-image: url("/public/images/tm/jmp-img/jump-tile.png");
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -44,7 +44,12 @@ const JumpColLeft = styled.div`
     font-size: 1.6em;
     line-height: 1em;
     color: #e20074;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     text-align: center;
     &:nth-child(2) {
@@ -59,7 +64,12 @@ const JumpColLeft = styled.div`
     margin: 0 auto;
     padding: 12px;
     color: #ffffff;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
@@ -70,7 +80,12 @@ const JumpColLeft = styled.div`
     margin: 0 auto;
     padding: 10px 0;
     color: #e20074;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.8em;
     text-align: center;
@@ -87,7 +102,12 @@ const JumpColLeft = styled.div`
     font-size: 0.8rem;
     font-weight: normal;
     text-align: center;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
   }
 
@@ -121,7 +141,8 @@ const JumpColRight = styled.div`
   flex: 2;
   width: 100%;
   min-height: 240px;
-  background: url(${tmoJumpHero}) no-repeat center center;
+  background: url("/public/images/tm/jmp-img/jodgirl.png") no-repeat center
+    center;
   background-size: cover;
 
   @media (min-width: 768px) {
@@ -142,7 +163,12 @@ const JumpBanner = styled.div`
     font-size: 1.8em;
     line-height: 1em;
     color: #000000;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     text-align: center;
   }
@@ -150,7 +176,12 @@ const JumpBanner = styled.div`
     margin: 0 auto;
     padding: 12px 0 0 0;
     color: #444444;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1em;
     line-height: 1.1em;
@@ -204,7 +235,7 @@ const PlanGridItem = styled.div`
 
 const JumpFooter = styled(JumpBanner)`
   padding: 24px;
-  background-image: url(${tmoJumpTile});
+  background-image: url("/public/images/tm/jmp-img/jump-tile.png");
   h2 {
     color: #ffffff;
   }
@@ -220,7 +251,7 @@ export default function Jump() {
       <HeaderTMO />
       <JumpHero>
         <JumpColLeft>
-          <img src={tmoJumpLogo} border='0' />
+          <img src='/public/images/tm/jmp-img/jodlogo.svg' border='0' />
           <h3>Get the phone you want when you want up to 3X a year.</h3>
           <h4>
             <span>Call now!&nbsp;</span>
@@ -242,7 +273,7 @@ export default function Jump() {
       </JumpBanner>
       <PlanGrid>
         <PlanGridItem>
-          <img src={tmoJumpMobile} border='0' />
+          <img src='/public/images/tm/jmp-img/newphone.svg' border='0' />
           <h5>
             <strong>Zero Upfront</strong>
             <br />
@@ -250,7 +281,7 @@ export default function Jump() {
           </h5>
         </PlanGridItem>
         <PlanGridItem>
-          <img src={tmoJumpDollar} border='0' />
+          <img src='/public/images/tm/jmp-img/nodolla.svg' border='0' />
           <h5>
             <strong>Zero at Upgrade</strong>
             <br />
@@ -258,7 +289,7 @@ export default function Jump() {
           </h5>
         </PlanGridItem>
         <PlanGridItem>
-          <img src={tmoJumpCal} border='0' />
+          <img src='/public/images/tm/jmp-img/calendar.svg' border='0' />
           <h5>
             <strong>Zero Waiting</strong>
             <br />

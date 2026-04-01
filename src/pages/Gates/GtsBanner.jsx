@@ -1,5 +1,11 @@
 import Banner from "../../components/Banner/LogoBanner";
-import gtsLogo from "../../assets/gt/gts.svg";
+//import gtsLogo from "../../../public/images/gt/gts.svg";
 export default function BannerGTS({ fixedLogo }) {
-  return <Banner logo={gtsLogo} alt='Gates Foundtaion' fixedLogo={fixedLogo} />;
+  return (
+    <Banner
+      logo='/public/images/gt/gts.svg'
+      alt='Gates Foundtaion'
+      fixedLogo={fixedLogo}
+    />
+  );
 }

@@ -1,26 +1,26 @@
 import styled from "styled-components";
-import attBold from "../../assets/at/fonts/omnesatt-medium.woff";
-import attReg from "../../assets/at/fonts/omnesatt-regular.woff";
-import attLight from "../../assets/at/fonts/omnesatt-light.woff";
-import attLogo from "../../assets/at/att-img/att-logo.svg";
-import attHouse from "../../assets/at/att-img/hero_outdoors.jpg";
-import attWater from "../../assets/at/att-img/circle_water.png";
-import attTileWater from "../../assets/at/att-img/icon_water.png";
-import attFire from "../../assets/at/att-img/circle_fire.png";
-import attTileFire from "../../assets/at/att-img/icon_security.png";
-import attLock from "../../assets/at/att-img/circle_lock.png";
-import attTileLock from "../../assets/at/att-img/icon_door.png";
-import attRemote from "../../assets/at/att-img/circle_remote.png";
-import attTileRemote from "../../assets/at/att-img/icon_alerts.png";
-import attBulb from "../../assets/at/att-img/circle_bulb.png";
-import attTileBulb from "../../assets/at/att-img/icon_panel.png";
-import attCar from "../../assets/at/att-img/circle_garage.png";
-import attTileCar from "../../assets/at/att-img/icon_program.png";
-import attCamera from "../../assets/at/att-img/circle_video.png";
-import attTileCamera from "../../assets/at/att-img/icon_monitor.png";
-import attSeven from "../../assets/at/att-img/700.png";
-import attTwelve from "../../assets/at/att-img/1200.png";
-import attSeventeen from "../../assets/at/att-img/1700.png";
+/* import attBold from "../../../public/fonts/at/omnesatt-medium.woff";
+import attReg from "../../../public/fonts/at/omnesatt-regular.woff";
+import attLight from "../../../public/fonts/at/omnesatt-light.woff";
+import attLogo from "../../../public/images/at/att-img/att-logo.svg";
+import attHouse from "../../../public/images/at/att-img/hero_outdoors.jpg";
+import attWater from "../../../public/images/at/att-img/circle_water.png";
+import attTileWater from "../../../public/images/at/att-img/icon_water.png";
+import attFire from "../../../public/images/at/att-img/circle_fire.png";
+import attTileFire from "../../../public/images/at/att-img/icon_security.png";
+import attLock from "../../../public/images/at/att-img/circle_lock.png";
+import attTileLock from "../../../public/images/at/att-img/icon_door.png";
+import attRemote from "../../../public/images/at/att-img/circle_remote.png";
+import attTileRemote from "../../../public/images/at/att-img/icon_alerts.png";
+import attBulb from "../../../public/images/at/att-img/circle_bulb.png";
+import attTileBulb from "../../../public/images/at/att-img/icon_panel.png";
+import attCar from "../../../public/images/at/att-img/circle_garage.png";
+import attTileCar from "../../../public/images/at/att-img/icon_program.png";
+import attCamera from "../../../public/images/at/att-img/circle_video.png";
+import attTileCamera from "../../../public/images/at/att-img/icon_monitor.png";
+import attSeven from "../../../public/images/at/att-img/700.png";
+import attTwelve from "../../../public/images/at/att-img/1200.png";
+import attSeventeen from "../../../public/images/at/att-img/1700.png"; */
 
 const DefaultFrameATT = styled.div`
   display: flex;
@@ -29,17 +29,17 @@ const DefaultFrameATT = styled.div`
 
   @font-face {
     font-family: ATT Bold;
-    src: url(${attBold});
+    src: url("/public/fonts/at/omnesatt-medium.woff");
     font-weight: bold;
   }
   @font-face {
     font-family: ATT Regular;
-    src: url(${attReg});
+    src: url("/public/fonts/at/omnesatt-regular.woff");
     font-weight: normal;
   }
   @font-face {
     font-family: ATT Light;
-    src: url(${attLight});
+    src: url("/public/fonts/at/omnesatt-light.woff");
     font-weight: light;
   }
 `;
@@ -64,7 +64,7 @@ const AttLogo = styled.div`
   width: 126px;
   height: 35px;
   padding: 20px 20px 0 20px;
-  background: url(${attLogo}) no-repeat center;
+  background: url("/public/images/at/att-img/att-logo.svg") no-repeat center;
   background-size: cover;
 `;
 
@@ -85,8 +85,8 @@ const AttNumber = styled.div`
 
     span {
       color: #000000;
-      font-family: "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial,
-        sans-serif;
+      font-family:
+        "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial, sans-serif;
     }
   }
 `;
@@ -104,7 +104,8 @@ const HeroContainer = styled.div`
   position: relative;
   width: 100%;
   padding-top: 56.25%;
-  background: url(${attHouse}) no-repeat center center;
+  background: url("/public/images/at/att-img/hero_outdoors.jpg") no-repeat
+    center center;
   background-size: cover;
 `;
 
@@ -121,49 +122,56 @@ const HeroIcon = styled.div`
 const IconWater = styled(HeroIcon)`
   top: 82%;
   left: 10%;
-  background: url(${attWater}) no-repeat center center;
+  background: url("/public/images/at/att-img/circle_water.png") no-repeat center
+    center;
   background-size: contain;
 `;
 
 const IconFire = styled(HeroIcon)`
   top: 43%;
   left: 26%;
-  background: url(${attFire}) no-repeat center center;
+  background: url("/public/images/at/att-img/circle_fire.png") no-repeat center
+    center;
   background-size: contain;
 `;
 
 const IconLock = styled(HeroIcon)`
   top: 64%;
   left: 40%;
-  background: url(${attLock}) no-repeat center center;
+  background: url("/public/images/at/att-img/circle_lock.png") no-repeat center
+    center;
   background-size: contain;
 `;
 
 const IconRemote = styled(HeroIcon)`
   top: 44%;
   left: 50%;
-  background: url(${attRemote}) no-repeat center center;
+  background: url("/public/images/at/att-img/circle_remote.png") no-repeat
+    center center;
   background-size: contain;
 `;
 
 const IconBulb = styled(HeroIcon)`
   top: 26%;
   left: 63%;
-  background: url(${attBulb}) no-repeat center center;
+  background: url("/public/images/at/att-img/circle_bulb.png") no-repeat center
+    center;
   background-size: contain;
 `;
 
 const IconCar = styled(HeroIcon)`
   top: 68%;
   left: 68%;
-  background: url(${attCar}) no-repeat center center;
+  background: url("/public/images/at/att-img/circle_garage.png") no-repeat
+    center center;
   background-size: contain;
 `;
 
 const IconCamera = styled(HeroIcon)`
   top: 42%;
   left: 92%;
-  background: url(${attCamera}) no-repeat center center;
+  background: url("/public/images/at/att-img/circle_video.png") no-repeat center
+    center;
   background-size: contain;
 `;
 
@@ -206,8 +214,8 @@ const ProductTile = styled.div`
     color: #ffffff;
     font-size: 1em;
     line-height: 1em;
-    font-family: "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial,
-      sans-serif;
+    font-family:
+      "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial, sans-serif;
     text-align: center;
     background: #009ede;
   }
@@ -248,15 +256,15 @@ const ProductPackages = styled.div`
     margin: 0;
     padding: 0;
     color: #000000;
-    font-family: "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial,
-      sans-serif;
+    font-family:
+      "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial, sans-serif;
   }
   h6 {
     margin: 0;
     padding: 0;
     color: #000000;
-    font-family: "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial,
-      sans-serif;
+    font-family:
+      "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial, sans-serif;
   }
 `;
 
@@ -282,13 +290,13 @@ const PackageItem = styled.div`
   border: 1px solid #ccc;
 
   &:nth-child(1) {
-    background: url(${attSeven}) no-repeat top right;
+    background: url("/public/images/at/att-img/700.png") no-repeat top right;
   }
   &:nth-child(2) {
-    background: url(${attTwelve}) no-repeat top right;
+    background: url("/public/images/at/att-img/1200.png") no-repeat top right;
   }
   &:nth-child(3) {
-    background: url(${attSeventeen}) no-repeat top right;
+    background: url("/public/images/at/att-img/1700.png") no-repeat top right;
   }
 
   h2 {
@@ -308,8 +316,8 @@ const PackageItem = styled.div`
     padding: 0;
     font-size: 2em;
     line-height: 1em;
-    font-family: "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial,
-      sans-serif;
+    font-family:
+      "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial, sans-serif;
     color: #000000;
     text-align: center;
   }
@@ -318,8 +326,8 @@ const PackageItem = styled.div`
     padding: 0;
     font-size: 1.2em;
     line-height: 1em;
-    font-family: "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial,
-      sans-serif;
+    font-family:
+      "ATT Light", "ATT Reg", "Open Sans", Helvetica, Arial, sans-serif;
     color: #078cc5;
     text-align: center;
   }
@@ -360,7 +368,11 @@ const PromoFooter = styled.div`
   h3 {
     margin: 0;
     padding: 0 0 12px 0;
-    font-family: Neue Hass Text, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Text,
+      helvetica,
+      arial,
+      sans-serif;
     color: #ffffff;
     font-size: 1.6em;
     line-height: 1.4em;
@@ -371,7 +383,11 @@ const PromoFooter = styled.div`
     margin: 0 auto;
     padding: 10px 0;
     color: #078cc5;
-    font-family: Neue Hass Display, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Display,
+      helvetica,
+      arial,
+      sans-serif;
     font-size: 1.8em;
     text-align: center;
     background: #ffffff;
@@ -413,7 +429,7 @@ export default function SmartSecurity() {
         </HeroContainer>
         <ProductGrid>
           <ProductTile>
-            <img src={attTileWater} border='0' />
+            <img src='/public/images/at/att-img/icon_water.png' border='0' />
             <h5>
               Water
               <br />
@@ -421,7 +437,7 @@ export default function SmartSecurity() {
             </h5>
           </ProductTile>
           <ProductTile>
-            <img src={attTileFire} border='0' />
+            <img src='/public/images/at/att-img/icon_security.png' border='0' />
             <h5>
               Fire & CO2
               <br />
@@ -429,7 +445,7 @@ export default function SmartSecurity() {
             </h5>
           </ProductTile>
           <ProductTile>
-            <img src={attTileLock} border='0' />
+            <img src='/public/images/at/att-img/icon_door.png' border='0' />
             <h5>
               Professional
               <br />
@@ -437,7 +453,7 @@ export default function SmartSecurity() {
             </h5>
           </ProductTile>
           <ProductTile>
-            <img src={attTileRemote} border='0' />
+            <img src='/public/images/at/att-img/icon_alerts.png' border='0' />
             <h5>
               Text &
               <br />
@@ -445,7 +461,7 @@ export default function SmartSecurity() {
             </h5>
           </ProductTile>
           <ProductTile>
-            <img src={attTileBulb} border='0' />
+            <img src='/public/images/at/att-img/icon_panel.png' border='0' />
             <h5>
               Lighting &
               <br />
@@ -453,7 +469,7 @@ export default function SmartSecurity() {
             </h5>
           </ProductTile>
           <ProductTile>
-            <img src={attTileCar} border='0' />
+            <img src='/public/images/at/att-img/icon_program.png' border='0' />
             <h5>
               Remote
               <br />
@@ -461,7 +477,7 @@ export default function SmartSecurity() {
             </h5>
           </ProductTile>
           <ProductTile>
-            <img src={attTileCamera} border='0' />
+            <img src='/public/images/at/att-img/icon_monitor.png' border='0' />
             <h5>
               Video
               <br />

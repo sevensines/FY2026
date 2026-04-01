@@ -1,16 +1,13 @@
 import styled from "styled-components";
-import stuLogo from "../../assets/ms/stu-img/33539_MSImagineLogo_2014-12.png";
-import msLogo from "../../assets/ms/stu-img/33539_mslogowt_115.png";
-import msFooter from "../../assets/ms/stu-img/33333_logo_microsoft_clear.png";
-import stuFacebook from "../../assets/ms/stu-img/33539_facebooksocial_25.png";
-import stuTwitter from "../../assets/ms/stu-img/33539_twittersocial_25.png";
-import stuInsta from "../../assets/ms/stu-img/33539_instagramsocial_25.png";
-import stuCode from "../../assets/ms/stu-img/33539_codehunt.jpg";
-import stuBoot from "../../assets/ms/stu-img/33539_bootcamp.jpg";
-import stuInnovate from "../../assets/ms/stu-img/33539_innovate.jpg";
-import stuDev from "../../assets/ms/stu-img/33539_EvG_81Dev_2014-11.png";
-import stuPhone from "../../assets/ms/stu-img/33539_EvG_PhoneDev_2014-11.png";
-import stuAzure from "../../assets/ms/stu-img/33539_EvG_AzureDev_2014-11.png";
+/* import stuLogo from "../../../public/images/ms/stu-img/33539_MSImagineLogo_2014-12.png";
+import msLogo from "../../../public/images/ms/stu-img/33539_mslogowt_115.png";
+import msFooter from "../../../public/images/ms/stu-img/33333_logo_microsoft_clear.png";
+import stuCode from "../../../public/images/ms/stu-img/33539_codehunt.jpg";
+import stuBoot from "../../../public/images/ms/stu-img/33539_bootcamp.jpg";
+import stuInnovate from "../../../public/images/ms/stu-img/33539_innovate.jpg";
+import stuDev from "../../../public/images/ms/stu-img/33539_EvG_81Dev_2014-11.png";
+import stuPhone from "../../../public/images/ms/stu-img/33539_EvG_PhoneDev_2014-11.png";
+import stuAzure from "../../../public/images/ms/stu-img/33539_EvG_AzureDev_2014-11.png"; */
 
 const ImagineTable = styled.table`
   max-width: 700px;
@@ -134,7 +131,7 @@ export default function ImagineEn() {
                       }}
                     >
                       <img
-                        src={stuLogo}
+                        src='/public/images/ms/stu-img/33539_MSImagineLogo_2014-12.png'
                         border='0'
                         alt='Microsoft Imagine'
                         className='header'
@@ -163,7 +160,7 @@ export default function ImagineEn() {
                     }}
                   >
                     <img
-                      src={msLogo}
+                      src='/public/images/ms/stu-img/33539_mslogowt_115.png'
                       border='0'
                       alt='Microsoft'
                       className='logo'
@@ -240,161 +237,6 @@ export default function ImagineEn() {
                     width='20'
                     align='left'
                     style={{ color: "#009285", padding: "10px 0 25px" }}
-                  >
-                    &nbsp;
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table
-              width='100%'
-              cellPadding='0'
-              cellSpacing='0'
-              border='0'
-              bgcolor='#e6e6e6'
-              className='mob-320'
-            >
-              <tbody>
-                <tr>
-                  <td
-                    width='20'
-                    align='left'
-                    style={{ color: "#e6e6e6", padding: "15px 0" }}
-                  >
-                    &nbsp;
-                  </td>
-                  <td
-                    width='25'
-                    align='left'
-                    valign='middle'
-                    style={{ color: "#000000", padding: "15px 0" }}
-                  >
-                    <a
-                      href=''
-                      title='Facebook'
-                      alias='Header Social: Facebook'
-                      style={{
-                        textDecoration: "none",
-                        border: "0px",
-                        color: "#000001",
-                      }}
-                    >
-                      <img
-                        src={stuFacebook}
-                        width='25'
-                        height='25'
-                        border='0'
-                        alt='Facebook'
-                      />
-                    </a>
-                  </td>
-                  <td
-                    width='10'
-                    align='left'
-                    style={{ color: "#e6e6e6", padding: "15px 0" }}
-                  >
-                    &nbsp;
-                  </td>
-                  <td
-                    width='25'
-                    align='left'
-                    valign='middle'
-                    style={{ color: "#000000", padding: "15px 0" }}
-                  >
-                    <a
-                      href=''
-                      title='Twitter'
-                      alias='Header Social: Twitter'
-                      style={{
-                        textDecoration: "none",
-                        border: "0px",
-                        color: "#000001",
-                      }}
-                    >
-                      <img
-                        src={stuTwitter}
-                        width='25'
-                        height='25'
-                        border='0'
-                        alt='Twitter'
-                      />
-                    </a>
-                  </td>
-                  <td
-                    width='10'
-                    align='left'
-                    style={{ color: "#e6e6e6", padding: "15px 0" }}
-                  >
-                    &nbsp;
-                  </td>
-                  <td
-                    width='25'
-                    align='left'
-                    valign='middle'
-                    style={{ color: "#000000", padding: "15px 0" }}
-                  >
-                    <a
-                      href=''
-                      title='Instagram'
-                      alias='Header Social: Instagram'
-                      style={{
-                        textDecoration: "none",
-                        border: "0px",
-                        color: "#000001",
-                      }}
-                    >
-                      <img
-                        src={stuInsta}
-                        width='25'
-                        height='25'
-                        border='0'
-                        alt='Instagram'
-                      />
-                    </a>
-                  </td>
-                  <td
-                    width='20'
-                    align='right'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Segoe UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      padding: "24px 0 8px",
-                    }}
-                  >
-                    &nbsp;
-                  </td>
-                  <td
-                    width='545'
-                    align='right'
-                    valign='middle'
-                    style={{
-                      color: "#000000",
-                      fontSize: "12px",
-                      lineHeight: "15px",
-                      padding: "15px 0",
-                    }}
-                  >
-                    Having trouble viewing this email?
-                    <br />
-                    <a
-                      href=''
-                      title='View in browser'
-                      alias='Preheader: View in browser'
-                      style={{ color: "#000000" }}
-                    >
-                      <strong>View in browser</strong>
-                    </a>
-                  </td>
-                  <td
-                    width='20'
-                    align='right'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Segoe UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      padding: "24px 0 8px",
-                    }}
                   >
                     &nbsp;
                   </td>
@@ -533,7 +375,7 @@ export default function ImagineEn() {
                       }}
                     >
                       <img
-                        src={stuCode}
+                        src='/public/images/ms/stu-img/33539_codehunt.jpg'
                         border='0'
                         alt='Want to win $1,000?'
                         className='sectionIMG'
@@ -681,7 +523,7 @@ export default function ImagineEn() {
                       }}
                     >
                       <img
-                        src={stuBoot}
+                        src='/public/images/ms/stu-img/33539_bootcamp.jpg'
                         border='0'
                         alt='Imagine Cup World Finals return to Seattle!'
                         className='sectionIMG'
@@ -1001,7 +843,7 @@ export default function ImagineEn() {
                       }}
                     >
                       <img
-                        src={stuInnovate}
+                        src='/public/images/ms/stu-img/33539_innovate.jpg'
                         border='0'
                         alt='Imagine Cup winners become entrepreneurs'
                         className='sectionIMG'
@@ -1046,7 +888,7 @@ export default function ImagineEn() {
                               }}
                             >
                               <img
-                                src={stuDev}
+                                src='/public/images/ms/stu-img/33539_EvG_81Dev_2014-11.png'
                                 border='0'
                                 alt='Windows 8.1 Developer'
                                 className='EvG'
@@ -1086,7 +928,7 @@ export default function ImagineEn() {
                               }}
                             >
                               <img
-                                src={stuPhone}
+                                src='/public/images/ms/stu-img/33539_EvG_PhoneDev_2014-11.png'
                                 border='0'
                                 alt='Windows Phone Developer'
                                 className='EvG'
@@ -1126,7 +968,7 @@ export default function ImagineEn() {
                               }}
                             >
                               <img
-                                src={stuAzure}
+                                src='/public/images/ms/stu-img/33539_EvG_AzureDev_2014-11.png'
                                 border='0'
                                 alt='Windows Azure Developer'
                                 className='EvG'
@@ -1195,7 +1037,7 @@ export default function ImagineEn() {
                     style={{ lineHeight: "1px", padding: "0px 0px 20px 0px" }}
                   >
                     <img
-                      src={msFooter}
+                      src='/public/images/ms/stu-img/33333_logo_microsoft_clear.png'
                       alt='Microsoft'
                       width='75'
                       height='13'

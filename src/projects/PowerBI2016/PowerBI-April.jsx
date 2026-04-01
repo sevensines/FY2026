@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import pbiLogo from "../../assets/ms/pbi-img/33531_PBIheaderLogo2.png";
-import pbiHeader from "../../assets/ms/pbi-img/33531_NLHeaderA.png";
-import pbiHeroApr from "../../assets/ms/pbi-img/33531_HeroMain_01.png";
-import pbiStory01 from "../../assets/ms/pbi-img/33531_Story1_01.png";
-import pbiStory02 from "../../assets/ms/pbi-img/33531_Story2_01.png";
-import pbiFacebook from "../../assets/ms/pbi-img/33531_Youtube_Tile2015.png";
-import pbiTwitter from "../../assets/ms/pbi-img/33531_FB_Tile2015.png";
-import pbiYouTube from "../../assets/ms/pbi-img/33531_Twitter_Tile2015.png";
-import pbiFooter from "../../assets/ms/pbi-img/33417_CloudOS_LogoMicrosoft.png";
+/* import pbiLogo from "../../../public/images/ms/pbi-img/33531_PBIheaderLogo2.png";
+import pbiHeader from "../../../public/images/ms/pbi-img/33531_NLHeaderA.png";
+import pbiHeroApr from "../../../public/images/ms/pbi-img/33531_HeroMain_01.png";
+import pbiStory01 from "../../../public/images/ms/pbi-img/33531_Story1_01.png";
+import pbiStory02 from "../../../public/images/ms/pbi-img/33531_Story2_01.png";
+import pbiFacebook from "../../../public/images/ms/pbi-img/33531_Youtube_Tile2015.png";
+import pbiTwitter from "../../../public/images/ms/pbi-img/33531_FB_Tile2015.png";
+import pbiYouTube from "../../../public/images/ms/pbi-img/33531_Twitter_Tile2015.png";
+import pbiFooter from "../../../public/images/ms/pbi-img/33417_CloudOS_LogoMicrosoft.png"; */
 
 const PowerAprTable = styled.table`
   .bodywrap {
@@ -130,7 +130,7 @@ export default function PowerBIApr() {
                               target='_blank'
                             >
                               <img
-                                src={pbiLogo}
+                                src='/public/images/ms/pbi-img/33531_PBIheaderLogo2.png'
                                 width='118'
                                 height='33'
                                 border='0'
@@ -198,7 +198,7 @@ export default function PowerBIApr() {
                               target='_blank'
                             >
                               <img
-                                src={pbiHeader}
+                                src='/public/images/ms/pbi-img/33531_NLHeaderA.png'
                                 className='bannerScale'
                                 width='560'
                                 height='36'
@@ -242,7 +242,7 @@ export default function PowerBIApr() {
                       style={{ textDecoration: "none", color: "#fffffe" }}
                     >
                       <img
-                        src={pbiHeroApr}
+                        src='/public/images/ms/pbi-img/33531_HeroMain_01.png'
                         className='hero'
                         width='700'
                         height='292'
@@ -425,7 +425,7 @@ export default function PowerBIApr() {
                       style={{ color: "#f2c811", textDecoration: "none" }}
                     >
                       <img
-                        src={pbiStory01}
+                        src='/public/images/ms/pbi-img/33531_Story1_01.png'
                         className='sectionImg'
                         border='0'
                         alt='Try Power BI with Google Analytics'
@@ -874,7 +874,7 @@ export default function PowerBIApr() {
                       style={{ color: "#f2c811", textDecoration: "none" }}
                     >
                       <img
-                        src={pbiStory02}
+                        src='/public/images/ms/pbi-img/33531_Story2_01.png'
                         className='sectionImg'
                         border='0'
                         alt='Learn more about the update'
@@ -1397,7 +1397,7 @@ export default function PowerBIApr() {
                           >
                             <a href='' title='YouTube' alias='YouTube'>
                               <img
-                                src={pbiYouTube}
+                                src='/public/images/ms/pbi-img/33531_Twitter_Tile2015.png'
                                 height='31'
                                 width='31'
                                 border='0'
@@ -1432,7 +1432,7 @@ export default function PowerBIApr() {
                           >
                             <a href='' title='Facebook' alias='Facebook'>
                               <img
-                                src={pbiFacebook}
+                                src='/public/images/ms/pbi-img/33531_Youtube_Tile2015.png'
                                 height='31'
                                 width='31'
                                 border='0'
@@ -1467,7 +1467,7 @@ export default function PowerBIApr() {
                           >
                             <a href='' title='Twitter' alias='Twitter'>
                               <img
-                                src={pbiTwitter}
+                                src='/public/images/ms/pbi-img/33531_FB_Tile2015.png'
                                 height='31'
                                 width='31'
                                 border='0'
@@ -1604,7 +1604,11 @@ export default function PowerBIApr() {
                       alias='Footer Image: Microsoft'
                       style={{ textDecoration: "none" }}
                     >
-                      <img src={pbiFooter} alt='Microsoft' border='0' />
+                      <img
+                        src='/public/images/ms/pbi-img/33417_CloudOS_LogoMicrosoft.png'
+                        alt='Microsoft'
+                        border='0'
+                      />
                     </a>
                   </td>
                   <td

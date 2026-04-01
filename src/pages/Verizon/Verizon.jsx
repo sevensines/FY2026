@@ -5,8 +5,6 @@ import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
 import OnePlan from "../../projects/XXL/OnePlan";
 
-import vznLogo from "../../assets/vz/vzn.svg";
-
 export default function Verizon() {
   const crumbs = [
     {
@@ -18,7 +16,7 @@ export default function Verizon() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <Banner logo={vznLogo} alt='Verizon' />
+      <Banner logo='/public/images/vz/vzn.svg' alt='Verizon' />
       <Article>
         <Copy title='Introducing XXL'>
           <b>Front End Developer • Graphic Designer</b>

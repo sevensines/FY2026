@@ -1,17 +1,17 @@
 import styled from "styled-components";
-import stuLogo from "../../assets/ms/stu-img/33539_MSPartnerLogo-466_2015-04.png";
-import stuFooter from "../../assets/ms/stu-img/33539_MSLogo_Footer_2015-04.png";
-import stuFacebook from "../../assets/ms/stu-img/33539_MSPartner_Facebook_2015-04.png";
-import stuTwitter from "../../assets/ms/stu-img/33539_MSPartner_Twitter_2015-04.png";
-import stuInsta from "../../assets/ms/stu-img/33539_MSPartner_IG_2015-04.png";
-import stuHireLine from "../../assets/ms/stu-img/33539_Headline_Scott_2015-04.png";
-import stuHires from "../../assets/ms/stu-img/33539_hires.jpg";
-import stuStudents from "../../assets/ms/stu-img/33539_azurestudent.jpg";
-import stuTopStory from "../../assets/ms/stu-img/33539_2015-04_Headline_TopStoriesB.png";
-import stuWin10 from "../../assets/ms/stu-img/33539_win10.jpg";
-import stuSpain from "../../assets/ms/stu-img/33539_spain.jpg";
-import stuCountryLine from "../../assets/ms/stu-img/33539_Headline_Country_2015-04.png";
-import stuDateLine from "../../assets/ms/stu-img/33539_2015-04_Headline_KeyDatesB.png";
+/* import stuLogo from "../../../public/images/ms/stu-img/33539_MSPartnerLogo-466_2015-04.png";
+import stuFooter from "../../../public/images/ms/stu-img/33539_MSLogo_Footer_2015-04.png";
+import stuFacebook from "../../../public/images/ms/stu-img/33539_MSPartner_Facebook_2015-04.png";
+import stuTwitter from "../../../public/images/ms/stu-img/33539_MSPartner_Twitter_2015-04.png";
+import stuInsta from "../../../public/images/ms/stu-img/33539_MSPartner_IG_2015-04.png";
+import stuHireLine from "../../../public/images/ms/stu-img/33539_Headline_Scott_2015-04.png";
+import stuHires from "../../../public/images/ms/stu-img/33539_hires.jpg";
+import stuStudents from "../../../public/images/ms/stu-img/33539_azurestudent.jpg";
+import stuTopStory from "../../../public/images/ms/stu-img/33539_2015-04_Headline_TopStoriesB.png";
+import stuWin10 from "../../../public/images/ms/stu-img/33539_win10.jpg";
+import stuSpain from "../../../public/images/ms/stu-img/33539_spain.jpg";
+import stuCountryLine from "../../../public/images/ms/stu-img/33539_Headline_Country_2015-04.png";
+import stuDateLine from "../../../public/images/ms/stu-img/33539_2015-04_Headline_KeyDatesB.png"; */
 
 const StudentTable = styled.table`
   max-width: 700px;
@@ -142,7 +142,7 @@ export default function StudentEn() {
                       }}
                     >
                       <img
-                        src={stuLogo}
+                        src='/public/images/ms/stu-img/33539_MSPartnerLogo-466_2015-04.png'
                         border='0'
                         alt='Microsoft Student Partners'
                         className='header'
@@ -204,7 +204,7 @@ export default function StudentEn() {
                               }}
                             >
                               <img
-                                src={stuFacebook}
+                                src='/public/images/ms/stu-img/33539_MSPartner_Facebook_2015-04.png'
                                 width='20'
                                 height='20'
                                 border='0'
@@ -236,7 +236,7 @@ export default function StudentEn() {
                               }}
                             >
                               <img
-                                src={stuTwitter}
+                                src='/public/images/ms/stu-img/33539_MSPartner_Twitter_2015-04.png'
                                 width='20'
                                 height='20'
                                 border='0'
@@ -268,7 +268,7 @@ export default function StudentEn() {
                               }}
                             >
                               <img
-                                src={stuInsta}
+                                src='/public/images/ms/stu-img/33539_MSPartner_IG_2015-04.png'
                                 width='20'
                                 height='20'
                                 border='0'
@@ -413,7 +413,7 @@ export default function StudentEn() {
                             }}
                           >
                             <img
-                              src={stuHireLine}
+                              src='/public/images/ms/stu-img/33539_Headline_Scott_2015-04.png'
                               width='177'
                               height='24'
                               border='0'
@@ -514,7 +514,7 @@ export default function StudentEn() {
                     }}
                   >
                     <img
-                      src={stuHires}
+                      src='/public/images/ms/stu-img/33539_hires.jpg'
                       border='0'
                       alt='Welcome to our worldwide MSP newsletter'
                       width='260'
@@ -581,7 +581,7 @@ export default function StudentEn() {
                       style={{ textDecoration: "none", color: "#404041" }}
                     >
                       <img
-                        src={stuStudents}
+                        src='/public/images/ms/stu-img/33539_azurestudent.jpg'
                         border='0'
                         alt='Microsoft Azure Offer for Students'
                         className='topstoryIMG'
@@ -609,7 +609,11 @@ export default function StudentEn() {
                       lineHeight: "24px",
                     }}
                   >
-                    <img src={stuTopStory} border='0' alt='Top Stories' />
+                    <img
+                      src='/public/images/ms/stu-img/33539_2015-04_Headline_TopStoriesB.png'
+                      border='0'
+                      alt='Top Stories'
+                    />
                   </td>
                   <td width='30' className='mobile-hidden' bgcolor='#e6e6e6'>
                     &nbsp;
@@ -838,7 +842,7 @@ export default function StudentEn() {
                       style={{ textDecoration: "none", color: "#fffffe" }}
                     >
                       <img
-                        src={stuWin10}
+                        src='/public/images/ms/stu-img/33539_win10.jpg'
                         border='0'
                         alt='Windows 10 Technical Preview'
                         width='260'
@@ -910,7 +914,7 @@ export default function StudentEn() {
                       }}
                     >
                       <img
-                        src={stuSpain}
+                        src='/public/images/ms/stu-img/33539_spain.jpg'
                         border='0'
                         alt='Spain MSP changing perceptions of Microsoft'
                         className='topstoryIMG'
@@ -939,7 +943,7 @@ export default function StudentEn() {
                     }}
                   >
                     <img
-                      src={stuCountryLine}
+                      src='/public/images/ms/stu-img/33539_Headline_Country_2015-04.png'
                       border='0'
                       alt='Country Spotlight'
                     />
@@ -1072,7 +1076,7 @@ export default function StudentEn() {
                     }}
                   >
                     <img
-                      src={stuDateLine}
+                      src='/public/images/ms/stu-img/33539_2015-04_Headline_KeyDatesB.png'
                       border='0'
                       alt='Key Dates + Events'
                     />
@@ -1322,7 +1326,7 @@ export default function StudentEn() {
                     style={{ lineHeight: "1px", padding: "0px 0px 20px 0px" }}
                   >
                     <img
-                      src={stuFooter}
+                      src='/public/images/ms/stu-img/33539_MSLogo_Footer_2015-04.png'
                       alt='Microsoft'
                       width='75'
                       height='16'

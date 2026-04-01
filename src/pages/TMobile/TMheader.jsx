@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import tmoLogo from "../../assets/tm/tmo-logo.svg";
+import tmoLogo from "../../../public/images/tm/tmo-logo.svg";
 
 const TmoHeader = styled.div`
   position: relative;

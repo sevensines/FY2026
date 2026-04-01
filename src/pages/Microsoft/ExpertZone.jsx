@@ -6,8 +6,6 @@ import Viewport from "../../components/Viewport/Viewport";
 import ExpertEN from "../../projects/ExpertZone/ExpertEN";
 import ExpertJA from "../../projects/ExpertZone/ExpertJA";
 
-import expLogo from "../../assets/ms/xpz.svg";
-
 export default function ExpertZone() {
   const crumbs = [
     {
@@ -23,7 +21,7 @@ export default function ExpertZone() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <Banner logo={expLogo} alt='Expert Zone' />
+      <Banner logo='/public/images/ms/xpz.svg' alt='Expert Zone' />
       <Article fadeOnly>
         <Copy title='Expert Zone Newsletter • United States & Japan'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>

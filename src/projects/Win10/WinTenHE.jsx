@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import winLogo from "../../assets/ms/ten-img/33547_headerlogo150x35_2014-09.png";
-import winSplit from "../../assets/ms/ten-img/splithero_rtl.jpg";
-import winGet from "../../assets/ms/ten-img/getwin10_rtl.jpg";
-import winArrow from "../../assets/ms/ten-img/33333_azure_arrowcta.png";
-import winFooter from "../../assets/ms/ten-img/33547_FooterLogo125x27_2014-09.png";
+/* import winLogo from "../../../public/images/ms/ten-img/33547_headerlogo150x35_2014-09.png";
+import winSplit from "../../../public/images/ms/ten-img/splithero_rtl.jpg";
+import winGet from "../../../public/images/ms/ten-img/getwin10_rtl.jpg";
+import winArrow from "../../../public/images/ms/ten-img/33333_azure_arrowcta.png";
+import winFooter from "../../../public/images/ms/ten-img/33547_FooterLogo125x27_2014-09.png"; */
 
 const WinHETable = styled.table`
   .bodywrap {
@@ -134,7 +134,7 @@ export default function Win10HE() {
                 style={{ background: "#ffffff", padding: "15px 0 25px" }}
               >
                 <img
-                  src={winLogo}
+                  src='/public/images/ms/ten-img/33547_headerlogo150x35_2014-09.png'
                   width='150'
                   height='35'
                   border='0'
@@ -187,7 +187,7 @@ export default function Win10HE() {
                 class='block'
               >
                 <img
-                  src={winSplit}
+                  src='/public/images/ms/ten-img/splithero_rtl.jpg'
                   width='300'
                   height='339'
                   border='0'
@@ -312,7 +312,12 @@ export default function Win10HE() {
                 <br />
                 <br />
                 להתקין ולהתחיל להשתמש ב- Windows 10&nbsp;
-                <img src={winArrow} width='16' height='16' border='0' />
+                <img
+                  src='/public/images/ms/ten-img/33333_azure_arrowcta.png'
+                  width='16'
+                  height='16'
+                  border='0'
+                />
               </td>
               <td width='20'>&nbsp;</td>
             </tr>
@@ -385,7 +390,7 @@ export default function Win10HE() {
                 }}
               >
                 <img
-                  src={winGet}
+                  src='/public/images/ms/ten-img/getwin10_rtl.jpg'
                   width='600'
                   height='383'
                   border='0'
@@ -472,7 +477,12 @@ export default function Win10HE() {
                 <br />
                 <br />
                 למידע נוסף&nbsp;&nbsp;&nbsp;
-                <img src={winArrow} width='16' height='16' border='0' />
+                <img
+                  src='/public/images/ms/ten-img/33333_azure_arrowcta.png'
+                  width='16'
+                  height='16'
+                  border='0'
+                />
               </td>
               <td width='20'>&nbsp;</td>
             </tr>
@@ -627,7 +637,7 @@ export default function Win10HE() {
                 }}
               >
                 <img
-                  src={winFooter}
+                  src='/public/images/ms/ten-img/33547_FooterLogo125x27_2014-09.png'
                   width='125'
                   height='27'
                   border='0'

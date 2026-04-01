@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import ezHeader from "../../assets/ms/xpz-img/33522_MS_Logo_Header_2014-10.png";
-import ezLogo from "../../assets/ms/xpz-img/33522_EZNews_Logo_Header_2014-10.png";
-import ezHeroJ from "../../assets/ms/xpz-img/33522_ez_jhero.jpg";
-import ezFooter from "../../assets/ms/xpz-img/33417_CloudOS_LogoMicrosoft.png";
-import ezArrowPrp from "../../assets/ms/xpz-img/33522_purparrowcta_2014-11.png";
-import ezEntryJ from "../../assets/ms/xpz-img/33522_ez_jentry.jpg";
-import ezWinPCJ from "../../assets/ms/xpz-img/33522_ez_jwinpc.jpg";
-import ezBannerJ from "../../assets/ms/xpz-img/33522_ez_pc_bannerlogo_2014-11.png";
+/* import ezHeader from "../../../public/images/ms/xpz-img/33522_MS_Logo_Header_2014-10.png";
+import ezLogo from "../../../public/images/ms/xpz-img/33522_EZNews_Logo_Header_2014-10.png";
+import ezHeroJ from "../../../public/images/ms/xpz-img/33522_ez_jhero.jpg";
+import ezFooter from "../../../public/images/ms/xpz-img/33417_CloudOS_LogoMicrosoft.png";
+import ezArrowPrp from "../../../public/images/ms/xpz-img/33522_purparrowcta_2014-11.png";
+import ezEntryJ from "../../../public/images/ms/xpz-img/33522_ez_jentry.jpg";
+import ezWinPCJ from "../../../public/images/ms/xpz-img/33522_ez_jwinpc.jpg";
+import ezBannerJ from "../../../public/images/ms/xpz-img/33522_ez_pc_bannerlogo_2014-11.png"; */
 
 const ExpertJATable = styled.table`
   .bodywrap {
@@ -70,81 +70,6 @@ export default function ExpertJA() {
               color: "#292929",
             }}
           >
-            <table width='100%' cellPadding='0' cellSpacing='0' border='0'>
-              <tbody>
-                <tr>
-                  <td
-                    width='5'
-                    align='left'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Seoge UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      padding: "24px 0 8px",
-                    }}
-                  >
-                    &nbsp;
-                  </td>
-                  <td
-                    width='540'
-                    align='left'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Seoge UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      lineHeight: "13px",
-                      padding: "24px 0 8px",
-                    }}
-                  >
-                    新世代の Windows を発表いたしました。
-                  </td>
-                  <td
-                    width='10'
-                    align='left'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Seoge UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      padding: "24px 0 8px",
-                    }}
-                  >
-                    &nbsp;
-                  </td>
-                  <td
-                    width='140'
-                    align='right'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Seoge UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      lineHeight: "13px",
-                      padding: "24px 0 8px",
-                    }}
-                  >
-                    <a
-                      href=''
-                      title='オンラインで読む'
-                      alias='Preheader: Read online'
-                      style={{ color: "#fffffe" }}
-                    >
-                      オンラインで読む
-                    </a>
-                  </td>
-                  <td
-                    width='5'
-                    align='left'
-                    style={{
-                      color: "#ffffff",
-                      fontFamily: "Seoge UI,Arial,sans-serif",
-                      fontSize: "11px",
-                      padding: "24px 0 8px",
-                    }}
-                  >
-                    &nbsp;
-                  </td>
-                </tr>
-              </tbody>
-            </table>
             <table
               width='100%'
               cellPadding='0'
@@ -194,7 +119,7 @@ export default function ExpertJA() {
                               style={{ textDecoration: "none" }}
                             >
                               <img
-                                src={ezHeader}
+                                src='/public/images/ms/xpz-img/33522_MS_Logo_Header_2014-10.png'
                                 width='94'
                                 height='19'
                                 border='0'
@@ -261,7 +186,7 @@ export default function ExpertJA() {
                               }}
                             >
                               <img
-                                src={ezLogo}
+                                src='/public/images/ms/xpz-img/33522_EZNews_Logo_Header_2014-10.png'
                                 class='bannerScale'
                                 width='372'
                                 height='56'
@@ -304,7 +229,7 @@ export default function ExpertJA() {
                       style={{ textDecoration: "none", color: "#fffffe" }}
                     >
                       <img
-                        src={ezHeroJ}
+                        src='/public/images/ms/xpz-img/33522_ez_jhero.jpg'
                         class='hero'
                         width='700'
                         height='390'
@@ -462,7 +387,7 @@ export default function ExpertJA() {
                               }}
                             >
                               <img
-                                src={ezArrowPrp}
+                                src='/public/images/ms/xpz-img/33522_purparrowcta_2014-11.png'
                                 width='6'
                                 height='12'
                                 alt='▶'
@@ -531,7 +456,7 @@ export default function ExpertJA() {
                       style={{ color: "#68217a", textDecoration: "none" }}
                     >
                       <img
-                        src={ezWinPCJ}
+                        src='/public/images/ms/xpz-img/33522_ez_jwinpc.jpg'
                         class='sectionImg'
                         border='0'
                         alt='Keep everybody entertained with Windows.'
@@ -624,7 +549,7 @@ export default function ExpertJA() {
                               }}
                             >
                               <img
-                                src={ezArrowPrp}
+                                src='/public/images/ms/xpz-img/33522_purparrowcta_2014-11.png'
                                 width='6'
                                 height='12'
                                 alt='▶'
@@ -744,7 +669,7 @@ export default function ExpertJA() {
                               }}
                             >
                               <img
-                                src={ezArrowPrp}
+                                src='/public/images/ms/xpz-img/33522_purparrowcta_2014-11.png'
                                 width='6'
                                 height='12'
                                 alt='▶'
@@ -786,7 +711,7 @@ export default function ExpertJA() {
                       style={{ textDecoration: "none", color: "#68217a" }}
                     >
                       <img
-                        src={ezEntryJ}
+                        src='/public/images/ms/xpz-img/33522_ez_jentry.jpg'
                         class='sectionImg'
                         border='0'
                         alt='The fun is just getting started with Windows 10.'
@@ -839,7 +764,7 @@ export default function ExpertJA() {
                       style={{ textDecoration: "none", color: "#5dc21e" }}
                     >
                       <img
-                        src={ezBannerJ}
+                        src='/public/images/ms/xpz-img/33522_ez_pc_bannerlogo_2014-11.png'
                         width='110'
                         height='110'
                         border='0'
@@ -973,7 +898,11 @@ export default function ExpertJA() {
                       alias='Footer  Image: Microsoft'
                       style={{ textDecoration: "none" }}
                     >
-                      <img src={ezFooter} alt='Microsoft' border='0' />
+                      <img
+                        src='/public/images/ms/xpz-img/33417_CloudOS_LogoMicrosoft.png'
+                        alt='Microsoft'
+                        border='0'
+                      />
                     </a>
                   </td>
                   <td

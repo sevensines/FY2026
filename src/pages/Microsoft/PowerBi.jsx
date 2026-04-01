@@ -5,8 +5,6 @@ import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
 import PowerBIApr from "../../projects/PowerBI2016/PowerBI-April";
 
-import pbiLogo from "../../assets/ms/pbi.svg";
-
 export default function PowerBI() {
   const crumbs = [
     {
@@ -22,7 +20,7 @@ export default function PowerBI() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <Banner logo={pbiLogo} alt='Power BI' />
+      <Banner logo='/public/images/ms/pbi.svg' alt='Power BI' />
       <Article fadeOnly>
         <Copy title='Power BI Newsletter'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>

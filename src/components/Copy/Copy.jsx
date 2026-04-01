@@ -20,6 +20,14 @@ const CopyBlock = styled.div`
       font-size: 125%;
     }
   }
+  a {
+    color: ${f.orangedk};
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   @media (min-width: 768px) {
     p {
       order: 2;

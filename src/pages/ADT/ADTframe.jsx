@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import adtZurch from "../../assets/ad/fonts/zurch.ttf";
-import adtZurchI from "../../assets/ad/fonts/zurchitalic.ttf";
-import adtZurchIB from "../../assets/ad/fonts/zurchitalbold.ttf";
-import adtZurchL from "../../assets/ad/fonts/zurchlight.ttf";
+import adtZurch from "../../../public/fonts/ad/zurch.ttf";
+import adtZurchI from "../../../public/fonts/ad/zurchitalic.ttf";
+import adtZurchIB from "../../../public/fonts/ad/zurchitalbold.ttf";
+import adtZurchL from "../../../public/fonts/ad/zurchlight.ttf";
 
 const DefaultFrameADT = styled.div`
   display: flex;

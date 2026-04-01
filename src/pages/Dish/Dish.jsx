@@ -5,8 +5,6 @@ import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
 import PriceLock from "../../projects/PriceLock/PriceLock";
 
-import dshLogo from "../../assets/ds/dsh.svg";
-
 export default function Dish() {
   const crumbs = [
     {
@@ -18,7 +16,7 @@ export default function Dish() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <Banner logo={dshLogo} alt='Dish' />
+      <Banner logo='/public/images/ds/dsh.svg' alt='Dish' />
       <Article>
         <Copy title='2 Year Price Lock'>
           <b>Front End Developer • Graphic Designer</b>

@@ -2,9 +2,9 @@ import styled from "styled-components";
 import FrameTMO from "../../pages/TMobile/TMframe";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 
-import tmoPayGoHero from "../../assets/tm/pyg-img/grocerycart.png";
-import tmoPayTile from "../../assets/tm/pyg-img/tile.png";
-import tmoIconCheck from "../../assets/tm/pyg-img/check.png";
+/* import tmoPayGoHero from "../../../public/images/tm/pyg-img/grocerycart.png";
+import tmoPayTile from "../../../public/images/tm/pyg-img/tile.png";
+import tmoIconCheck from "../../../public/images/tm/pyg-img/check.png"; */
 
 const PayGoHero = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ const PayGoHero = styled.div`
   align-items: center;
   padding-top: 1px;
   background: #efefef;
-  background-image: url(${tmoPayTile});
+  background-image: url("/public/images/tm/pyg-img/tile.png");
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -26,7 +26,8 @@ const PayGoColLeft = styled.div`
   flex: 2;
   width: 100%;
   min-height: 240px;
-  background: url(${tmoPayGoHero}) no-repeat center center;
+  background: url("/public/images/tm/pyg-img/grocerycart.png") no-repeat center
+    center;
   background-size: contain;
 
   @media (min-width: 768px) {
@@ -47,7 +48,12 @@ const PayGoColRight = styled.div`
     font-size: 1.4em;
     line-height: 1em;
     color: #e20074;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -59,7 +65,12 @@ const PayGoColRight = styled.div`
     margin: 0 auto;
     padding: 0 12px;
     color: #000000;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.6em;
     line-height: 1em;
@@ -73,7 +84,12 @@ const PayGoColRight = styled.div`
     margin: 0 auto;
     padding: 10px 0;
     color: #ffffff;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.4em;
     text-align: center;
@@ -88,7 +104,12 @@ const PayGoColRight = styled.div`
     margin: 0 auto;
     padding: 12px;
     color: #444444;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
@@ -99,7 +120,12 @@ const PayGoColRight = styled.div`
     font-size: 0.6rem;
     font-weight: normal;
     text-align: center;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
   }
 
@@ -143,7 +169,12 @@ const PayBanner = styled.div`
     font-size: 1.8em;
     line-height: 1em;
     color: #000000;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     text-align: center;
   }
@@ -151,7 +182,12 @@ const PayBanner = styled.div`
     margin: 0 auto;
     padding: 12px 0 0 0;
     color: #444444;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1em;
     line-height: 1.1em;
@@ -165,7 +201,7 @@ const PayBanner = styled.div`
 
 const PayList = styled.ul`
   padding: 0 2% 0 12%;
-  list-style-image: url(${tmoIconCheck});
+  list-style-image: url("/public/images/tm/pyg-img/check.png");
 
   li {
     margin: 0;

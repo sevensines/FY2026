@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import vznLogo from "../../assets/vz/vzn-clr.svg";
+import vznLogo from "../../../public/images/vz/vzn-clr.svg";
 
 const VznHeader = styled.div`
   position: relative;

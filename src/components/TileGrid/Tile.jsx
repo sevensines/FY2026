@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export const TileLink = styled(Link)`
   text-decoration: none;
   border: 0;
+  color: ${f.orange};
 `;
 
 const DefaultTile = styled.div`

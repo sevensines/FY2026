@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import FrameADT from "../../pages/ADT/ADTframe";
-import adtBizLogo from "../../assets/ad/adt-img/adt-biz.svg";
-import adtBizHero from "../../assets/ad/adt-img/biz-hero.jpg";
-import adtCamOne from "../../assets/ad/adt-img/biz-cam1.png";
-import adtCamTwo from "../../assets/ad/adt-img/biz-cam2.png";
-import adtCamThree from "../../assets/ad/adt-img/biz-cam3.png";
-import adtCamFour from "../../assets/ad/adt-img/biz-cam4.png";
-import adtRetail from "../../assets/ad/adt-img/adt-hanger.svg";
-import adtClinic from "../../assets/ad/adt-img/adt-stetho.svg";
-import adtTech from "../../assets/ad/adt-img/adt-gear.svg";
-import adtFood from "../../assets/ad/adt-img/adt-bell.svg";
-import adtOffice from "../../assets/ad/adt-img/adt-monitor.svg";
-import adtService from "../../assets/ad/adt-img/adt-coffee.svg";
+/* import adtBizLogo from "../../../public/images/ad/adt-img/adt-biz.svg";
+import adtBizHero from "../../../public/images/ad/adt-img/biz-hero.jpg";
+import adtCamOne from "../../../public/images/ad/adt-img/biz-cam1.png";
+import adtCamTwo from "../../../public/images/ad/adt-img/biz-cam2.png";
+import adtCamThree from "../../../public/images/ad/adt-img/biz-cam3.png";
+import adtCamFour from "../../../public/images/ad/adt-img/biz-cam4.png";
+import adtRetail from "../../../public/images/ad/adt-img/adt-hanger.svg";
+import adtClinic from "../../../public/images/ad/adt-img/adt-stetho.svg";
+import adtTech from "../../../public/images/ad/adt-img/adt-gear.svg";
+import adtFood from "../../../public/images/ad/adt-img/adt-bell.svg";
+import adtOffice from "../../../public/images/ad/adt-img/adt-monitor.svg";
+import adtService from "../../../public/images/ad/adt-img/adt-coffee.svg"; */
 
 const AdtHeader = styled.div`
   position: relative;
@@ -33,7 +33,7 @@ const AdtLogo = styled.div`
   width: 136px;
   height: 48px;
   padding: 20px 20px 0 20px;
-  background: url(${adtBizLogo}) no-repeat center;
+  background: url("/public/images/ad/adt-img/adt-biz.svg") no-repeat center;
   background-size: cover;
 `;
 const AdtNumber = styled.div`
@@ -60,7 +60,8 @@ const BizHero = styled.div`
   justify-content: flex-end;
   align-items: center;
   padding: 4%;
-  background: url(${adtBizHero}) no-repeat center center;
+  background: url("/public/images/ad/adt-img/biz-hero.jpg") no-repeat center
+    center;
   background-size: cover;
 `;
 const BizHeroCopy = styled.div`
@@ -74,7 +75,12 @@ const BizHeroCopy = styled.div`
     color: #0f9aff;
     text-transform: uppercase;
     text-align: center;
-    font-family: Zurch Bold, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Bold,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
   }
   h2 {
     margin: 0;
@@ -84,7 +90,12 @@ const BizHeroCopy = styled.div`
     color: #0061a8;
     text-transform: uppercase;
     text-align: center;
-    font-family: Zurch Bold, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Bold,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
   }
   h3 {
     margin: 0;
@@ -94,7 +105,12 @@ const BizHeroCopy = styled.div`
     line-height: 1em;
     text-transform: uppercase;
     text-align: center;
-    font-family: Zurch Light, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Light,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
     span {
       color: #0f9aff;
     }
@@ -107,7 +123,12 @@ const BizHeroCopy = styled.div`
     color: #0061a8;
     text-transform: uppercase;
     text-align: center;
-    font-family: Zurch Ital Bold, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Ital Bold,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
   }
   h6 {
     margin: 0;
@@ -137,7 +158,12 @@ const BizBanner = styled.div`
     padding: 0;
     font-size: 1.4em;
     color: #ffffff;
-    font-family: Zurch Light, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Light,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
     text-align: center;
     border-radius: 0;
     background: transparent;
@@ -187,7 +213,12 @@ const BizGridItem = styled.div`
     margin: 0;
     padding: 0;
     color: #000000;
-    font-family: Zurch Light, "Open Sans", Helvetica, Arial, sans-serif;
+    font-family:
+      Zurch Light,
+      "Open Sans",
+      Helvetica,
+      Arial,
+      sans-serif;
   }
 
   img {
@@ -235,7 +266,12 @@ const BizQuoteTypes = styled.div`
       font-size: 1.4em;
       line-height: 0.8em;
       color: #000000;
-      font-family: Zurch Light, "Open Sans", Helvetica, Arial, sans-serif;
+      font-family:
+        Zurch Light,
+        "Open Sans",
+        Helvetica,
+        Arial,
+        sans-serif;
 
       img {
         width: 32px;
@@ -332,7 +368,7 @@ export default function BusinessADT() {
         <h4>Business Surveillance Products</h4>
         <BizProductGrid>
           <BizGridItem>
-            <img src={adtCamThree} border='0' />
+            <img src='/public/images/ad/adt-img/biz-cam3.png' border='0' />
             <h5>Wireless Day/ Night Camera</h5>
             <p>
               Video motion- detection capable, with a light sensor for night
@@ -341,7 +377,7 @@ export default function BusinessADT() {
             </p>
           </BizGridItem>
           <BizGridItem>
-            <img src={adtCamFour} border='0' />
+            <img src='/public/images/ad/adt-img/biz-cam4.png' border='0' />
             <h5>Wireless Day/ Night Camera</h5>
             <p>
               Video motion- detection capable, with a light sensor for night
@@ -350,7 +386,7 @@ export default function BusinessADT() {
             </p>
           </BizGridItem>
           <BizGridItem>
-            <img src={adtCamTwo} border='0' />
+            <img src='/public/images/ad/adt-img/biz-cam2.png' border='0' />
             <h5>Wireless Day/ Night Camera</h5>
             <p>
               Video motion- detection capable, with a light sensor for night
@@ -359,7 +395,7 @@ export default function BusinessADT() {
             </p>
           </BizGridItem>
           <BizGridItem>
-            <img src={adtCamOne} border='0' />
+            <img src='/public/images/ad/adt-img/biz-cam1.png' border='0' />
             <h5>Wireless Day/ Night Camera</h5>
             <p>
               Video motion- detection capable, with a light sensor for night
@@ -377,27 +413,27 @@ export default function BusinessADT() {
           <h4>Control your business from anywhere with your mobile device.</h4>
           <ul>
             <li>
-              <img src={adtRetail} border='0' />
+              <img src='/public/images/ad/adt-img/adt-hanger.svg' border='0' />
               Retail
             </li>
             <li>
-              <img src={adtClinic} border='0' />
+              <img src='/public/images/ad/adt-img/adt-stetho.svg' border='0' />
               Clinical
             </li>
             <li>
-              <img src={adtTech} border='0' />
+              <img src='/public/images/ad/adt-img/adt-gear.svg' border='0' />
               Tech
             </li>
             <li>
-              <img src={adtFood} border='0' />
+              <img src='/public/images/ad/adt-img/adt-bell.svg' border='0' />
               Food
             </li>
             <li>
-              <img src={adtOffice} border='0' />
+              <img src='/public/images/ad/adt-img/adt-monitor.svg' border='0' />
               Office
             </li>
             <li>
-              <img src={adtService} border='0' />
+              <img src='/public/images/ad/adt-img/adt-coffee.svg' border='0' />
               Services
             </li>
           </ul>

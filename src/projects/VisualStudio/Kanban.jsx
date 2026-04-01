@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import vstHeader from "../../assets/ms/vst-img/VSO_HeaderLogo2_2015-02.png";
-import vstKanban from "../../assets/ms/vst-img/33542_VSO_Agile_Kanban.gif";
-import vstArrow from "../../assets/ms/vst-img/33333_Azure_ArrowCTA.png";
-import vstFooter from "../../assets/ms/vst-img/ms-logo-metro-generic-bk.gif";
+/* import vstHeader from "../../../public/images/ms/vst-img/VSO_HeaderLogo2_2015-02.png";
+import vstKanban from "../../../public/images/ms/vst-img/33542_VSO_Agile_Kanban.gif";
+import vstArrow from "../../../public/images/ms/vst-img/33333_Azure_ArrowCTA.png";
+import vstFooter from "../../../public/images/ms/vst-img/ms-logo-metro-generic-bk.gif"; */
 
 const VSTable = styled.table`
   .bodywrap {
@@ -76,7 +76,7 @@ export default function Kanban() {
                       title='Visual Studio Online'
                     >
                       <img
-                        src={vstHeader}
+                        src='/public/images/ms/vst-img/VSO_HeaderLogo2_2015-02.png'
                         alt='Visual Studio Online'
                         style={{ display: "block" }}
                         border='0'
@@ -137,7 +137,7 @@ export default function Kanban() {
                       style={{ color: "#0044cc", textDecoration: "none" }}
                     >
                       <img
-                        src={vstKanban}
+                        src='/public/images/ms/vst-img/33542_VSO_Agile_Kanban.gif'
                         width='565'
                         height='342'
                         border='0'
@@ -216,7 +216,7 @@ export default function Kanban() {
                               }}
                             >
                               <img
-                                src={vstArrow}
+                                src='/public/images/ms/vst-img/33333_Azure_ArrowCTA.png'
                                 width='20'
                                 height='20'
                                 border='0'
@@ -421,7 +421,7 @@ export default function Kanban() {
                   <td width='60' align='right'>
                     <a href='http://www.microsoft.com/' target='_blank'>
                       <img
-                        src={vstFooter}
+                        src='/public/images/ms/vst-img/ms-logo-metro-generic-bk.gif'
                         wdith='60'
                         height='11'
                         alt='Microsoft'

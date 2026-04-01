@@ -1,15 +1,15 @@
-import azrLogoTop from "../../assets/ms/nws-img/ms-logo-azure-top.png";
-import azrLetter02 from "../../assets/ms/nws-img/Azure2014-NewsLetter-EN_02.png";
-import azrLetter05 from "../../assets/ms/nws-img/Azure2014-NewsLetter-EN_05.jpg";
-import azrLetter07 from "../../assets/ms/nws-img/Azure2014-NewsLetter-EN_07.png";
-import azrArrow from "../../assets/ms/nws-img/33333_Azure_ArrowCTA.png";
-import azrHelium from "../../assets/ms/nws-img/Helium_Thumbnail_2014-06.png";
-import azrHeliumLogo from "../../assets/ms/nws-img/Helium_Tile_2014-06.png";
-import azrMazda from "../../assets/ms/nws-img/Mazda_Thumbnail_2014-06.png";
-import azrMazdaLogo from "../../assets/ms/nws-img/Mazda_Tile_2014-06.png";
-import azrAlert from "../../assets/ms/nws-img/AlertLogic_Thumbnail_2014-06.png";
-import azrAlertLogo from "../../assets/ms/nws-img/AlertLogic_Tile_2014-06.png";
-import azrLogoWt from "../../assets/ms/nws-img/MS_Logo_white_100.png";
+//import azrLogoTop from "../../../public/images/ms/nws-img/ms-logo-azure-top.png";
+//import azrLetter02 from "../../../public/images/ms/nws-img/Azure2014-NewsLetter-EN_02.png";
+//import azrLetter05 from "../../../public/images/ms/nws-img/Azure2014-NewsLetter-EN_05.jpg";
+//import azrLetter07 from "../../../public/images/ms/nws-img/Azure2014-NewsLetter-EN_07.png";
+//import azrArrow from "../../../public/images/ms/nws-img/33333_Azure_ArrowCTA.png";
+//import azrHelium from "../../../public/images/ms/nws-img/Helium_Thumbnail_2014-06.png";
+//import azrHeliumLogo from "../../../public/images/ms/nws-img/Helium_Tile_2014-06.png";
+//import azrMazda from "../../../public/images/ms/nws-img/Mazda_Thumbnail_2014-06.png";
+//import azrMazdaLogo from "../../../public/images/ms/nws-img/Mazda_Tile_2014-06.png";
+//import azrAlert from "../../../public/images/ms/nws-img/AlertLogic_Thumbnail_2014-06.png";
+//import azrAlertLogo from "../../../public/images/ms/nws-img/AlertLogic_Tile_2014-06.png";
+//import azrLogoWt from "../../../public/images/ms/nws-img/MS_Logo_white_100.png";
 
 export default function AzureJaNewsletter() {
   return (
@@ -60,7 +60,7 @@ export default function AzureJaNewsletter() {
                           </td>
                           <td width='74' style={{ background: "#f1f1f1" }}>
                             <img
-                              src={azrLogoTop}
+                              src='/public/images/ms/nws-img/ms-logo-azure-top.png'
                               width='74'
                               height='30'
                               border='0'
@@ -93,7 +93,12 @@ export default function AzureJaNewsletter() {
                     align='left'
                     style={{ background: "#f1f1f1", lineHeight: "1px" }}
                   >
-                    <img src={azrLetter02} width='500' height='76' border='0' />
+                    <img
+                      src='/public/images/ms/nws-img/Azure2014-NewsLetter-EN_02.png'
+                      width='500'
+                      height='76'
+                      border='0'
+                    />
                   </td>
                   <td
                     width='98'
@@ -117,7 +122,7 @@ export default function AzureJaNewsletter() {
                             style={{ background: "#f1f1f1", lineHeight: "1px" }}
                           >
                             <img
-                              src={azrLetter05}
+                              src='/public/images/ms/nws-img/Azure2014-NewsLetter-EN_05.png'
                               width='98'
                               height='30'
                               border='0'
@@ -217,7 +222,7 @@ export default function AzureJaNewsletter() {
                     style={{ background: "#326fb5", display: "block" }}
                   >
                     <img
-                      src={azrLetter07}
+                      src='/public/images/ms/nws-img/Azure2014-NewsLetter-EN_07.png'
                       width='261'
                       height='97'
                       border='0'
@@ -858,7 +863,7 @@ export default function AzureJaNewsletter() {
                                               }}
                                             >
                                               <img
-                                                src={azrArrow}
+                                                src='/public/images/ms/nws-img/33333_Azure_ArrowCTA.png'
                                                 width='24'
                                                 height='24'
                                                 border='0'
@@ -943,7 +948,7 @@ export default function AzureJaNewsletter() {
                                               }}
                                             >
                                               <img
-                                                src={azrHelium}
+                                                src='/public/images/ms/nws-img/Helium_Thumbnail_2014-06.png'
                                                 width='25'
                                                 height='25'
                                                 border='0'
@@ -1046,7 +1051,7 @@ export default function AzureJaNewsletter() {
                                               style={{ textDecoration: "none" }}
                                             >
                                               <img
-                                                src={azrMazda}
+                                                src='/public/images/ms/nws-img/Mazda_Thumbnail_2014-06.png'
                                                 width='25'
                                                 height='25'
                                                 border='0'
@@ -1156,7 +1161,7 @@ export default function AzureJaNewsletter() {
                                               style={{ textDecoration: "none" }}
                                             >
                                               <img
-                                                src={azrAlert}
+                                                src='/public/images/ms/nws-img/AlertLogic_Thumbnail_2014-06.png'
                                                 width='25'
                                                 height='25'
                                                 border='0'
@@ -1411,7 +1416,7 @@ export default function AzureJaNewsletter() {
                                       border='0'
                                     >
                                       <img
-                                        src={azrHeliumLogo}
+                                        src='/public/images/ms/nws-img/Helium_Tile_2014-06.png'
                                         alt='Helium'
                                         width='125'
                                         height='129'
@@ -1544,7 +1549,7 @@ export default function AzureJaNewsletter() {
                                       border='0'
                                     >
                                       <img
-                                        src={azrMazdaLogo}
+                                        src='/public/images/ms/nws-img/Mazda_Tile_2014-06.png'
                                         alt='Mazda'
                                         width='125'
                                         height='129'
@@ -1706,7 +1711,7 @@ export default function AzureJaNewsletter() {
                                       border='0'
                                     >
                                       <img
-                                        src={azrAlertLogo}
+                                        src='/public/images/ms/nws-img/AlertLogic_Tile_2014-06.png'
                                         alt='Alert Logic'
                                         width='125'
                                         height='93'
@@ -2093,7 +2098,7 @@ export default function AzureJaNewsletter() {
                     }}
                   >
                     <img
-                      src={azrLogoWt}
+                      src='/public/images/ms/nws-img/MS_Logo_white_100.png'
                       width='75'
                       height='16'
                       border='0'

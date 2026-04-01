@@ -1,17 +1,16 @@
 import styled from "styled-components";
-import NeueHaasDisplay from "../../assets/vz/fonts/NeueHaasGroteskDisplay.woff2";
-import NeueHaasDisplayBold from "../../assets/vz/fonts/NeueHaasGroteskDisplayBold.woff2";
-import NeueHaasDisplayMed from "../../assets/vz/fonts/NeueHaasGroteskDisplayMedium.woff2";
-import NeueHaasText from "../../assets/vz/fonts/NeueHaasGroteskText.woff2";
-import NeueHaasTextBold from "../../assets/vz/fonts/NeueHaasGroteskTextBold.woff2";
-import NeueHaasTextMed from "../../assets/vz/fonts/NeueHaasGroteskTextMedium.woff2";
 import HeaderVZN from "../../pages/Verizon/VZheader";
-
-import vznConeS from "../../assets/vz/xxl-img/cone_s.png";
-import vznConeM from "../../assets/vz/xxl-img/cone_m.png";
-import vznConeL from "../../assets/vz/xxl-img/cone_l.png";
-import vznConeXL from "../../assets/vz/xxl-img/cone_xl.png";
-import vznConeXXL from "../../assets/vz/xxl-img/cone_xxl.png";
+/* import NeueHaasDisplay from "../../../public/fonts/vz/NeueHaasGroteskDisplay.woff2";
+import NeueHaasDisplayBold from "../../../public/fonts/vz/NeueHaasGroteskDisplayBold.woff2";
+import NeueHaasDisplayMed from "../../../public/fonts/vz/NeueHaasGroteskDisplayMedium.woff2";
+import NeueHaasText from "../../../public/fonts/vz/NeueHaasGroteskText.woff2";
+import NeueHaasTextBold from "../../../public/fonts/vz/NeueHaasGroteskTextBold.woff2";
+import NeueHaasTextMed from "../../../public/fonts/vz/NeueHaasGroteskTextMedium.woff2";
+import vznConeS from "../../../public/images/vz/xxl-img/cone_s.png";
+import vznConeM from "../../../public/images/vz/xxl-img/cone_m.png";
+import vznConeL from "../../../public/images/vz/xxl-img/cone_l.png";
+import vznConeXL from "../../../public/images/vz/xxl-img/cone_xl.png";
+import vznConeXXL from "../../../public/images/vz/xxl-img/cone_xxl.png"; */
 
 const DefaultFrameVZN = styled.div`
   display: flex;
@@ -20,30 +19,30 @@ const DefaultFrameVZN = styled.div`
 
   @font-face {
     font-family: Neue Hass Display;
-    src: url(${NeueHaasDisplay});
+    src: url("/public/fonts/vz/NeueHaasGroteskDisplay.woff2");
   }
   @font-face {
     font-family: Neue Hass Display Med;
-    src: url(${NeueHaasDisplayMed});
+    src: url("/public/fonts/vz/NeueHaasGroteskDisplayMedium.woff2");
     font-weight: 600;
   }
   @font-face {
     font-family: Neue Hass Display;
-    src: url(${NeueHaasDisplayBold});
+    src: url("/public/fonts/vz/NeueHaasGroteskDisplayBold.woff2");
     font-weight: bold;
   }
   @font-face {
     font-family: Neue Hass;
-    src: url(${NeueHaasText});
+    src: url("/public/fonts/vz/NeueHaasGroteskText.woff2");
   }
   @font-face {
     font-family: Neue Hass Med;
-    src: url(${NeueHaasTextMed});
+    src: url("/public/fonts/vz/NeueHaasGroteskTextMedium.woff2");
     font-weight: 600;
   }
   @font-face {
     font-family: Neue Hass;
-    src: url(${NeueHaasTextBold});
+    src: url("/public/fonts/vz/NeueHaasGroteskTextBold.woff2");
     font-weight: bold;
   }
 `;
@@ -60,7 +59,11 @@ const OnePlanHero = styled.div`
   h1 {
     margin: 0;
     padding: 0;
-    font-family: Neue Hass Display, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Display,
+      helvetica,
+      arial,
+      sans-serif;
     font-weight: bold;
     color: #cd040b;
     font-size: 4em;
@@ -70,7 +73,11 @@ const OnePlanHero = styled.div`
   h2 {
     margin: 0;
     padding: 12px 00;
-    font-family: Neue Hass Display, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Display,
+      helvetica,
+      arial,
+      sans-serif;
     font-weight: bold;
     color: #000000;
     font-size: 2em;
@@ -80,7 +87,11 @@ const OnePlanHero = styled.div`
   h3 {
     margin: 0;
     padding: 0;
-    font-family: Neue Hass Text, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Text,
+      helvetica,
+      arial,
+      sans-serif;
     color: #000000;
     font-size: 1.6em;
     line-height: 1.4em;
@@ -92,7 +103,11 @@ const OnePlanHero = styled.div`
     margin: 24px auto;
     padding: 10px 0;
     color: #ffffff;
-    font-family: Neue Hass Display, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Display,
+      helvetica,
+      arial,
+      sans-serif;
     font-size: 1.8em;
     text-align: center;
     background: #cd040b;
@@ -100,7 +115,11 @@ const OnePlanHero = styled.div`
   h6 {
     margin: 0;
     padding: 0;
-    font-family: Neue Hass Text, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Text,
+      helvetica,
+      arial,
+      sans-serif;
     color: #000000;
     font-size: 0.625em;
     line-height: 1.2;
@@ -149,7 +168,11 @@ const OnePlanGridItem = styled.div`
     font-size: 1.6em;
     line-height: 1em;
     color: #cd040b;
-    font-family: Neue Hass Display, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Display,
+      helvetica,
+      arial,
+      sans-serif;
     font-weight: bold;
     text-align: center;
   }
@@ -189,7 +212,11 @@ const PromoBanner = styled.div`
   h2 {
     margin: 0;
     padding: 12px 00;
-    font-family: Neue Hass Display, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Display,
+      helvetica,
+      arial,
+      sans-serif;
     font-weight: bold;
     color: #000000;
     font-size: 2em;
@@ -199,7 +226,11 @@ const PromoBanner = styled.div`
   h3 {
     margin: 0;
     padding: 0;
-    font-family: Neue Hass Text, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Text,
+      helvetica,
+      arial,
+      sans-serif;
     color: #000000;
     font-size: 1.6em;
     line-height: 1em;
@@ -214,7 +245,11 @@ const PromoBanner = styled.div`
     font-size: 1.2em;
     line-height: 1.4em;
     color: #000000;
-    font-family: Neue Hass Text, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Text,
+      helvetica,
+      arial,
+      sans-serif;
     font-weight: normal;
   }
 `;
@@ -240,7 +275,11 @@ const PromoFooter = styled.div`
   h3 {
     margin: 0;
     padding: 0;
-    font-family: Neue Hass Text, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Text,
+      helvetica,
+      arial,
+      sans-serif;
     color: #000000;
     font-size: 1.6em;
     line-height: 1.4em;
@@ -251,7 +290,11 @@ const PromoFooter = styled.div`
     margin: 0 auto;
     padding: 10px 0;
     color: #ffffff;
-    font-family: Neue Hass Display, helvetica, arial, sans-serif;
+    font-family:
+      Neue Hass Display,
+      helvetica,
+      arial,
+      sans-serif;
     font-size: 1.8em;
     text-align: center;
     background: #cd040b;
@@ -280,27 +323,27 @@ export default function OnePlan() {
         <h2>Introducing XXL. 18GB&nbsp;/&nbsp;$100.</h2>
         <OnePlanGrid>
           <OnePlanGridItem>
-            <img src={vznConeS} border='0' />
+            <img src='/public/images/vz/xxl-img/cone_s.png' border='0' />
             <GridItemSize>S</GridItemSize>
             <h5>1GB&nbsp;/&nbsp;$30</h5>
           </OnePlanGridItem>
           <OnePlanGridItem>
-            <img src={vznConeM} border='0' />
+            <img src='/public/images/vz/xxl-img/cone_m.png' border='0' />
             <GridItemSize>M</GridItemSize>
             <h5>3GB&nbsp;/&nbsp;$45</h5>
           </OnePlanGridItem>
           <OnePlanGridItem>
-            <img src={vznConeL} border='0' />
+            <img src='/public/images/vz/xxl-img/cone_l.png' border='0' />
             <GridItemSize>L</GridItemSize>
             <h5>6GB&nbsp;/&nbsp;$60</h5>
           </OnePlanGridItem>
           <OnePlanGridItem>
-            <img src={vznConeXL} border='0' />
+            <img src='/public/images/vz/xxl-img/cone_xl.png' border='0' />
             <GridItemSize>XL</GridItemSize>
             <h5>12GB&nbsp;/&nbsp;$80</h5>
           </OnePlanGridItem>
           <OnePlanGridItem>
-            <img src={vznConeXXL} border='0' />
+            <img src='/public/images/vz/xxl-img/cone_xxl.png' border='0' />
             <GridItemSize>XXL</GridItemSize>
             <h5>18GB&nbsp;/&nbsp;$100</h5>
           </OnePlanGridItem>

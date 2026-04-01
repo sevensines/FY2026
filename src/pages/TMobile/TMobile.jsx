@@ -6,8 +6,6 @@ import TileText from "../../components/TileGrid/TileText";
 import BannerTMO from "./TMbanner";
 import { TMOBILE } from "../../data";
 
-import tmoData from "../../assets/tm/tmo-dat.jpg";
-
 export default function TMobile() {
   const crumbs = [
     {

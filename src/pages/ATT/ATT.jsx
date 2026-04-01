@@ -5,8 +5,6 @@ import Copy from "../../components/Copy/Copy";
 import Viewport from "../../components/Viewport/Viewport";
 import SmartSecurity from "../../projects/SmartSecurity/SmartSecurity";
 
-import attLogo from "../../assets/at/att.svg";
-
 export default function ATT() {
   const crumbs = [
     {
@@ -18,7 +16,7 @@ export default function ATT() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <Banner logo={attLogo} alt='AT&T Digital Life' />
+      <Banner logo='/public/images/at/att.svg' alt='AT&T Digital Life' />
       <Article>
         <Copy title='AT&T Smart Security'>
           <b>Front End Developer • Graphic Designer</b>

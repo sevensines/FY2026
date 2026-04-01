@@ -2,13 +2,13 @@ import styled from "styled-components";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 import FrameTMO from "../../pages/TMobile/TMframe";
 
-import tmoKhaled from "../../assets/tm/tue-img/hero.png";
-import tmoFree from "../../assets/tm/tue-img/tmo-freetuesdays.svg";
-import tmoDomino from "../../assets/tm/tue-img/tmo-dominos.svg";
-import tmoVudu from "../../assets/tm/tue-img/tmo-vudu.svg";
-import tmoWendys from "../../assets/tm/tue-img/tmo-wendys.svg";
-import tmoGraph from "../../assets/tm/tue-img/tmo-graph.svg";
-import tmoStockup from "../../assets/tm/tue-img/tmo-stockup.svg";
+/* import tmoKhaled from "../../../public/images/tm/tue-img/hero.png";
+import tmoFree from "../../../public/images/tm/tue-img/tmo-freetuesdays.svg";
+import tmoDomino from "../../../public/images/tm/tue-img/tmo-dominos.svg";
+import tmoVudu from "../../../public/images/tm/tue-img/tmo-vudu.svg";
+import tmoWendys from "../../../public/images/tm/tue-img/tmo-wendys.svg";
+import tmoGraph from "../../../public/images/tm/tue-img/tmo-graph.svg";
+import tmoStockup from "../../../public/images/tm/tue-img/tmo-stockup.svg"; */
 
 const KhaledHero = styled.div`
   display: flex;
@@ -26,7 +26,7 @@ const KhaledHero = styled.div`
 const ColumnLeft = styled.div`
   width: 180px;
   height: 164px;
-  background: url(${tmoKhaled}) no-repeat top center;
+  background: url("/public/images/tm/tue-img/hero.png") no-repeat top center;
   background-size: contain;
   @media (min-width: 768px) {
     flex: 1;
@@ -55,7 +55,12 @@ const ColumnRight = styled.div`
     font-size: 1.3em;
     line-height: 1em;
     color: #e20074;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     text-align: center;
   }
@@ -63,7 +68,12 @@ const ColumnRight = styled.div`
     margin: 0 auto;
     padding-top: 5px;
     color: #444444;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.15em;
     line-height: 1.3em;
@@ -74,7 +84,12 @@ const ColumnRight = styled.div`
     margin: 0 auto;
     padding: 10px 0;
     color: #ffffff;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.8em;
     text-align: center;
@@ -205,7 +220,12 @@ const FreeCta = styled.div`
     margin: 0 auto;
     padding: 10px 0;
     color: #ffffff;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.8em;
     text-align: center;
@@ -268,7 +288,8 @@ const StockSubTitle = styled.div`
 
 const StockSubContainer = styled.div`
   flex: 1;
-  background: url(${tmoGraph}) no-repeat center bottom;
+  background: url("/public/images/tm/tue-img/tmo-graph.svg") no-repeat center
+    bottom;
   background-size: contain;
 
   div:nth-child(1) {
@@ -304,7 +325,12 @@ const StockLeft = styled.div`
     margin: 0 auto;
     padding: 10px 0;
     color: #e20074;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.8em;
     text-align: center;
@@ -318,7 +344,12 @@ const StockLeft = styled.div`
   p {
     font-size: 1.2em;
     line-height: 1.3em;
-    font-family: swis721 roman, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
   }
   @media (min-width: 768px) {
@@ -350,7 +381,12 @@ const StockRight = styled.div`
     padding: 0;
     font-size: 1.6em;
     text-align: center;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
   }
   p {
@@ -358,7 +394,12 @@ const StockRight = styled.div`
     font-size: 1.2em;
     line-height: 1.3em;
     text-align: center;
-    font-family: swis721 roman, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
   }
 
@@ -378,7 +419,7 @@ export default function Tuesday() {
         <ColumnRight>
           <h2>SIGN UP FOR A T-MOBILE PLAN AND GET FREE STUFF. EVERY WEEK.</h2>
           <img
-            src={tmoFree}
+            src='/public/images/tm/tue-img/tmo-freetuesdays.svg'
             alt='Introducing T-Mobile Tuesdays. Free Stuff. Every Week.'
           />
           <h3>
@@ -408,19 +449,31 @@ export default function Tuesday() {
           <FreeGridItem>
             <h3>Free</h3>
             <h4>Pizza</h4>
-            <img src={tmoDomino} border='0' alt="Domino's Pizza" />
+            <img
+              src='/public/images/tm/tue-img/tmo-dominos.svg'
+              border='0'
+              alt="Domino's Pizza"
+            />
             <h5>A Medium 2 Topping Pizza</h5>
           </FreeGridItem>
           <FreeGridItem>
             <h3>Free</h3>
             <h4>Movies</h4>
-            <img src={tmoVudu} border='0' alt='Vudu' />
+            <img
+              src='/public/images/tm/tue-img/tmo-vudu.svg'
+              border='0'
+              alt='Vudu'
+            />
             <h5>A Movie with Vudu</h5>
           </FreeGridItem>
           <FreeGridItem>
             <h3>Free</h3>
             <h4>Treats</h4>
-            <img src={tmoWendys} border='0' alt="Wendy's" />
+            <img
+              src='/public/images/tm/tue-img/tmo-wendys.svg'
+              border='0'
+              alt="Wendy's"
+            />
             <h5>A Wendy's Frosty</h5>
           </FreeGridItem>
         </FreeGrid>
@@ -457,7 +510,7 @@ export default function Tuesday() {
           </h4>
         </StockLeft>
         <StockRight>
-          <img src={tmoStockup} />
+          <img src='/public/images/tm/tue-img/tmo-stockup.svg' />
           <h5>REFER A FRIEND FOR EVEN MORE SHARES</h5>
           <p>
             Increase your ownership stake with a share of stock for every friend

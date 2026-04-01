@@ -1,7 +1,7 @@
-import azrAlertLogo from "../../assets/ms/azr-img/ms-logo-azure-top.png";
-import azrLogoWt from "../../assets/ms/azr-img/MS_Logo_white_100.png";
-import azrInfo02 from "../../assets/ms/azr-img/Azure2014-InformativeV2_02.png";
-import azrInfo04 from "../../assets/ms/azr-img/Azure2014-InformativeV2_04.png";
+//import azrAlertLogo from "../../../public/images/ms/azr-img/ms-logo-azure-top.png";
+//import azrLogoWt from "../../../public/images/ms/azr-img/MS_Logo_white_100.png";
+//import azrInfo02 from "../../../public/images/ms/azr-img/Azure2014-InformativeV2_02.png";
+//import azrInfo04 from "../../../public/images/ms/azr-img/Azure2014-InformativeV2_04.png";
 
 export default function AzureAlertEn() {
   return (
@@ -23,35 +23,6 @@ export default function AzureAlertEn() {
             &nbsp;
           </td>
           <td valign='top' style={{ backgroundColor: "none" }}>
-            <table width='600' cellPadding='0' cellSpacing='0' border='0'>
-              <tbody>
-                <tr>
-                  <td
-                    width='600'
-                    align='right'
-                    style={{
-                      backgroundColor: "none",
-                      color: "#3f4042",
-                      fontFamily: "Segoe UI,Arial,sans-serif",
-                      fontSize: "10px",
-                      fontWeight: "bold",
-                      padding: "24px 0 3px",
-                    }}
-                  >
-                    Having trouble viewing this email?{" "}
-                    <a
-                      href=''
-                      title='View as a webpage'
-                      alias='Preheader: View as a webpage'
-                      style={{ color: "#3da5dd", textDecoration: "none" }}
-                    >
-                      View as a webpage
-                    </a>
-                    .
-                  </td>
-                </tr>
-              </tbody>
-            </table>
             <table width='600' cellPadding='0' cellSpacing='0' border='0'>
               <tbody>
                 <tr>
@@ -81,7 +52,7 @@ export default function AzureAlertEn() {
                           </td>
                           <td width='74' style={{ background: "#f1f1f1" }}>
                             <img
-                              src={azrAlertLogo}
+                              src='/public/images/ms/azr-img/ms-logo-azure-top.png'
                               width='74'
                               height='30'
                               border='0'
@@ -113,7 +84,12 @@ export default function AzureAlertEn() {
                       display: "block",
                     }}
                   >
-                    <img src={azrInfo02} width='598' height='70' border='0' />
+                    <img
+                      src='/public/images/ms/azr-img/Azure2014-InformativeV2_02.png'
+                      width='598'
+                      height='70'
+                      border='0'
+                    />
                   </td>
                   <td
                     width='1'
@@ -172,7 +148,7 @@ export default function AzureAlertEn() {
                     style={{ background: "#ffffff", display: "block" }}
                   >
                     <img
-                      src={azrInfo04}
+                      src='/public/images/ms/azr-img/Azure2014-InformativeV2_04.png'
                       width='179'
                       height='170'
                       border='0'
@@ -462,7 +438,7 @@ export default function AzureAlertEn() {
                     }}
                   >
                     <img
-                      src={azrLogoWt}
+                      src='/public/images/ms/azr-img/MS_Logo_white_100.png'
                       width='75'
                       height='16'
                       border='0'

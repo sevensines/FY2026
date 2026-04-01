@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import dinBlack from "../../assets/dt/DINBk.woff";
-import dinBold from "../../assets/dt/DINBd.woff";
-import dinReg from "../../assets/dt/DINrg.woff";
-import dinMed from "../../assets/dt/DINMd.woff";
-import dtvLogo from "../../assets/dt/dtv-img/dtv-clr.svg";
-import dtvHero from "../../assets/dt/dtv-img/home-hero.jpg";
-import dtvCheck from "../../assets/dt/dtv-img/check.svg";
+/* import dinBlack from "../../../public/fonts/dt/DINBk.woff";
+import dinBold from "../../../public/fonts/dt/DINBd.woff";
+import dinReg from "../../../public/fonts/dt/DINrg.woff";
+import dinMed from "../../../public/fonts/dt/DINMd.woff";
+import img from "../../../public/images/dt/dtv-img";
+import dtvLogo from "../../../public/images/dt/dtv-img/dtv-clr.svg";
+import dtvHero from "../../../public/images/dt/dtv-img/home-hero.jpg";
+import dtvCheck from "../../../public/images/dt/dtv-img/check.svg"; */
 
 const DefaultFrameDTV = styled.div`
   display: flex;
@@ -14,22 +15,22 @@ const DefaultFrameDTV = styled.div`
 
   @font-face {
     font-family: Din Black;
-    src: url(${dinBlack});
+    src: url("/public/fonts/dt/DINBk.woff");
     font-weight: bold;
   }
   @font-face {
     font-family: Din Bold;
-    src: url(${dinBold});
+    src: url("/public/fonts/dt/DINBd.woff");
     font-weight: bold;
   }
   @font-face {
     font-family: Din;
-    src: url(${dinReg});
+    src: url("/public/fonts/dt/DINrg.woff");
     font-weight: normal;
   }
   @font-face {
     font-family: Din Med;
-    src: url(${dinMed});
+    src: url("/public/fonts/dt/DINMd.woff");
   }
 `;
 
@@ -53,7 +54,7 @@ const DtvLogo = styled.div`
   width: 126px;
   height: 35px;
   padding: 20px 20px 0 20px;
-  background: url(${dtvLogo}) no-repeat center;
+  background: url("/public/images/dt/dtv-img/dtv-clr.svg") no-repeat center;
   background-size: cover;
 `;
 
@@ -84,7 +85,8 @@ const DtvHero = styled.div`
   justify-content: center;
   align-items: center;
   padding: 4%;
-  background: url(${dtvHero}) no-repeat center center;
+  background: url("/public/images/dt/dtv-img/home-hero.jpg") no-repeat center
+    center;
   background-size: cover;
   @media (min-width: 768px) {
     flex-direction: row;
@@ -105,7 +107,7 @@ const DtvHeroCopy = styled.div`
   }
   ul {
     padding: 0 2% 2% 6%;
-    list-style-image: url(${dtvCheck});
+    list-style-image: url("/public/images/dt/dtv-img/check.svg");
 
     li {
       margin: 0;
@@ -122,7 +124,12 @@ const DtvHeroCopy = styled.div`
     margin: 0 auto;
     padding: 10px 0;
     color: #000000;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1.4em;
     text-align: center;

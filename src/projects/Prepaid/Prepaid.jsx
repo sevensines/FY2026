@@ -2,15 +2,15 @@ import styled from "styled-components";
 import FrameTMO from "../../pages/TMobile/TMframe";
 import HeaderTMO from "../../pages/TMobile/TMheader";
 
-import tmoPrepaidHero from "../../assets/tm/pre-img/prehero.png";
-import tmoBYOD from "../../assets/tm/pre-img/byod.png";
+//import tmoPrepaidHero from "../../../public/images/tm/pre-img/prehero.png";/
+//import tmoBYOD from "../../../public/images/tm/pre-img/byod.png";
 
 const PrepaidHero = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(${tmoPrepaidHero}) no-repeat top center;
+  background: url("/public/images/tm/pre-img/prehero.png") no-repeat top center;
   background-size: cover;
 `;
 
@@ -38,7 +38,12 @@ const PrepaidColRight = styled.div`
     font-size: 1.4em;
     line-height: 1em;
     color: #e20074;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
   }
   h3 {
@@ -47,7 +52,12 @@ const PrepaidColRight = styled.div`
     font-size: 1.2em;
     line-height: 1em;
     color: #000000;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
   }
   h5 {
@@ -56,7 +66,12 @@ const PrepaidColRight = styled.div`
     font-size: 1.2em;
     line-height: 1em;
     color: #444444;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
   }
   @media (min-width: 768px) {
@@ -162,7 +177,12 @@ const PayBanner = styled.div`
     font-size: 1.8em;
     line-height: 1em;
     color: #000000;
-    font-family: swis721 bold, "swis721 bold", "open sans", helvetica, arial,
+    font-family:
+      swis721 bold,
+      "swis721 bold",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     text-align: center;
   }
@@ -170,7 +190,12 @@ const PayBanner = styled.div`
     margin: 0 auto;
     padding: 12px 0 0 0;
     color: #444444;
-    font-family: swis721 roman, "swis721 roman", "open sans", helvetica, arial,
+    font-family:
+      swis721 roman,
+      "swis721 roman",
+      "open sans",
+      helvetica,
+      arial,
       sans-serif;
     font-size: 1em;
     line-height: 1.1em;
@@ -196,7 +221,7 @@ const DeviceBanner = styled.div`
 const DeviceLeft = styled.div`
   flex: 1;
   min-height: 200px;
-  background: url(${tmoBYOD}) no-repeat center center;
+  background: url("/public/images/tm/pre-img/byod.png") no-repeat center center;
   background-size: contain;
   @media (min-width: 768px) {
     flex: 2;

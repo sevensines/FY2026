@@ -7,8 +7,6 @@ import Win10EN from "../../projects/Win10/WinTenEN";
 import Win10HE from "../../projects/Win10/WinTenHE";
 import Win10TH from "../../projects/Win10/WinTenTH";
 
-import tenLogo from "../../assets/ms/ten.svg";
-
 export default function Win10() {
   const crumbs = [
     {
@@ -24,7 +22,7 @@ export default function Win10() {
   return (
     <>
       <Breadcrumb route={crumbs} />
-      <Banner logo={tenLogo} alt='Microsoft Student' />
+      <Banner logo='/public/images/ms/ten.svg' alt='Microsoft Student' />
       <Article fadeOnly>
         <Copy title='Windows 10 Preview Registration'>
           <b>Front End Developer • Email Developer • Graphic Designer</b>
